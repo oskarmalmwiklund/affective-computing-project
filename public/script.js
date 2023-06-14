@@ -73,16 +73,13 @@
       false
     );
 
-    startbutton.addEventListener(
-      "click",
-      (ev) => {
-        takepicture();
-        ev.preventDefault();
-      },
-      false
-    );
+    // Remove the click event listener for the startbutton
+    startbutton.removeEventListener("click", takepicture);
 
     clearphoto();
+
+    // Start taking pictures every 2 seconds
+    setInterval(takepicture, 2000);
   }
 
   // Fill the photo with an indication that none has been
