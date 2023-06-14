@@ -1,3 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.contentarea {
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  width: 760px;
+}
+
+.camera {
+  width: 340px;
+  display: inline-block;
+}
+
+.output {
+  width: 340px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 #video {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
@@ -16,17 +38,6 @@
   display: none;
 }
 
-.camera {
-  width: 340px;
-  display: inline-block;
-}
-
-.output {
-  width: 340px;
-  display: inline-block;
-  vertical-align: top;
-}
-
 #startbutton {
   display: block;
   position: relative;
@@ -39,10 +50,4 @@
   font-size: 14px;
   font-family: "Lucida Grande", "Arial", sans-serif;
   color: rgba(255, 255, 255, 1);
-}
-
-.contentarea {
-  font-size: 16px;
-  font-family: "Lucida Grande", "Arial", sans-serif;
-  width: 760px;
 }
