@@ -1,118 +1,90 @@
-(() => {
-  // The width and height of the captured photo. We will set the
-  // width to the value defined here, but the height will be
-  // calculated based on the aspect ratio of the input stream.
-  const width = 320; // We will scale the photo width to this
-  let height = 0; // This will be computed based on the input stream
-
-  // |streaming| indicates whether or not we're currently streaming
-  // video from the camera. Obviously, we start at false.
-  let streaming = false;
-
-  // The various HTML elements we need to configure or control. These
-  // will be set by the startup() function.
-  let video = null;
-  let canvas = null;
-  let photo = null;
-  let startbutton = null;
-
-  function showViewLiveResultButton() {
-    if (window.self !== window.top) {
-      // Ensure that if our document is in a frame, we get the user
-      // to first open it in its own tab or window. Otherwise, it
-      // won't be able to request permission for camera access.
-      document.querySelector(".contentarea").remove();
-      const button = document.createElement("button");
-      button.textContent = "View live result of the example code above";
-      document.body.append(button);
-      button.addEventListener("click", () => window.open(location.href));
-      return true;
-    }
-    return false;
+/* This function checks and sets up the camera */
+function startVideo() {
+  if (navigator.mediaDevices && 
+      navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({video: true})
+      .then(handleUserMediaSuccess)
+      .catch(handleUserMediaError);
   }
+}
 
-  function startup() {
-    if (showViewLiveResultButton()) {
-      return;
-    }
-    video = document.getElementById("video");
-    canvas = document.getElementById("canvas");
-    photo = document.getElementById("photo");
-    startbutton = document.getElementById("startbutton");
+function handleUserMediaError(error){
+  console.log(error);
+}
 
-    navigator.mediaDevices
-      .getUserMedia({ video: true, audio: false })
-      .then((stream) => {
-        video.srcObject = stream;
-        video.play();
-      })
-      .catch((err) => {
-        console.error(`An error occurred: ${err}`);
-      });
+function handleUserMediaSuccess(stream){
+  var video = document.getElementById("myVideo");
+  video.srcObject = stream;
+  // video.play();
+  console.log("success");
+  window.setInterval(captureImageFromVideo, 2000);
+}
 
-    video.addEventListener(
-      "canplay",
-      (ev) => {
-        if (!streaming) {
-          height = video.videoHeight / (video.videoWidth / width);
+// The variable that holds the detected face information, which will be updated through Firebase callbacks
+var detection = null;
 
-          // Firefox currently has a bug where the height can't be read from
-          // the video, so we will make assumptions if this happens.
+function captureImageFromVideo() {
+  const canvas = document.getElementById("mainCanvas");
+  const context = canvas.getContext("2d");
+  
+  const video = document.getElementById("myVideo");
+  canvas.setAttribute("width", video.width);
+  canvas.setAttribute("height", video.height);  
+  // Draw video image onto Canvas
+  context.drawImage(video, 0, 0, video.width, video.height);
 
-          if (isNaN(height)) {
-            height = width / (4 / 3);
-          }
+  sendSnapshot();
+  
+  //var dataObj = context.getImageData(0, 0, canvas.width, canvas.height);
 
-          video.setAttribute("width", width);
-          video.setAttribute("height", height);
-          canvas.setAttribute("width", width);
-          canvas.setAttribute("height", height);
-          streaming = true;
-        }
-      },
-      false
-    );
-
-    // Remove the click event listener for the startbutton
-    startbutton.removeEventListener("click", takepicture);
-
-    clearphoto();
-
-    // Start taking pictures every 2 seconds
-    setInterval(takepicture, 2000);
+  // If a face detection has been received from the database, draw a rectangle around it on Canvas
+  if (detection) {
+    const face = detection[0];
+    context.beginPath();
+    context.moveTo(face.x, face.y);
+    context.lineTo(face.x + face.w, face.y);
+    context.lineTo(face.x + face.w, face.y + face.h);
+    context.lineTo(face.x, face.y + face.h);
+    context.lineTo(face.x, face.y);
+    context.lineWidth = 5;
+    context.strokeStyle = "#0F0";
+    context.fillStyle = "#0F0";
+    context.stroke();
   }
+}
+  
+function sendSnapshot() {
+  const canvas = document.getElementById("mainCanvas");
+  // Convert the image into a a URL string with built0-in canvas function 
+  const data = canvas.toDataURL();
+  const commaIndex = data.indexOf(",");
+  const imgString = data.substring(commaIndex+1,data.length);
+  storeImage(imgString);
+}
 
-  // Fill the photo with an indication that none has been
-  // captured.
-  function clearphoto() {
-    const context = canvas.getContext("2d");
-    context.fillStyle = "#AAA";
-    context.fillRect(0, 0, canvas.width, canvas.height);
+// Initialize Firebase
+const config = {
+  apiKey: "AIzaSyAFlE1-z280atVYvoCdirQwBjolPDjksBA",
+  authDomain: "affective-computing-proj-48220.firebaseapp.com",
+  projectId: "affective-computing-proj-48220",
+  databaseURL: "https://affective-computing-proj-48220.firebaseio.com",
+  storageBucket: "affective-computing-proj-48220.appspot.com",
+  messagingSenderId: "1084466855468",
+  appId: "1:1084466855468:web:7e25dcbd77af8a8c52db89",
+  measurementId: "G-363YKWWSE7"
+};
+firebase.initializeApp(config);
 
-    const data = canvas.toDataURL("image/png");
-    photo.setAttribute("src", data);
-  }
+function storeImage(imgContent)
+{
+    var dbRef = firebase.database().ref('/');
+    dbRef.update({"image":imgContent});
+}
 
-  // Capture a photo by fetching the current contents of the video
-  // and drawing it into a canvas, then converting that to a PNG
-  // format data URL. By drawing it on an offscreen canvas and then
-  // drawing that to the screen, we can change its size and/or apply
-  // other changes before drawing it.
-  function takepicture() {
-    const context = canvas.getContext("2d");
-    if (width && height) {
-      canvas.width = width;
-      canvas.height = height;
-      context.drawImage(video, 0, 0, width, height);
+// Register a callback for when a detection is updated in the database
+var dbRef = firebase.database().ref('/detection/');
+dbRef.on("value", newFaceDetected);
 
-      const data = canvas.toDataURL("image/png");
-      photo.setAttribute("src", data);
-    } else {
-      clearphoto();
-    }
-  }
-
-  // Set up our event listener to run the startup process
-  // once loading is complete.
-  window.addEventListener("load", startup, false);
-})();
+function newFaceDetected(snapshot) {
+  detection = snapshot.val();
+}
