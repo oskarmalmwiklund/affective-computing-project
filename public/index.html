@@ -7,6 +7,7 @@
     <canvas id="canvas"></canvas>
 
     <script type="module">
+      //Firebase configuration for app and storage
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
       import { getStorage, ref, uploadString } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-storage.js";
 
@@ -21,12 +22,15 @@
         measurementId: "G-363YKWWSE7"
       };
 
+      // Initialize firebase
       const app = initializeApp(firebaseConfig);
       const storage = getStorage(app);
 
+      // Declare video and canvas variables
       const video = document.getElementById("video");
       const canvas = document.getElementById("canvas");
 
+      // On load, set video height and width, play video and call loop function
       video.onloadedmetadata = function () {
         const ratio = video.videoHeight / video.videoWidth;
         const max_width = 640;
@@ -42,13 +46,20 @@
         loop();
       };
 
+      // Draws the image on canvas
       function snap() {
         canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        // Saves the canvas data to data_url format
         const data_url = canvas.toDataURL("image/jpeg");
 
-        const storage_ref_name = `${Date.now()}.jpeg`;
+        // define variables for where to store images
+        // saves image with a unique date.now name
+        // 'test' needs to be changed to a static user session ID that is unique every time
+        const storage_ref_name = `test/${Date.now()}.jpeg`;
         const storage_ref = ref(storage, storage_ref_name);
-          
+        
+        // uploads data_url encoded string to Cloud Storage
         uploadString(storage_ref, data_url, "data_url")
           .then((snapshot) => {
             console.log(`Uploaded ${storage_ref_name}`);
@@ -58,11 +69,13 @@
           });
       };
 
+      // calls snap, sets timeout and calls itself
       function loop() {
         snap();
-        setTimeout(loop, 5000);
+        setTimeout(loop, 2000);
       };
 
+      // sets constraints for video stream
       navigator.mediaDevices
         .getUserMedia({
           audio: false,
