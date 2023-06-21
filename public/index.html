@@ -1,11 +1,12 @@
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Affective Computing Project</title>
   </head>
   <body>
     <video id="video"></video>
     <canvas id="canvas"></canvas>
-
+    <!--
     <script type="module">
       //Firebase configuration for app and storage
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
@@ -45,12 +46,12 @@
         video.play();
         loop();
       };
-
+      
       // creates unique id when called
       function generateId() {
-          return Math.random().toString(16).slice(2);
+        return Math.random().toString(16).slice(2);
       }
-        
+
       const id = generateId();
 
       // Draws the image on canvas
@@ -94,6 +95,8 @@
         .catch((err) => {
           console.log(err);
         });
-    </script>
+   </script>
+  -->
+  <script type="module" src="script.js"></script>
   </body>
 </html>
