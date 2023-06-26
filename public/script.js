@@ -86,4 +86,4 @@ navigator.mediaDevices
     console.log(err);
   });
 
-console.log("Test");
+console.log("Test2");
