@@ -85,3 +85,5 @@ navigator.mediaDevices
   .catch((err) => {
     console.log(err);
   });
+
+console.log("Test");
