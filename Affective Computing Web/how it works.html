@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How it works</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="subscribe.css">
+    <script src="popup.js"></script>
+    <style>
+
+        .how-works-title{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(66, 66, 66);
+        }
+
+        .step-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-top: 20px;
+            color: rgb(66, 66, 66);
+        }
+
+        .step-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .step-content.left {
+           flex-direction: row-reverse;
+        }
+
+        .step-image {
+            flex: 1;
+        }
+
+        .step-image img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .step-text {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .step-description{
+            font-size: 18px;
+        }
+
+        .get-start-button {
+           display: block;
+           margin-top: 10px;
+        }
+
+        .get-start-button:hover {
+          background-color: #45a049;
+        }
+
+        .get-start-button a {
+            color: inherit;
+            text-decoration: none; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .step-container {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .step {
+               width: 100%;
+               margin-bottom: 20px;
+            }
+
+            .step-image {
+               margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body> 
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">HelloFresh</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+                <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+                <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            <!-- Add more menu items as needed -->
+            </ul>
+            <button onclick="openPopup()">Subscibe</button>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+        <div id="popup" class="popup">
+          <div class="subscription-box">
+            <button class="close-button" onclick="closePopup()">&times;</button>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Receive the latest recipes by subscribing now!</p>
+            <form>
+              <input type="text" id="name" placeholder="Enter you name" required>
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="how-works-title">
+            How It Works
+        </div>
+
+        <div class="step-container">
+            <div class="step-content">
+                <div class="step-image">
+                    <img src="/photos/step1.avif" alt="Step 1">
+                </div>
+                <div class="step-text">
+                    <h2>1. Pick a plan</h2>
+                    <p class="step-description">Whether cooking for yourself or your household, we have a flexible plan to match your lifestyle. Need to cancel, change meals, or skip a week? Not a problem.</p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content left">
+                <div class="step-image">
+                    <img src="step2.avif" alt="Step 2">
+                </div>
+                <div class="step-text">
+                    <h2>2. Get your delivery</h2>
+                    <p class="step-description">Each week, you’ll open simple step-by-step recipes complete with nutritional information and fresh, pre-measured ingredients to get you whipping up delicious dinners in no time.</p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content">
+                <div class="step-image">
+                    <img src="step3.avif" alt="Step 3">
+                </div>
+                <div class="step-text">
+                    <h2>3. Cook, eat, enjoy!</h2>
+                    <p class="step-description">The old “what do you want to eat?” conversation is about to be banished from your life. Welcome to a world where dinner is always planned, simple, and delicious.
+                    </p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content left">
+                <div class="step-image">
+                    <img src="step4.avif" alt="Step 4">
+                </div>
+                <div class="step-text">
+                    <h2>4. Recycle your box and packaging</h2>
+                    <p class="step-description">Simply fold your box and place it with your curbside recyclables or take it to your local recycling center. Explore the recycling and packaging page for more details.</p>
+                </div>
+            </div>
+        </div>
+      
+        <footer>
+          <iframe src="footer.html" width="100%" height="400"></iframe>
+        </footer>
+
+       
+          
+    </header>
+    <script src="mobile-menu.js"></script>
+
+
+
+</body>
+</html>

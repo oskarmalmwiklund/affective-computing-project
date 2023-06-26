@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Plans2</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="subscribe.css">
+    <script src="popup.js"></script>
+    <style>
+
+        .big-box {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 400px; /* Set the desired width of the box */
+          height: 570px; /* Set the desired height of the box */
+          padding: 1px; /* Add some padding inside the box */
+          padding-top: 1px;
+          background-color: #ffffff;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .container {
+           position: relative;
+           height: 90vh;
+           color: rgb(66, 66, 66);
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px; /* Add margin to create space between the boxes */
+        }
+
+
+        .button {
+            margin-top: auto; /* Push the button to the bottom of the box */
+            margin-left: auto;
+            position: relative;
+            left: 35%;
+            background-color: rgb(24, 121, 55);
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+        }
+
+      .ttl {
+        font-size: 20px;
+        margin-bottom: 20px;
+        z-index: 3;
+      }
+
+      .button a {
+        color: inherit; /* Inherit the color from the parent element */
+        text-decoration: none; /* Remove the underline */
+      }
+
+
+
+      @media screen and (max-width: 767px) {
+
+      .big-box {
+        padding: 10px;
+        max-width: 80%;
+        height: 570px;
+        top: 50%;
+      }
+      .choices {
+        padding: 10px;
+      }
+      .checkbox-tile{
+        width: 120px;
+      }
+
+      .title {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">HelloFresh</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+                <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+                <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            <!-- Add more menu items as needed -->
+            </ul>
+            <button onclick="openPopup()">Subscibe</button>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>  
+        <div id="popup" class="popup">
+          <div class="subscription-box">
+            <button class="close-button" onclick="closePopup()">&times;</button>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Receive the latest recipes by subscribing now!</p>
+            <form>
+              <input type="text" id="name" placeholder="Enter you name" required>
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+          <div class="container">
+            <div class="big-box"> 
+              <p class="ttl">1. Choose your preferences</p>
+               <p>Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes each week!</p>
+              <div class="choices">
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-carrot"></i>
+                        <span class="checkbox-label">Veggie</span>
+                      </span>
+                    </label>
+                </div>  
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-hamburger"></i>
+                        <span class="checkbox-label">Meat & Veggie</span>
+                      </span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-fish"></i>
+                        <span class="checkbox-label">Pescatarian</span>
+                      </span>
+                    </label>
+                </div>  
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-lemon"></i>
+                        <span class="checkbox-label">Fit & Wholesome</span>
+                      </span>
+                    </label>
+                </div>  
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-clock"></i>
+                        <span class="checkbox-label">Quick & Easy</span>
+                      </span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label class="checkbox-wrapper">
+                      <input type="checkbox" class="checkbox-input" />
+                      <span class="checkbox-tile">
+                        <i class="choice-icon fas fa-child"></i>
+                        <span class="checkbox-label">Family Friendly</span>
+                      </span>
+                    </label>
+                </div>  
+                <button class="button"><a href="Continue2.html">Continue</a></button>
+              </div>
+            </div>
+          </div>    
+    </header>    
+    <footer>
+      <iframe src="footer.html" width="100%" height="400"></iframe>
+    </footer>
+      
+      <script src="continue-btn.js"></script>
+      <script src="mobile-menu.js"></script>
+</body>
+</html>

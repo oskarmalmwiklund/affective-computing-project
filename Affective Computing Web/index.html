@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="subscribe.css">
+    <script src="popup.js"></script>
+</head>
+<body> 
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">HelloFresh</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+                <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+                <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+                <li class="nav-item"><a href="#">Contact</a></li>
+            <!-- Add more menu items as needed -->
+            </ul>
+            <button onclick="openPopup()">Subscibe</button>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>
+        <div id="popup" class="popup">
+          <div class="subscription-box">
+            <button class="close-button" onclick="closePopup()">&times;</button>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Receive the latest recipes by subscribing now!</p>
+            <form>
+              <input type="text" id="name" placeholder="Enter you name" required>
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="hero-image">
+            <h1>Take the stress<br>
+                out of mealtime</h1>
+            
+        </div>
+        <button class="center-button"><a href="Our Plans2.html">View Our Plans</a></button>
+        <section class="section">
+            <div class="text-container">
+              <div class="text-box">
+                <img src="/photos/hf1.png" alt="Image 1">
+                <h3>No skimpin’ on the chicken!</h3>
+                <p>Or steak, or fish, or plant protein.</p>
+              </div>
+              <div class="text-box">
+                <img src="/photos/hf2.png" alt="Image 2">
+                <h3>No commitment whatsoever</h3>
+                <p>Skipping weeks or cancelling is super easy.</p>
+              </div>
+              <div class="text-box">
+                <img src="/photos/hf3.png" alt="Image 3">
+                <h3>The most 5-star reviews</h3>
+                <p>Our huge recipe selection wows week after week.</p>
+              </div>
+              <div class="text-box">
+                <img src="/photos/hf4.png" alt="Image 4">
+                <h3>Fresh and affordable</h3>
+                <p>Chef-created deliciousness from $7.49 per meal.</p>
+              </div>
+            </div>
+          </section>
+          <iframe src="section1.html" width="100%" height="500"></iframe>
+          <iframe src="section2.html" width="100%" height="900"></iframe>
+        <footer>
+          <iframe src="footer.html" width="100%" height="400"></iframe>
+        </footer>
+
+       
+          
+    </header>
+    <script src="mobile-menu.js"></script>
+
+
+
+</body>
+</html>
+
+

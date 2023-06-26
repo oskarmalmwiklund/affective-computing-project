@@ -1,0 +1,118 @@
+
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .subscription-box {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-color: #e1e1e1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .subscription-box .close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .subscription-box .close-button:hover {
+    color: #555;
+  }
+  
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+input[type="text"],
+input[type="email"] {
+  width: 280px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+  
+  button {
+    padding: 8px 16px;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+ 
+
+  @media (max-width: 767px) {
+    .subscription-box {
+      padding: 10px;
+      height: 250px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  
+    p {
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  
+    input[type="email"] {
+      width: 80%;
+      margin-right: 0;
+    }
+  
+    button {
+      padding: 6px 12px;
+    }
+    .subscription-box .close-button {
+      position: absolute;
+      top:2px;
+      right: 2px;
+    }
+  }
+  
