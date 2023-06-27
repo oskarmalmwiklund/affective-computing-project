@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/oskarmalmwiklund/affective-computing-project/issues"
   },
-  "homepage": "https://github.com/oskarmalmwiklund/affective-computing-project#readme"
+  "homepage": "https://github.com/oskarmalmwiklund/affective-computing-project#readme",
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jquery": "^3.7.0"
+  }
 }
