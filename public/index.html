@@ -1,30 +1,38 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<!-- Google tag (gtag.js) -->
-<script async
-src="https://www.googletagmanager.com/gtag/js?id=G-363YKWWSE7"></script>
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-363YKWWSE7"></script>
 
-   gtag('config', 'G-363YKWWSE7');
-</script>
-<script src="html2canvas.js"></script>
-<script src="scriptTest.js"></script>
-   <link rel="stylesheet" href="style.css">
-   <title>Affective Computing Project</title>
+  <!-- Google Optimize for A/B test -->
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-M64CL4V"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-363YKWWSE7');
+  </script>
+  <script src="html2canvas.js"></script>
+  <script src="scriptTest.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Affective Computing Project</title>
 </head>
 
 <body>
-   <video id="video"></video>
-   <canvas id="canvas"></canvas>
+  <video id="video"></video>
+  <canvas id="canvas"></canvas>
 
-   <script type="module" src="script.js"></script>
-   <label value="Finish Experiment"
-onClick="finishTracking();finishExperiment();">click here to stop</a>
+  <script type="module" src="script.js"></script>
+  <label value="Finish Experiment" onClick="finishTracking();finishExperiment();">click here to stop</a>
 </body>
+
 </html>
