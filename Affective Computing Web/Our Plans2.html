@@ -7,87 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="subscribe.css">
     <script src="popup.js"></script>
-    <style>
-
-        .big-box {
-          position: absolute;
-          top: 60%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 400px; /* Set the desired width of the box */
-          height: 570px; /* Set the desired height of the box */
-          padding: 1px; /* Add some padding inside the box */
-          padding-top: 1px;
-          background-color: #ffffff;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        }
-
-        .container {
-           position: relative;
-           height: 90vh;
-           color: rgb(66, 66, 66);
-        }
-
-        .box-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px; /* Add margin to create space between the boxes */
-        }
-
-
-        .button {
-            margin-top: auto; /* Push the button to the bottom of the box */
-            margin-left: auto;
-            position: relative;
-            left: 35%;
-            background-color: rgb(24, 121, 55);
-            border: none;
-            border-radius: 4px;
-            padding: 10px 20px;
-            color: white;
-        }
-
-      .ttl {
-        font-size: 20px;
-        margin-bottom: 20px;
-        z-index: 3;
-      }
-
-      .button a {
-        color: inherit; /* Inherit the color from the parent element */
-        text-decoration: none; /* Remove the underline */
-      }
-
-
-
-      @media screen and (max-width: 767px) {
-
-      .big-box {
-        padding: 10px;
-        max-width: 80%;
-        height: 570px;
-        top: 50%;
-      }
-      .choices {
-        padding: 10px;
-      }
-      .checkbox-tile{
-        width: 120px;
-      }
-
-      .title {
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
-      }
-
-    </style>
+   
 </head>
 <body>
     <header class="header">
@@ -122,7 +42,7 @@
         </div>
           <div class="container">
             <div class="big-box"> 
-              <p class="ttl">1. Choose your preferences</p>
+              <p class="ttl-our-plans">1. Choose your preferences</p>
                <p>Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes each week!</p>
               <div class="choices">
                 <div class="checkbox">
@@ -179,7 +99,7 @@
                       </span>
                     </label>
                 </div>  
-                <button class="button"><a href="Continue2.html">Continue</a></button>
+                <button class="button-our-plans"><a href="Continue2.html">Continue</a></button>
               </div>
             </div>
           </div>    

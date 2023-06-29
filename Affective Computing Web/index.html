@@ -19,7 +19,9 @@
                 <li class="nav-item"><a href="#">Contact</a></li>
             <!-- Add more menu items as needed -->
             </ul>
+            <button id="quit-button" onclick="openPopup2()">Quit</button>
             <button onclick="openPopup()">Subscibe</button>
+            
 
         <div class="hamburger">
             <span class="bar"></span>
@@ -27,6 +29,16 @@
             <span class="bar"></span>
         </div>
         </nav>
+
+        <div id="popup2" class="popup2">
+          <div class="quit-box">
+            <button class="close-button" onclick="closePopup2()">&times;</button>
+            <h2>Are you sure you want to quit?</h2>
+            <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel like you’re not able to complete the task, you can finish the experiment now.</p>
+            <button>Finish the experiment</button>
+          </div>
+        </div>
+
         <div id="popup" class="popup">
           <div class="subscription-box">
             <button class="close-button" onclick="closePopup()">&times;</button>
@@ -38,6 +50,11 @@
               <button type="submit">Subscribe</button>
             </form>
           </div>
+
+        
+
+
+
         </div>
         <div class="hero-image">
             <h1>Take the stress<br>
@@ -48,22 +65,22 @@
         <section class="section">
             <div class="text-container">
               <div class="text-box">
-                <img src="/photos/hf1.png" alt="Image 1">
+                <img src="photos/hf1.png" alt="Image 1">
                 <h3>No skimpin’ on the chicken!</h3>
                 <p>Or steak, or fish, or plant protein.</p>
               </div>
               <div class="text-box">
-                <img src="/photos/hf2.png" alt="Image 2">
+                <img src="photos/hf2.png" alt="Image 2">
                 <h3>No commitment whatsoever</h3>
                 <p>Skipping weeks or cancelling is super easy.</p>
               </div>
               <div class="text-box">
-                <img src="/photos/hf3.png" alt="Image 3">
+                <img src="photos/hf3.png" alt="Image 3">
                 <h3>The most 5-star reviews</h3>
                 <p>Our huge recipe selection wows week after week.</p>
               </div>
               <div class="text-box">
-                <img src="/photos/hf4.png" alt="Image 4">
+                <img src="photos/hf4.png" alt="Image 4">
                 <h3>Fresh and affordable</h3>
                 <p>Chef-created deliciousness from $7.49 per meal.</p>
               </div>
