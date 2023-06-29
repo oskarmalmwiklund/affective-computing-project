@@ -37,13 +37,6 @@ video.onloadedmetadata = function () {
   loop();
 };
 
-// creates unique id when called
-function generateId() {
-  return Math.random().toString(16).slice(2);
-}
-
-const id = generateId();
-
 // Draws the image on canvas
 function snap() {
   canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
@@ -54,7 +47,7 @@ function snap() {
   // define variables for where to store images
   // saves image with a unique date.now name
   // 'test' needs to be changed to a static user session ID that is unique every time
-  const storage_ref_name = `${id}/${Date.now()}.jpeg`;
+  const storage_ref_name = `${user}/${Date.now()}.jpeg`;
   const storage_ref = ref(storage, storage_ref_name);
 
   // uploads data_url encoded string to Cloud Storage
