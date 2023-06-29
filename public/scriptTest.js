@@ -32,8 +32,6 @@ const COMPONENT_CHECK_BOX = 5;
 
 const user = createUser();
 
-
-
 var list = [];
 var sceneId = 0;
 var eventCounter = 0;
@@ -756,3 +754,40 @@ function postAJAXDemographicData(parametros) {
 function registergender(value) { postStringDD(39, value); } function registerbirthdate(value) { postDateDD(40, value); } function registercountry_of_origin(value) { postStringDD(41, value); } function registereducation_level(value) { postStringDD(42, value); } function registercurrent_occupation(value) { postStringDD(43, value); } function registercurrent_location(value) { postStringDD(44, value); } function registeralone_or_together(value) { postStringDD(45, value); } function registercurrent_mood(value) { postStringDD(46, value); } function registertech_comfortable(value) { postNumberDD(47, value); } function registeronline_subscriptions(value) { postNumberDD(48, value); }
 
 function registerneed_of_learning(value) {postNumberDD(76, value);}function registercumbersome(value) {postNumberDD(77, value);}function registerneeded_help(value) {postNumberDD(78, value);}function registerfrequency_of_use(value) {postNumberDD(79, value);}function registertoo_much_inconsistency(value) {postNumberDD(80, value);}function registercomplex(value) {postNumberDD(81, value);}function registersystem_ease(value) {postNumberDD(82, value);}function registerquick_learn_of_system(value) {postNumberDD(83, value);}function registerwell_integrated(value) {postNumberDD(84, value);}function registeruse_confidenty(value) {postNumberDD(85, value);}function registerattractive(value) {postNumberDD(86, value);}function registeraesthically_appealing(value) {postNumberDD(87, value);}function registernice_graphic_images(value) {postNumberDD(88, value);}function registerappealed_visually(value) {postNumberDD(89, value);}function registerpleasing_screen_layout(value) {postNumberDD(90, value);}
+
+$(document).ready(function () {
+	$('#submit').on('click', function (event) {
+		
+		var gender = $('input[name="gender"]:checked').val();
+		var dateVal = $('#birth-date').val();
+		var origin = $('select[name="country-of-origin"]').val();
+		var education = $('select[name="education"]').val();
+		var occupation = $('input[name=current-occupation]:checked').val();
+		var location = $('input[name=current_location]:checked').val();
+		var setting = $('input[name=setting]:checked').val();
+		var mood = $('input[name=current_mood]:checked').val();
+		var techExp = $('input[name=tech-comfortable]:checked').val();
+		var subscriptions = $('input[name=online_subscriptions]:checked').val();
+
+		if(!gender || !dateVal || !origin || !education || !occupation  || !location || !setting || !mood || !techExp || !subscriptions){
+			return;
+		}
+
+		var date = new Date(dateVal);
+		var birthDate = date.toISOString().split('T')[0];
+		
+		console.log(gender, birthDate, origin, education, occupation, location, setting, mood, techExp, subscriptions);
+		
+		registergender(gender);
+		registerbirthdate(birthDate);
+		registercountry_of_origin(origin);
+		registereducation_level(education);
+		registercurrent_occupation(occupation);
+		registercurrent_location(location);
+		registeralone_or_together(setting);
+		registercurrent_mood(techExp);
+		registertech_comfortable(techExp);
+		registeronline_subscriptions(subscriptions);
+
+	});
+});
