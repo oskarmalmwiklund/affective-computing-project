@@ -790,7 +790,7 @@ $(document).ready(function () {
 		registertech_comfortable(techExp);
 		registeronline_subscriptions(subscriptions);
 
-		finishTracking('index.html');
+		finishTracking('video.html');
 		finishSubsceneTracking();
 	});
 });

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="subscribe.css">
+  <script src="script.js"></script>
+  <title>Meal Tabs</title>
+  
+ 
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" target="">
+        <object class="nav-logo" data="logo/freshbox_logo.svg" type="image/svg+xml"></object></a>
+
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+        <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+        <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+        <!-- Add more menu items as needed -->
+      </ul>
+      <button id="quit-button" onclick="openPopupQuit()">Quit</button>
+      <button onclick="openPopup()">Subscibe</button>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <div id="popupQuit" class="popupQuit">
+      <div class="quit-box">
+        <button class="close-button" onclick="closePopupQuit()">&times;</button>
+        <h2>Are you sure you want to quit?</h2>
+        <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel
+          like you’re not able to complete the task, you can finish the experiment now.</p>
+        <button>Finish the experiment</button>
+      </div>
+    </div>
+    <div id="popup" class="popup">
+      <div class="subscription-box">
+        <button class="close-button" onclick="closePopup()">&times;</button>
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Receive the latest recipes by subscribing now!</p>
+        <form>
+          <input type="text" id="name" placeholder="Enter you name" required>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+
+        
+    <div class="our-menus-ttl">
+        Our recipes
+    </div>
+
+  <div class="tabs">
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/enchiladas.jpg);"></div>
+      <div class="tab-title">One-Pan Beef Enchiladas Verdes</div>
+      <div class="tab-description">with Mexican Cheese Blend & Hot Sauce Crema.</div>
+      <div class="tab-preparation-time">30 minutes</div>
+    </div>
+    
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/flatbread.jpg);"></div>
+      <div class="tab-title">Chicken & Mushroom Flatbreads</div>
+      <div class="tab-description">with Gouda Cream Sauce & Parmesan</div>
+      <div class="tab-preparation-time">30 minutes</div>
+    </div>
+
+    <div class="tab">
+        <div class="tab-image" style="background-image: url(photos/beef\ cavatappi.jpg);"></div>
+        <div class="tab-title">Southwest Beef Cavatappi</div>
+        <div class="tab-description">with Green Pepper & Smoky Red Pepper Crema</div>
+        <div class="tab-preparation-time">35 minutes</div>
+    </div>
+
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/moo-shu-pork-bowls.avif);"></div>
+      <div class="tab-title">Moo Shu Pork Bowls</div>
+      <div class="tab-description">with Cabbage, Scallions & Buttery Rice</div>
+      <div class="tab-preparation-time">20 minutes</div>
+    </div>
+    
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/cheeseburger.jpg);"></div>
+      <div class="tab-title">Firehouse Cheeseburgers</div>
+      <div class="tab-description">with Fried Onions, Garlic Potato Wedges & Creamy Ranch Sauce</div>
+      <div class="tab-preparation-time">35 minutes</div>
+    </div>
+
+    <div class="tab">
+        <div class="tab-image" style="background-image: url(photos/lemon-dill-chicken-sausage-couscous.avif);"></div>
+        <div class="tab-title">Lemon-Dill Chicken Sausage Couscous</div>
+        <div class="tab-description">with Zucchini</div>
+        <div class="tab-preparation-time">35 minutes</div>
+    </div>
+
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/citrusy-tex-mex-pork-tenderloin.avif);"></div>
+      <div class="tab-title">Citrusy Tex-Mex Pork Tenderloin</div>
+      <div class="tab-description">with Spiced Veggie Jumble & Lime Crema</div>
+      <div class="tab-preparation-time">35 minutes</div>
+    </div>
+
+    <div class="tab">
+      <div class="tab-image" style="background-image: url(photos/trattoria-tortelloni.avif);"></div>
+      <div class="tab-title">One-Pan Trattoria Tortelloni Bake</div>
+      <div class="tab-description">with a Crispy Parmesan Panko Topping</div>
+      <div class="tab-preparation-time">25 minutes</div>
+    </div>
+    
+    <!-- Add more tabs for other meals -->
+  </div>
+  <footer>
+    <iframe src="footer.html" width="100%" height="400"></iframe>
+  </footer>
+  
+</header>
+</body>
+</html>

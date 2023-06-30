@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finish</title>
+    <!-- Google Optimize for A/B test -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-M64CL4V"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VCRGBNS29B');
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- Tracking script -->
+    <script src="html2canvas.js"></script>
+    <script src="scriptTest.js"></script>
+   
+</head>
+<body>
+    
+    <div id="survey-title">
+        <h1>FreshBox Survey</h1>
+
+        <!-- Create Form -->
+        <form id="form">
+
+            <!-- Details -->
+            <div class="form-control">
+                <label>
+                    I think that I would like to use this system frequently.
+                </label>
+
+              <div class="form-control" id="likert-options">
+                <label for="frequency_of_use-1">
+                    <input type="radio" id="frequency_of_use-1" name="frequency_of_use">1</input>
+                </label>
+                <label for="frequency_of_use-2">
+                    <input type="radio" id="frequency_of_use-2" name="frequency_of_use">2</input>
+                </label>
+                <label for="frequency_of_use-3">
+                    <input type="radio" id="frequency_of_use-3" name="frequency_of_use">3</input>
+                </label>
+                <label for="frequency_of_use-4">
+                    <input type="radio" id="frequency_of_use-4" name="frequency_of_use">4</input>
+                </label>
+                <label for="frequency_of_use-5">
+                    <input type="radio" id="frequency_of_use-5" name="frequency_of_use">5</input>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I found the system unnecessarily complex.
+                </label>
+              <div class="likert-options"> 
+                <label for="complex-1">
+                    <input type="radio" id="complex-1" name="complex">1</input>
+                </label>
+                <label for="complex-2">
+                    <input type="radio" id="complex-2" name="complex">2</input>
+                </label>
+                <label for="complex-3">
+                    <input type="radio" id="complex-3" name="complex">3</input>
+                </label>
+                <label for="complex-4">
+                    <input type="radio" id="complex-4" name="complex">4</input>
+                </label>
+                <label for="complex-5">
+                    <input type="radio" id="complex-5" name="complex">5</input>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I thought the system was easy to use.
+                </label>
+              <div class="likert-options">  
+                <label for="system-ease-1">
+                    <input type="radio" id="system-ease-1" name="system-ease">1</input>
+                </label>
+                <label for="system-ease-2">
+                    <input type="radio" id="system-ease-2" name="system-ease">2</input>
+                </label>
+                <label for="system-ease-3">
+                    <input type="radio" id="system-ease-3" name="system-ease">3</input>
+                </label>
+                <label for="system-ease-4">
+                    <input type="radio" id="system-ease-4" name="system-ease">4</input>
+                </label>
+                <label for="system-ease-5">
+                    <input type="radio" id="system-ease-5" name="system-ease">5</input>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I think that I would need the support of a technical person to be able to use this system.
+                </label>
+              <div class="likert-options">
+                <label for="needed_help-1">
+                    <input type="radio" id="needed_help-1" name="needed_help">1</input>
+                </label>
+                <label for="needed_help-2">
+                    <input type="radio" id="needed_help-2" name="needed_help">2</input>
+                </label>
+                <label for="needed_help-3">
+                    <input type="radio" id="needed_help-3" name="needed_help">3</input>
+                </label>
+                <label for="needed_help-4">
+                    <input type="radio" id="needed_help-4" name="needed_help">4</input>
+                </label>
+                <label for="needed_help-5">
+                    <input type="radio" id="needed_help-5" name="needed_help">5</input>
+                </label>
+              </div>    
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I found the various functions in this system were well integrated.
+                </label>
+              <div class="likert-options">
+                <label for="well_integrated-1">
+                    <input type="radio" id="well_integrated-1" name="well_integrated">1</input>
+                </label>
+                <label for="well_integrated-2">
+                    <input type="radio" id="well_integrated-2" name="well_integrated">2</input>
+                </label>
+                <label for="well_integrated-3">
+                    <input type="radio" id="well_integrated-3" name="well_integrated">3</input>
+                </label>
+                <label for="well_integrated-4">
+                    <input type="radio" id="well_integrated-4" name="well_integrated">4</input>
+                </label>
+                <label for="well_integrated-5">
+                    <input type="radio" id="well_integrated-5" name="well_integrated">5</input>
+                </label>
+              </div>    
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I thought there was too much inconsistency in this system.
+                </label>
+              <div class="likert-options">
+                <label for="too_much_inconsistency-1">
+                    <input type="radio" id="too_much_inconsistency-1" name="too_much_inconsistency">1</input>
+                </label>
+                <label for="too_much_inconsistency-2">
+                    <input type="radio" id="too_much_inconsistency-2" name="too_much_inconsistency">2</input>
+                </label>
+                <label for="too_much_inconsistency-3">
+                    <input type="radio" id="too_much_inconsistency-3" name="too_much_inconsistency">3</input>
+                </label>
+                <label for="too_much_inconsistency-4">
+                    <input type="radio" id="too_much_inconsistency-4" name="too_much_inconsistency">4</input>
+                </label>
+                <label for="too_much_inconsistency-5">
+                    <input type="radio" id="too_much_inconsistency-5" name="too_much_inconsistency">5</input>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I would imagine that most people would learn to use this system very quickly.
+                </label>
+              <div class="likert-options">
+                <label for="quick_learn_of_system-1">
+                    <input type="radio" id="quick_learn_of_system-1" name="quick_learn_of_system">1</input>
+                </label>
+                <label for="quick_learn_of_system-2">
+                    <input type="radio" id="quick_learn_of_system-2" name="quick_learn_of_system">2</input>
+                </label>
+                <label for="quick_learn_of_system-3">
+                    <input type="radio" id="quick_learn_of_system-3" name="quick_learn_of_system">3</input>
+                </label>
+                <label for="quick_learn_of_system-4">
+                    <input type="radio" id="quick_learn_of_system-4" name="quick_learn_of_system">4</input>
+                </label>
+                <label for="quick_learn_of_system-5">
+                    <input type="radio" id="quick_learn_of_system-5" name="quick_learn_of_system">5</input>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I found the system very cumbersome to use.
+                </label>
+
+              <div class="likert-options">
+                <label for="cumbersome-1">
+                    <input type="radio" id="cumbersome-1" name="cumbersome">1</input>
+                </label>
+                <label for="cumbersome-2">
+                    <input type="radio" id="cumbersome-2" name="cumbersome">2</input>
+                </label>
+                <label for="cumbersome-3">
+                    <input type="radio" id="cumbersome-3" name="cumbersome">3</input>
+                </label>
+                <label for="cumbersome-4">
+                    <input type="radio" id="cumbersome-4" name="cumbersome">4</input>
+                </label>
+                <label for="cumbersome-5">
+                    <input type="radio" id="cumbersome-5" name="cumbersome">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I felt very confident using the system.
+                </label>
+
+              <div class="likert-options">
+                <label for="use_confidenty-1">
+                    <input type="radio" id="use_confidenty-1" name="use_confidenty">1</input>
+                </label>
+                <label for="use_confidenty-2">
+                    <input type="radio" id="use_confidenty-2" name="use_confidenty">2</input>
+                </label>
+                <label for="use_confidenty-3">
+                    <input type="radio" id="use_confidenty-3" name="use_confidenty">3</input>
+                </label>
+                <label for="use_confidenty-4">
+                    <input type="radio" id="use_confidenty-4" name="use_confidenty">4</input>
+                </label>
+                <label for="use_confidenty-5">
+                    <input type="radio" id="use_confidenty-5" name="use_confidenty">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I needed to learn a lot of things before I could get going with this system.
+                </label>
+
+              <div class="likert-options">
+                <label for="need_of_learning-1">
+                    <input type="radio" id="need_of_learning-1" name="need_of_learning">1</input>
+                </label>
+                <label for="need_of_learning-2">
+                    <input type="radio" id="need_of_learning-2" name="need_of_learning">2</input>
+                </label>
+                <label for="need_of_learning-3">
+                    <input type="radio" id="need_of_learning-3" name="need_of_learning">3</input>
+                </label>
+                <label for="need_of_learning-4">
+                    <input type="radio" id="need_of_learning-4" name="need_of_learning">4</input>
+                </label>
+                <label for="need_of_learning-5">
+                    <input type="radio" id="need_of_learning-5" name="need_of_learning">5</input>
+                </label>
+
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    This website is attractive.
+                </label>
+
+              <div class="likert-options">
+                <label for="attractive-1">
+                    <input type="radio" id="attractive-1" name="attractive">1</input>
+                </label>
+                <label for="attractive-2">
+                    <input type="radio" id="attractive-2" name="attractive">2</input>
+                </label>
+                <label for="attractive-3">
+                    <input type="radio" id="attractive-3" name="attractive">3</input>
+                </label>
+                <label for="attractive-4">
+                    <input type="radio" id="attractive-4" name="attractive">4</input>
+                </label>
+                <label for="attractive-5">
+                    <input type="radio" id="attractive-5" name="attractive">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    This website was aesthetically appealing.
+                </label>
+
+              <div class="likert-options">
+                <label for="aesthically_appealing-1">
+                    <input type="radio" id="aesthically_appealing-1" name="aesthically_appealing">1</input>
+                </label>
+                <label for="aesthically_appealing-2">
+                    <input type="radio" id="aesthically_appealing-2" name="aesthically_appealing">2</input>
+                </label>
+                <label for="aesthically_appealing-3">
+                    <input type="radio" id="aesthically_appealing-3" name="aesthically_appealing">3</input>
+                </label>
+                <label for="aesthically_appealing-4">
+                    <input type="radio" id="aesthically_appealing-4" name="aesthically_appealing">4</input>
+                </label>
+                <label for="aesthically_appealing-5">
+                    <input type="radio" id="aesthically_appealing-5" name="aesthically_appealing">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    I liked the graphics and images used on this website.
+                </label>
+
+              <div class="likert-options">
+                <label for="nice_graphic_images-1">
+                    <input type="radio" id="nice_graphic_images-1" name="nice_graphic_images">1</input>
+                </label>
+                <label for="nice_graphic_images-2">
+                    <input type="radio" id="nice_graphic_images-2" name="nice_graphic_images">2</input>
+                </label>
+                <label for="nice_graphic_images-3">
+                    <input type="radio" id="nice_graphic_images-3" name="nice_graphic_images">3</input>
+                </label>
+                <label for="nice_graphic_images-4">
+                    <input type="radio" id="nice_graphic_images-4" name="nice_graphic_images">4</input>
+                </label>
+                <label for="nice_graphic_images-5">
+                    <input type="radio" id="nice_graphic_images-5" name="nice_graphic_images">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    This website appealed to my visual senses.
+                </label>
+
+              <div class="likert-options">
+                <label for="appealed_visually-1">
+                    <input type="radio" id="appealed_visually-1" name="appealed_visually">1</input>
+                </label>
+                <label for="appealed_visually-2">
+                    <input type="radio" id="appealed_visually-2" name="appealed_visually">2</input>
+                </label>
+                <label for="appealed_visually-3">
+                    <input type="radio" id="appealed_visually-3" name="appealed_visually">3</input>
+                </label>
+                <label for="appealed_visually-4">
+                    <input type="radio" id="appealed_visually-4" name="appealed_visually">4</input>
+                </label>
+                <label for="appealed_visually-5">
+                    <input type="radio" id="appealed_visually-5" name="appealed_visually">5</input>
+                </label>
+              </div>  
+            </div>
+
+            <div class="form-control">
+                <label>
+                    The screen layout of this shopping website was visually pleasing.
+                </label>
+
+              <div class="likert-options">
+                <label for="pleasing_screen_layout-1">
+                    <input type="radio" id="pleasing_screen_layout-1" name="pleasing_screen_layout">1</input>
+                </label>
+                <label for="pleasing_screen_layout-2">
+                    <input type="radio" id="pleasing_screen_layout-2" name="pleasing_screen_layout">2</input>
+                </label>
+                <label for="pleasing_screen_layout-3">
+                    <input type="radio" id="pleasing_screen_layout-3" name="pleasing_screen_layout">3</input>
+                </label>
+                <label for="pleasing_screen_layout-4">
+                    <input type="radio" id="pleasing_screen_layout-4" name="pleasing_screen_layout">4</input>
+                </label>
+                <label for="pleasing_screen_layout-5">
+                    <input type="radio" id="pleasing_screen_layout-5" name="pleasing_screen_layout">5</input>
+                </label>
+              </div> 
+            </div>
+
+
+            <button id="finish" type="submit" value="submit">
+                Submit
+            </button>
+            <label value="Finish Experiment" onClick="finishTracking();finishExperiment();">click here to stop</a>
+        </form>
+    </div>
+            
+
+</body>
+</html>

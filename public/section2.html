@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+  
+.image-container {
+    flex: 1;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+  
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.content-container {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+    color: rgb(54, 54, 54);
+}
+  
+.content-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Helvetica", sans-serif;
+}
+  
+.content-container ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    text-align: left;
+}
+  
+.content-container li {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.center-button {
+    padding: 10px 170px;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .section-container { 
+      flex-wrap: wrap;
+      margin-top: 10px;
+      height: 100%;
+
+    }
+  
+    .image-container,
+    .content-container {
+      flex-basis: 100%;
+      text-align: center;
+    }
+}
+  
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="section-container">
+          <div class="image-container">
+            <img src="photos/box.jpg" alt="Your Image">
+          </div>
+          <div class="content-container">
+            <h2>What’s inside each box?</h2>
+            <ul>
+              <li>Easy-to-follow recipes with clear nutritional info</li>
+              <li>High-quality ingredients sourced straight from the farm</li>
+              <li>Convenient meal kits that fit perfectly in the fridge</li>
+              <li>A fun cooking experience that makes you feel unstoppable</li>
+              <li>Innovative packaging designed to reduce waste</li>
+            </ul>
+            <button class="center-button">View Our Plans</button>
+          </div>
+        </div>
+      </section>
+
+
+</body>
+</html>

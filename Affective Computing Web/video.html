@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <!-- Google Optimize for A/B test -->
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-M64CL4V"></script>
+      
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
+      
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+      
+          gtag('config', 'G-VCRGBNS29B');
+        </script>
+      
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+        <!-- Tracking script -->
+        <script src="html2canvas.js"></script>
+        <script src="scriptTest.js"></script>
+      
+        <!-- All other javaScript   -->
+        <script src="config.js" type="module"></script>
+        <script src="script.js"></script>
+      
+        <!-- Styling -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="subscribe.css">
+      
+        <title>FreshBox</title>
+      </head>
     <style>
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f1f1f1;
-        }
-        
-        video {
-            width: 800px;
-            height: 450px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        
-        .continue-button {
-            display: none;
-            margin-top: 20px;
-            background-color: rgb(24, 121, 55);
-            border: none;
-            border-radius: 4px;
-            padding: 10px 20px;
-            color: white;
-
-        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
+            var video = document.getElementById('promo-video');
             var continueButton = document.getElementById('continue-button');
 
             video.addEventListener('ended', function() {
@@ -42,11 +49,11 @@
     </script>
 </head>
 <body>
-    <video id="video" controls>
+    <h1>Please watch the video until the end</h1>
+    <video id="promo-video" controls autoplay>
         <source src="video/FreshBox_promo.mp4" type="video/mp4">
         <!-- Include additional source elements for different video formats if needed -->
     </video>
-
-    <button id="continue-button" class="continue-button">Continue</button>
+    <button id="continue-button" class="continue-button" onClick="finishTracking('index.html');finishSubsceneTracking();">Continue</button>
 </body>
 </html>

@@ -1,22 +1,3 @@
-//Firebase configuration for app and storage
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-import { getStorage, ref, uploadString } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-storage.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyAFlE1-z280atVYvoCdirQwBjolPDjksBA",
-  authDomain: "affective-computing-proj-48220.firebaseapp.com",
-  databaseURL: "https://affective-computing-proj-48220-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "affective-computing-proj-48220",
-  storageBucket: "affective-computing-proj-48220.appspot.com",
-  messagingSenderId: "1084466855468",
-  appId: "1:1084466855468:web:7e25dcbd77af8a8c52db89",
-  measurementId: "G-363YKWWSE7"
-};
-
-// Initialize firebase
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
-
 // Declare video and canvas variables
 const video = document.getElementById("video");
 const canvas = document.getElementById("canvas");
@@ -78,3 +59,73 @@ navigator.mediaDevices
   .catch((err) => {
     console.log(err);
   });
+
+// opens and closes the subscribe popup
+
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// opens and closes the quit experiment popup
+
+function openPopupQuit() {
+    document.getElementById("popupQuit").style.display = "block";
+}
+
+ function closePopupQuit() {
+    document.getElementById("popupQuit").style.display = "none";
+}
+
+// used on Continue2 to calculcate prices
+
+function calculatePrice() {
+    const q1Options = document.getElementsByName("q1");
+    const q2Options = document.getElementsByName("q2");
+    let totalPrice = 0;
+
+    for (let i = 0; i < q1Options.length; i++) {
+        if (q1Options[i].checked) {
+            totalPrice += parseInt(q1Options[i].value);
+        }
+    }
+
+    for (let i = 0; i < q2Options.length; i++) {
+        if (q2Options[i].checked) {
+            totalPrice += parseInt(q2Options[i].value);
+        }
+    }
+
+    document.getElementById("totalPrice").textContent = totalPrice;
+}
+
+// continue button
+let checkbox = document.querySelector(".checkbox-input");
+let button = document.querySelector(".button");
+button.disabled = true;
+checkbox.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if (document.querySelector(".input").value === "") {
+        button.disabled = true;
+    } else {
+        button.disabled = false;
+    }
+}
+
+// mobile menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))

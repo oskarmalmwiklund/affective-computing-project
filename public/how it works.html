@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How it works</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="subscribe.css">
+    <script src="script.js"></script>
+   
+</head>
+<body> 
+    <header class="header">
+        <nav class="navbar">
+          <a href="index.html" target="">
+            <object class="nav-logo" data="logo/freshbox_logo.svg" type="image/svg+xml"></object></a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+            <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+            <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <!-- Add more menu items as needed -->
+          </ul>
+          <button id="quit-button" onclick="openPopupQuit()">Quit</button>
+          <button onclick="openPopup()">Subscibe</button>
+    
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+        <div id="popupQuit" class="popupQuit">
+          <div class="quit-box">
+            <button class="close-button" onclick="closePopupQuit()">&times;</button>
+            <h2>Are you sure you want to quit?</h2>
+            <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel
+              like you’re not able to complete the task, you can finish the experiment now.</p>
+            <button>Finish the experiment</button>
+          </div>
+        </div>
+        <div id="popup" class="popup">
+          <div class="subscription-box">
+            <button class="close-button" onclick="closePopup()">&times;</button>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Receive the latest recipes by subscribing now!</p>
+            <form>
+              <input type="text" id="name" placeholder="Enter you name" required>
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="how-works-title">
+            How It Works
+        </div>
+
+        <div class="step-container">
+            <div class="step-content">
+                <div class="step-image">
+                    <img src="photos/step1.avif" alt="Step 1">
+                </div>
+                <div class="step-text">
+                    <h2>1. Pick a plan</h2>
+                    <p class="step-description">Whether cooking for yourself or your household, we have a flexible plan to match your lifestyle. Need to cancel, change meals, or skip a week? Not a problem.</p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content left">
+                <div class="step-image">
+                    <img src="photos/step2.avif" alt="Step 2">
+                </div>
+                <div class="step-text">
+                    <h2>2. Get your delivery</h2>
+                    <p class="step-description">Each week, you’ll open simple step-by-step recipes complete with nutritional information and fresh, pre-measured ingredients to get you whipping up delicious dinners in no time.</p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content">
+                <div class="step-image">
+                    <img src="photos/step3.avif" alt="Step 3">
+                </div>
+                <div class="step-text">
+                    <h2>3. Cook, eat, enjoy!</h2>
+                    <p class="step-description">The old “what do you want to eat?” conversation is about to be banished from your life. Welcome to a world where dinner is always planned, simple, and delicious.
+                    </p>
+                    <button class="get-start-button"><a href="Our Plans2.html">Get started</a></button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="step-container">
+            <div class="step-content left">
+                <div class="step-image">
+                    <img src="photos/step4.avif" alt="Step 4">
+                </div>
+                <div class="step-text">
+                    <h2>4. Recycle your box and packaging</h2>
+                    <p class="step-description">Simply fold your box and place it with your curbside recyclables or take it to your local recycling center. Explore the recycling and packaging page for more details.</p>
+                </div>
+            </div>
+        </div>
+      
+        <footer>
+          <iframe src="footer.html" width="100%" height="400"></iframe>
+        </footer>
+
+       
+          
+    </header>
+    <script src="mobile-menu.js"></script>
+
+
+
+</body>
+</html>
