@@ -620,6 +620,12 @@ h2 {
 .get-start-button {
     display: block;
     margin-top: 10px;
+    background-color: rgb(24, 121, 55);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10%;
 }
 
 .get-start-button:hover {
@@ -633,17 +639,26 @@ h2 {
 
 
 @media (max-width: 768px) {
-    .step-container {
+    .step-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .step-content {
         flex-direction: column;
         align-items: center;
     }
 
+    .step-content.left {
+        flex-direction: column;
+    }
+    
     .step {
         width: 100%;
         margin-bottom: 20px;
     }
 
     .step-image {
+        max-width: 100%;
         margin-bottom: 10px;
     }
 }
@@ -932,12 +947,9 @@ h1#carousel-title {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    /* Set the desired width of the box */
-    height: 600px;
-    /* Set the desired height of the box */
-    padding: 1px;
-    /* Add some padding inside the box */
+    width: 800px; /* Set the desired width of the box */
+    height: 600px; /* Set the desired height of the box */
+    padding: 1px; /* Add some padding inside the box */
     padding-top: 1px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1005,6 +1017,15 @@ h1#carousel-title {
     border-radius: 4px;
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
+}
+
+.purchase-button a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.purchase-button:hover {
+    background-color: #45a049;
 }
 
 p#agree-terms {
@@ -1141,15 +1162,15 @@ p#agree-terms {
         background-color: #f1f1f1;
     }
 }
-
 /* styling for the pre-questionnaire */
 
 #survey-title {
     text-align: center;
+    margin-top: 20px;
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
-#startForm {
+#startForm, #finishForm {
     background-color: #fff;
     max-width: 500px;
     margin: 50px auto;
@@ -1158,7 +1179,6 @@ p#agree-terms {
     font-family: Verdana;
     text-align: center;
 }
-
 /* Styling form-control Class */
 .form-control {
     text-align: left;
@@ -1316,3 +1336,90 @@ button and Checkbox */
       padding: 20px;
     }
   }
+
+.congratulations {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+    padding-top: 10%;
+}
+
+.congratulations h1{
+    font-size: 28px;
+}
+
+.congratulations p {
+    margin-top: 20px;
+}
+
+.finish-experiment-button {
+    padding: 10px 115px;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    margin-top: 20px;
+}
+
+.finish-experiment-button a {
+    color: inherit;
+    /* Inherit the color from the parent element */
+    text-decoration: none;
+    /* Remove the underline */
+}
+
+.finish-experiment-button:hover {
+    background-color: #45a049;
+  }
+
+
+/*Task explanation popup window*/  
+.task-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.task-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+}
+  
+.task-popup-content h2 {
+    margin-top: 20px;
+}
+  
+.task-popup-content p {
+    margin-bottom: 20px;
+}
+  
+#close-task-popup {
+    padding: 8px 16px;
+    background-color: rgb(24, 121, 55);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.task-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
