@@ -3,112 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explanation</title>
 
-  <style>
-    body {
-      font-family: "Helvetica", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: rgb(255, 255, 255);
-    }
+  <!-- Google Optimize for A/B test -->
+  <script src="https://www.googleoptimize.com/optimize.js?id=OPT-M64CL4V"></script>
 
-    .welcome {
-      text-align: center;
-      padding-bottom: 20px;
-      color: rgb(82, 82, 82);
-    }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
-    .start-img-container {
-      display: flex;
-      justify-content: center;
-      height: 100vh;
-    }
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
 
-    .start-image {
-      flex: 1;
-      margin-left: 150px;
-      align-self: flex-start;
-    }
+      gtag('config', 'G-VCRGBNS29B');
+  </script>
 
-    .start-image img {
-      max-width: 80%;
-      height: auto;
-    }
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    .text-block {
-      flex: 1;
-      display: inline-block;
-      margin-left: 2px;
-      width: 500px;
-      height: 250px;
-      margin-right: 150px;
-      align-self: flex-start;
-      bottom: 20px;
-      right: 20px;
-      background-color: rgb(82, 82, 82);
-      color: white;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 10px;
-      margin-top: 50px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-
-    .top {
-      min-height: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      background-color: rgb(82, 82, 82);
-      margin-bottom: 10px;
-
-    }
-
-    .start-button {
-      padding: 10px 30px;
-      background-color: rgb(24, 121, 55);
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      font-family: "Helvetica", sans-serif;
-      margin-left: 25%;
-    }
-
-    .start-button a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    @media (max-width: 767px) {
-      .start-img-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        height: auto;
-      }
-
-      .start-image {
-        margin-left: 0;
-        margin-bottom: 20px;
-      }
-
-      .text-block {
-        width: auto;
-        height: auto;
-        margin-right: 0;
-        margin-left: 0;
-        padding: 20px;
-      }
-    }
-  </style>
+  <!-- Tracking script -->
+  <script src="html2canvas.js"></script>
+  <script src="scriptTest.js"></script>
+  <!-- <script src="script.js" type="module"></script> -->
+  <link rel="stylesheet" href="styles.css">
+  <title>
+      Explanation
+  </title>
 </head>
 
-<body>
+<body class="explanation">
   <nav class="top"></nav>
   <div class="welcome">
     <h1>Welcome to our experiment!</h1>
@@ -125,7 +50,7 @@
         expressions using a camera while you navigate through a website. Please note that the captured data will be used
         solely for the purpose of this experiment and will not be stored.
       </p>
-      <button class="start-button"><a href="\public\start.html">Start the experiment</a></button>
+      <button class="start-button"><a href="start.html">Start the experiment</a></button>
     </div>
   </div>
 

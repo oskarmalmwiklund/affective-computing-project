@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
         <!-- Google Optimize for A/B test -->
         <script src="https://www.googleoptimize.com/optimize.js?id=OPT-M64CL4V"></script>
-      
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
-      
+
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-      
-          gtag('config', 'G-VCRGBNS29B');
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-VCRGBNS29B');
         </script>
-      
+
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      
+
         <!-- Tracking script -->
         <script src="html2canvas.js"></script>
         <script src="scriptTest.js"></script>
-      
+
         <!-- All other javaScript   -->
         <script src="config.js" type="module"></script>
-        <script src="script.js"></script>
-      
+
         <!-- Styling -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="subscribe.css">
-      
+
         <title>FreshBox</title>
-      </head>
-    <style>
-    </style>
+    </head>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("DOM fully loaded and parsed");
             var video = document.getElementById('promo-video');
             var continueButton = document.getElementById('continue-button');
 
-            video.addEventListener('ended', function() {
+            video.addEventListener('ended', function () {
+                console.log("Video has ended");
                 continueButton.style.display = 'block';
             });
         });
     </script>
-</head>
+
 <body>
-    <h1>Please watch the video until the end</h1>
-    <video id="promo-video" controls autoplay>
-        <source src="video/FreshBox_promo.mp4" type="video/mp4">
-        <!-- Include additional source elements for different video formats if needed -->
-    </video>
-    <button id="continue-button" class="continue-button" onClick="finishTracking('index.html');finishSubsceneTracking();">Continue</button>
+    <div id="video-container">
+        <h1>Please watch the video until the end</h1>
+        <video id="promo-video" controls autoplay>
+            <source src="video/FreshBox_promo.mp4" type="video/mp4">
+            <!-- Include additional source elements for different video formats if needed -->
+        </video>
+        <button id="continue-button" class="continue-button"
+            onClick="finishTracking('index.html');finishSubsceneTracking();">Continue</button>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

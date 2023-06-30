@@ -756,7 +756,7 @@ function registergender(value) { postStringDD(39, value); } function registerbir
 function registerneed_of_learning(value) {postNumberDD(76, value);}function registercumbersome(value) {postNumberDD(77, value);}function registerneeded_help(value) {postNumberDD(78, value);}function registerfrequency_of_use(value) {postNumberDD(79, value);}function registertoo_much_inconsistency(value) {postNumberDD(80, value);}function registercomplex(value) {postNumberDD(81, value);}function registersystem_ease(value) {postNumberDD(82, value);}function registerquick_learn_of_system(value) {postNumberDD(83, value);}function registerwell_integrated(value) {postNumberDD(84, value);}function registeruse_confidenty(value) {postNumberDD(85, value);}function registerattractive(value) {postNumberDD(86, value);}function registeraesthically_appealing(value) {postNumberDD(87, value);}function registernice_graphic_images(value) {postNumberDD(88, value);}function registerappealed_visually(value) {postNumberDD(89, value);}function registerpleasing_screen_layout(value) {postNumberDD(90, value);}
 
 $(document).ready(function () {
-	$('#submit').on('click', function (event) {
+	$('#startForm').on('submit', function (event) {
 
 		// Prevent the form from being submitted
 		event.preventDefault();
@@ -794,5 +794,3 @@ $(document).ready(function () {
 		finishSubsceneTracking();
 	});
 });
-
-

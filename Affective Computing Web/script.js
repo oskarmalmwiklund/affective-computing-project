@@ -132,13 +132,15 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   
 // When promo video has finished, show continue button
 
-/*
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM fully loaded and parsed");
   var video = document.getElementById('promo-video');
   var continueButton = document.getElementById('continue-button');
 
   video.addEventListener('ended', function() {
-    console.log('video ended');
+      console.log("Video has ended");
       continueButton.style.display = 'block';
-  });
-};*/
+  }); 
+});
+
+console.log('test');

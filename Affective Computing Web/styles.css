@@ -1,7 +1,7 @@
 /* Hide video and canvas elements */
 #video,
 #canvas {
-    display:none;
+    display: none;
 }
 
 body,
@@ -802,44 +802,45 @@ h1#carousel-title {
 
 @media (max-width: 768px) {
     .carousel-container {
-      width: calc(100% - 30px);
-      margin: 0 15px;
+        width: calc(100% - 30px);
+        margin: 0 15px;
     }
+
     .carousel {
-      margin-top: 20%;
+        margin-top: 20%;
     }
-  
+
     .carousel-item {
-      margin-right: 10px;
+        margin-right: 10px;
     }
-  
+
     .carousel-image {
-      width: 200px;
-      height: 200px;
+        width: 200px;
+        height: 200px;
     }
-  
+
     .carousel-text {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
-    .carousel-navigation .arrow{
-      text-align: center;
-      margin-left: 50%;
-      margin: 0 40px;
-      margin-top: 20%;
-  
+
+    .carousel-navigation .arrow {
+        text-align: center;
+        margin-left: 50%;
+        margin: 0 40px;
+        margin-top: 20%;
+
     }
-  
+
     h1#carousel-title {
-      margin-top: 10%;
-      font-size: 20px;
-      text-align: center;
+        margin-top: 10%;
+        font-size: 20px;
+        text-align: center;
     }
-  
-    .carousel-button{
-      margin-top: 10%;
+
+    .carousel-button {
+        margin-top: 10%;
     }
-  
+
 }
 
 .section2-container {
@@ -931,9 +932,12 @@ h1#carousel-title {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px; /* Set the desired width of the box */
-    height: 600px; /* Set the desired height of the box */
-    padding: 1px; /* Add some padding inside the box */
+    width: 800px;
+    /* Set the desired width of the box */
+    height: 600px;
+    /* Set the desired height of the box */
+    padding: 1px;
+    /* Add some padding inside the box */
     padding-top: 1px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -950,7 +954,7 @@ h1#carousel-title {
     margin-bottom: 10px;
     margin-left: 30px;
 }
-  
+
 .image-purchase img {
     width: 90%;
     height: auto;
@@ -974,7 +978,7 @@ h1#carousel-title {
     text-align: left;
     color: rgb(54, 54, 54);
 }
-  
+
 .big-box3 h2 {
     font-size: 35px;
     margin-bottom: 20px;
@@ -987,11 +991,11 @@ h1#carousel-title {
     font-family: "Helvetica", sans-serif;
 }
 
-#purchase-form form{
+#purchase-form form {
     display: flex;
     flex-direction: column;
-    
-  }
+
+}
 
 .purchase-button {
     padding: 10px 115px;
@@ -1001,29 +1005,27 @@ h1#carousel-title {
     border-radius: 4px;
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
-}  
+}
 
-p#agree-terms  {
+p#agree-terms {
     font-size: 10px;
     color: #9c9c9c;
     width: 300px;
     margin-top: 10px;
 }
 
-
-
 @media (max-width: 760px) {
     .big-box3-container {
-      text-align: center;
-      height: 1000px;
+        text-align: center;
+        height: 1000px;
     }
-  
+
     .big-box3 {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-      height: auto;
-      width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+        width: 100%;
     }
 
     .purchase-container {
@@ -1031,34 +1033,34 @@ p#agree-terms  {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-      }
-  
+    }
+
     .image-purchase {
-      margin-bottom: 20px;
-      max-width: 100%;
+        margin-bottom: 20px;
+        max-width: 100%;
     }
 
     .purchase-content {
         text-align: center;
-      }
-    
-    .purchase-button { 
-      padding: 6px 12px;
-      position:absolute;
-      right: 35%;
     }
-  
+
+    .purchase-button {
+        padding: 6px 12px;
+        position: absolute;
+        right: 35%;
+    }
+
     .under-subscribe-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .under-subscribe-box {
-      margin-bottom: 20px;
-      text-align: center;
+        margin-bottom: 20px;
+        text-align: center;
     }
-  }
+}
 
 .under-subscribe-container {
     display: flex;
@@ -1093,6 +1095,53 @@ p#agree-terms  {
     font-size: 12px;
 }
 
+/* styling for video page */
+
+#promo-video {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.continue-button {
+    display: none;
+    margin-top: 20px;
+    background-color: rgb(24, 121, 55);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    #video-container {
+        margin: 0;
+        display: flex;
+        padding: 5% 5% 5% 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #f1f1f1;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #video-container {
+        margin: 0;
+        display: flex;
+        padding: 5% 20% 5% 20%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #f1f1f1;
+    }
+}
+
 /* styling for the pre-questionnaire */
 
 #survey-title {
@@ -1100,7 +1149,7 @@ p#agree-terms  {
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
-form {
+#startForm {
     background-color: #fff;
     max-width: 500px;
     margin: 50px auto;
@@ -1109,22 +1158,7 @@ form {
     font-family: Verdana;
     text-align: center;
 }
-/* styling for the pre-questionnaire */
 
-#survey-title {
-    text-align: center;
-}
-
-/* Styling the Form (Color, Padding, Shadow) */
-#form {
-    background-color: #fff;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-    font-family: Verdana;
-    text-align: center;
-}
 /* Styling form-control Class */
 .form-control {
     text-align: left;
@@ -1182,3 +1216,103 @@ button and Checkbox */
     padding: 0 0 15px;
     border-bottom: 2px solid #efefef;
 }
+
+/* explanation page styling */
+
+.explanation {
+    font-family: "Helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .explanation .welcome {
+    margin-top: 5%;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(82, 82, 82);
+  }
+
+  .explanation .start-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .explanation .start-image {
+    flex: 1;
+    margin-left: 150px;
+    align-self: flex-start;
+  }
+
+  .explanation .start-image img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .explanation .text-block {
+    flex: 1;
+    display: inline-block;
+    width: 500px;
+    height: 250px;
+    margin-right: 150px;
+    align-self: flex-start;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .explanation .top {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(82, 82, 82);
+    margin-bottom: 10px;
+
+  }
+
+  .explanation .start-button {
+    padding: 10px 30px;
+    margin-top: 5%;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    margin-left: 25%;
+  }
+
+  .explanation .start-button a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (max-width: 767px) {
+    .explanation .start-img-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: auto;
+    }
+
+    .explanation .start-image {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .explanation .text-block {
+      width: auto;
+      height: auto;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
