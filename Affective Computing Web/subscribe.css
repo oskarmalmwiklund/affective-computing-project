@@ -69,7 +69,8 @@ input[type="email"] {
 }
 
   
-  .subscription-button {
+  .subscription-button,
+  .subscription-box-button {
     padding: 8px 16px;
     background-color: rgb(24, 121, 55);
     color: white;
@@ -78,6 +79,7 @@ input[type="email"] {
     cursor: pointer;
     margin-top: 10px;
   }
+
   
   .subscription-button:hover {
     background-color: #45a049;
@@ -93,7 +95,7 @@ input[type="email"] {
   
     h2 {
       font-size: 20px;
-      margin-bottom: 8px;
+      margin-top: 15px;
     }
   
     p {
@@ -102,19 +104,24 @@ input[type="email"] {
     }
   
     input[type="email"] {
-      width: 80%;
+      width: 90%;
       margin-right: 0;
     }
   
-    button {
+    .subscription-button {
       padding: 6px 12px;
-      position:absolute;
-      right: 35%;
+      right: 28%;
+      position: absolute;
+    }
+
+    .subscription-box-button{
+      position: relative;
+      top: 60%;
     }
     .subscription-box .close-button {
       position: absolute;
-      top:2px;
-      right: 2px;
+      top:5px;
+      right: 5px;
     }
   }
   
@@ -161,6 +168,7 @@ input[type="email"] {
   #quit-experiment {
     margin-top: 15px;
     font-size: 16px;
+    line-height: 20px;
   }
 
   .quit-box .close-button {
@@ -184,25 +192,20 @@ input[type="email"] {
       height: 250px;
     }
   
-  
-    input[type="email"] {
-      width: 80%;
-      margin-right: 0;
-    }
-  
     #quit-experiment {
       position: absolute;
       right: 10px;
+      padding: 20px;
     }
 
     .quit-box .close-button {
       position: absolute;
-      top:2px;
-      right: 2px;
+      top:5px;
+      right: 5px;
     }
 
     #quit-button {
-      right: 20%;
+      right: 15%;
       padding: 6px 12px;
     }
   }
