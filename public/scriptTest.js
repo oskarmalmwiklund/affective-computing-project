@@ -757,6 +757,9 @@ function registerneed_of_learning(value) {postNumberDD(76, value);}function regi
 
 $(document).ready(function () {
 	$('#submit').on('click', function (event) {
+
+		// Prevent the form from being submitted
+		event.preventDefault();
 		
 		var gender = $('input[name="gender"]:checked').val();
 		var dateVal = $('#birth-date').val();
@@ -776,8 +779,6 @@ $(document).ready(function () {
 		var date = new Date(dateVal);
 		var birthDate = date.toISOString().split('T')[0];
 		
-		console.log(gender, birthDate, origin, education, occupation, location, setting, mood, techExp, subscriptions);
-		
 		registergender(gender);
 		registerbirthdate(birthDate);
 		registercountry_of_origin(origin);
@@ -789,5 +790,9 @@ $(document).ready(function () {
 		registertech_comfortable(techExp);
 		registeronline_subscriptions(subscriptions);
 
+		finishTracking('index.html');
+		finishSubsceneTracking();
 	});
 });
+
+
