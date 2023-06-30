@@ -1100,7 +1100,7 @@ p#agree-terms  {
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
-form {
+#form {
     background-color: #fff;
     max-width: 500px;
     margin: 50px auto;
@@ -1171,6 +1171,7 @@ button and Checkbox */
     margin-top: 50px;
     margin-bottom: 20px;
 }
+
 
 .likert-options {
     display: flex;
