@@ -129,3 +129,25 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+//Task popup
+document.addEventListener("DOMContentLoaded", function() {
+  var taskPopupOverlay = document.getElementById("task-popup-overlay");
+  var taskPopupContent = document.getElementById("task-popup-content");
+  var closeTaskPopupButton = document.getElementById("close-task-popup");
+
+  // Check if popup has been shown before
+  var hasTaskPopupBeenShown = localStorage.getItem("hasTaskPopupBeenShown");
+
+  // If the popup has not been shown, display it
+  if (!hasTaskPopupBeenShown) {
+    taskPopupOverlay.style.display = "block";
+  }
+
+  // Close the popup when the close button is clicked
+  closeTaskPopupButton.addEventListener("click", function() {
+    taskPopupOverlay.style.display = "none";
+    // Store a flag to indicate that the popup has been shown
+    localStorage.setItem("hasTaskPopupBeenShown", true);
+  });
+});
