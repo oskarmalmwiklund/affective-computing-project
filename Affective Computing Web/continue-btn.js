@@ -1,5 +1,5 @@
 
-let checkbox = document.querySelector(".checkbox-input");
+/*let checkbox = document.querySelector(".checkbox-input");
 let button = document.querySelector(".button");
 button.disabled = true;
 checkbox.addEventListener("change", stateHandle);
@@ -10,4 +10,4 @@ function stateHandle() {
     } else {
         button.disabled = false;
     }
-}
+}*/

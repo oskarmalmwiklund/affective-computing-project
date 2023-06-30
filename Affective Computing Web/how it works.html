@@ -5,29 +5,41 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="subscribe.css">
-    <script src="popup.js"></script>
+    <script src="script.js"></script>
    
 </head>
 <body> 
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="nav-logo">HelloFresh</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
-                <li class="nav-item"><a href="how it works.html">How It Works</a></li>
-                <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+          <a href="index.html" target="">
+            <object class="nav-logo" data="freshbox_logo.svg" type="image/svg+xml"></object></a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="Our Plans2.html">Our Plans</a></li>
+            <li class="nav-item"><a href="how it works.html">How It Works</a></li>
+            <li class="nav-item"><a href="our menus.html">Our Menus</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
             <!-- Add more menu items as needed -->
-            </ul>
-            <button onclick="openPopup()">Subscibe</button>
-
-        <div class="hamburger">
+          </ul>
+          <button id="quit-button" onclick="openPopupQuit()">Quit</button>
+          <button onclick="openPopup()">Subscibe</button>
+    
+          <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
+          </div>
         </nav>
+        <div id="popupQuit" class="popupQuit">
+          <div class="quit-box">
+            <button class="close-button" onclick="closePopupQuit()">&times;</button>
+            <h2>Are you sure you want to quit?</h2>
+            <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel
+              like you’re not able to complete the task, you can finish the experiment now.</p>
+            <button>Finish the experiment</button>
+          </div>
+        </div>
         <div id="popup" class="popup">
           <div class="subscription-box">
             <button class="close-button" onclick="closePopup()">&times;</button>
