@@ -620,6 +620,12 @@ h2 {
 .get-start-button {
     display: block;
     margin-top: 10px;
+    background-color: rgb(24, 121, 55);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10%;
 }
 
 .get-start-button:hover {
@@ -1003,6 +1009,15 @@ h1#carousel-title {
     font-family: "Helvetica", sans-serif;
 }  
 
+.purchase-button a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.purchase-button:hover {
+    background-color: #45a049;
+}
+
 p#agree-terms  {
     font-size: 10px;
     color: #9c9c9c;
@@ -1183,3 +1198,41 @@ button and Checkbox */
     padding: 0 0 15px;
     border-bottom: 2px solid #efefef;
 }
+
+.congratulations {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+    padding-top: 10%;
+}
+
+.congratulations h1{
+    font-size: 28px;
+}
+
+.congratulations p {
+    margin-top: 20px;
+}
+
+
+.finish-experiment-button {
+    padding: 10px 115px;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    margin-top: 20px;
+}
+
+.finish-experiment-button a {
+    color: inherit;
+    /* Inherit the color from the parent element */
+    text-decoration: none;
+    /* Remove the underline */
+}
+
+.finish-experiment-button:hover {
+    background-color: #45a049;
+  }
