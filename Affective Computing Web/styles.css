@@ -1,5 +1,6 @@
 /* Hide video and canvas elements */
-#video, #canvas {
+#video,
+#canvas {
     display:none;
 }
 
@@ -204,8 +205,6 @@ object {
     }
 }
 
-
-
 .choices input[type="checkbox"]:checked {
     background-color: #304f30;
 }
@@ -392,8 +391,6 @@ object {
     }
 }
 
-
-
 .big-box {
     position: absolute;
     top: 60%;
@@ -456,8 +453,6 @@ object {
     /* Remove the underline */
 }
 
-
-
 @media screen and (max-width: 767px) {
 
     .big-box {
@@ -480,7 +475,6 @@ object {
         margin-bottom: 20px;
     }
 }
-
 
 .big-box2 {
     position: absolute;
@@ -723,31 +717,31 @@ h2 {
     margin: 0 50px;
     overflow: hidden;
     position: relative;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     display: flex;
     width: fit-content;
     transition: transform 0.3s ease-in-out;
     margin-top: 5%;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     flex: 0 0 auto;
     margin-right: 20px;
     position: relative;
-  }
-  
-  .carousel-image {
+}
+
+.carousel-image {
     width: 300px;
     height: 300px;
     background-size: cover;
     background-position: center;
     position: relative;
     filter: brightness(70%);
-  }
-  
-  .carousel-text {
+}
+
+.carousel-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -758,18 +752,18 @@ h2 {
     font-size: 28px;
     font-family: "Helvetica", sans-serif;
 
-  }
-  
-  .carousel-navigation {
+}
+
+.carousel-navigation {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
     text-align: center;
-  }
-  
-  .carousel-navigation .arrow {
+}
+
+.carousel-navigation .arrow {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -781,9 +775,9 @@ h2 {
     margin: 0 250px;
     margin-top: 50px;
 
-  }
+}
 
-  .carousel-button {
+.carousel-button {
     padding: 10px 20px;
     background-color: rgb(24, 121, 55);
     color: white;
@@ -791,21 +785,21 @@ h2 {
     border-radius: 4px;
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
-    position: absolute; 
-    left: 50%; 
+    position: absolute;
+    left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 5%;
-  }
+}
 
- h1#carousel-title  {
+h1#carousel-title {
     font-size: 28px;
     padding-bottom: 220px;
     font-family: "Helvetica", sans-serif;
-    position: absolute;  
-    left: 50%; 
+    position: absolute;
+    left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
+}
+
 @media (max-width: 768px) {
     .carousel-container {
       width: calc(100% - 30px);
@@ -846,7 +840,6 @@ h2 {
       margin-top: 10%;
     }
   
-  
 }
 
 .section2-container {
@@ -856,39 +849,39 @@ h2 {
     justify-content: center;
     margin-top: 5%;
 }
-  
+
 .section2-image {
     flex: 1;
     max-width: 100%;
     margin-bottom: 10px;
 }
-  
+
 .section2-image img {
     width: 100%;
     height: auto;
     max-width: 100%;
     max-height: 100%;
 }
-  
+
 .section2-content {
     flex: 1;
     padding: 0 20px;
     text-align: left;
     color: rgb(54, 54, 54);
 }
-  
+
 .section2-content h2 {
     font-size: 28px;
     margin-bottom: 20px;
     font-family: "Helvetica", sans-serif;
 }
-  
+
 #section2-disc ul {
     list-style-type: disc;
     padding-left: 30px;
     text-align: left;
 }
-  
+
 .section2-content li {
     font-size: 18px;
     margin-bottom: 30px;
@@ -907,25 +900,24 @@ h2 {
 }
 
 @media (max-width: 767px) {
-    .section2-container { 
-      flex-wrap: wrap;
-      margin-top: 10px;
-      height: 100%;
+    .section2-container {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        height: 100%;
 
     }
-  
+
     .section2-image,
     .section2-content {
-      flex-basis: 100%;
-      text-align: center;
+        flex-basis: 100%;
+        text-align: center;
     }
 
     .section2-button {
-      padding: 6px 12px;
-      position:absolute;
-      right: 35%;
+        padding: 6px 12px;
+        position: absolute;
+        right: 35%;
     }
-
 }
 
 .big-box3-container {
@@ -950,7 +942,7 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-}  
+}
 
 .image-purchase {
     flex: 1;
@@ -1101,8 +1093,6 @@ p#agree-terms  {
     font-size: 12px;
 }
 
-@media screen and (max-width: 600px) {
-   
 /* styling for the pre-questionnaire */
 
 #survey-title {
@@ -1119,7 +1109,22 @@ form {
     font-family: Verdana;
     text-align: center;
 }
+/* styling for the pre-questionnaire */
 
+#survey-title {
+    text-align: center;
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+#form {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: Verdana;
+    text-align: center;
+}
 /* Styling form-control Class */
 .form-control {
     text-align: left;
@@ -1154,7 +1159,8 @@ button and Checkbox */
 }
 
 /* Styling Button */
-#submit, #finish {
+#start,
+#finish {
     background-color: #05c46b;
     border: 1px solid #777;
     border-radius: 2px;
@@ -1170,37 +1176,9 @@ button and Checkbox */
     display: flex;
     align-items: center;
     gap: 40px;
-    list-style:none;
-    width:100%;
-    margin:0;
-    padding:0 0 15px;
-    border-bottom:2px solid #efefef;
-  }
-
-  body {
+    list-style: none;
+    width: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
-}
-
-#promo-video {
-    width: 800px;
-    height: 450px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.continue-button {
-    display: none;
-    margin-top: 20px;
-    background-color: rgb(24, 121, 55);
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    color: white;
-
+    padding: 0 0 15px;
+    border-bottom: 2px solid #efefef;
 }
