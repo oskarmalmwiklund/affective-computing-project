@@ -1159,7 +1159,7 @@ button and Checkbox */
 }
 
 /* Styling Button */
-#start,
+#submit,
 #finish {
     background-color: #05c46b;
     border: 1px solid #777;
