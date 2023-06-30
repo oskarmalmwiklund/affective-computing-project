@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Optimize for A/B test -->
@@ -13,11 +11,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-VCRGBNS29B');
+    gtag('config', 'G-VCRGBNS29B');
   </script>
 
   <!-- jQuery -->
@@ -26,11 +24,16 @@
   <!-- Tracking script -->
   <script src="html2canvas.js"></script>
   <script src="scriptTest.js"></script>
-  <!-- <script src="script.js" type="module"></script> -->
-  <link rel="stylesheet" href="styles.css">
-  <title>
-      Explanation
-  </title>
+
+  <!-- All other javaScript   -->
+  <script src="config.js" type="module"></script>
+  <script src="script.js"></script>
+
+  <!-- Styling -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="subscribe.css">
+
+  <title>FreshBox</title>
 </head>
 
 <body class="explanation">
@@ -50,10 +53,16 @@
         expressions using a camera while you navigate through a website. Please note that the captured data will be used
         solely for the purpose of this experiment and will not be stored.
       </p>
-      <button class="start-button"><a href="start.html">Start the experiment</a></button>
+      <button onclick="openPopup()" class="start-button">Start the experiment</button>
     </div>
   </div>
-
+  <div id="popup" class="popup">
+    <div class="videoConsent">
+      <h2>Experiment Info</h2>
+      <p>This is some information about the experiment.</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
 </body>
 
 </html>
