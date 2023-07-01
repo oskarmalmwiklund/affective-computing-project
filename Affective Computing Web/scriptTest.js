@@ -760,7 +760,9 @@ $(document).ready(function () {
 
 		// Prevent the form from being submitted
 		event.preventDefault();
-		
+
+		loadingSpinner();
+
 		var gender = $('input[name="gender"]:checked').val();
 		var dateVal = $('#birth-date').val();
 		var origin = $('select[name="country-of-origin"]').val();
@@ -790,7 +792,7 @@ $(document).ready(function () {
 		registertech_comfortable(techExp);
 		registeronline_subscriptions(subscriptions);
 
-		finishTracking('video.html');
 		finishSubsceneTracking();
+		finishTracking('video.html');
 	});
 });

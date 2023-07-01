@@ -498,10 +498,18 @@
 
             <!-- Multi-line Text Input Control -->
             <button type="submit" id="submit" value="submit">
-                Submit
+                Submit survey
             </button>
         </form>
     </div>
+    <div id="loading">
+        <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
+    </div>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').hide();
+        }) 
+    </script>
 </body>
 
 </html>

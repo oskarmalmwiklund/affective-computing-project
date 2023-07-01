@@ -29,6 +29,7 @@
 
         <!-- All other javaScript   -->
         <script src="config.js" type="module"></script>
+        <script src="script.js"></script>
 
         <!-- Styling -->
         <link rel="stylesheet" type="text/css" href="styles.css">
@@ -57,9 +58,16 @@
             <!-- Include additional source elements for different video formats if needed -->
         </video>
         <button id="continue-button" class="continue-button"
-            onClick="finishTracking('index.html');finishSubsceneTracking();">Continue</button>
+            onClick="loadingSpinner();finishSubsceneTracking();finishTracking('index.html');">Start experiment</button>
     </div>
-    <script src="script.js"></script>
+    <div id="loading">
+        <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
+    </div>
+    <script>
+        $(window).on('load', function () {
+            $('#loading').hide();
+        }) 
+    </script>
 </body>
 
 </html>

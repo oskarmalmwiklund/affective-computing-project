@@ -193,7 +193,14 @@
     </footer>
   </header>
   <script src="carousel.js"></script>
-
+  <div id="loading">
+    <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
+</div>
+<script>
+    $(window).on('load', function () {
+        $('#loading').hide();
+    }) 
+</script>
 </body>
 
 </html>
