@@ -1407,6 +1407,10 @@ button and Checkbox */
     font-family: "Helvetica", sans-serif;
 }
 
+#start-camera:hover{
+    background-color: rgb(17, 96, 42);
+}
+
 .close-button {
     position: absolute;
     top: 5px;
