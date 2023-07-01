@@ -180,3 +180,23 @@ function loadingSpinner() {
   }, 1000);
 
 }
+
+// For final form where the user subscribes to the service
+
+document.getElementById('purchase-form').addEventListener('subscribe', function (event) {
+  event.preventDefault();
+  loadingSpinner();
+  finishTracking('congratulations-finish.html');
+});
+
+/*
+$(document).ready(function () {
+	$('#purchase-form').on('subscribe', function (event) {
+		// Prevent the form from being submitted
+    console.log("subscribe pushed");
+
+		event.preventDefault();
+		loadingSpinner();
+		finishTracking('congratulations-finish.html');
+	});
+});*/

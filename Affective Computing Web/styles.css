@@ -440,6 +440,10 @@ object {
     color: white;
 }
 
+.button-our-plans:hover{
+    background-color: rgb(15, 98, 41);
+}
+
 .ttl-our-plans {
     font-size: 20px;
     margin-bottom: 20px;
@@ -549,6 +553,10 @@ object {
     padding: 10px 20px;
     color: white;
     margin-top: 10%;
+}
+
+.button:hover{
+    background-color: rgb(18, 103, 45);
 }
 
 @media screen and (max-width: 767px) {

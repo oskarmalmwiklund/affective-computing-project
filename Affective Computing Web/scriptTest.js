@@ -1,9 +1,3 @@
-window.onload = function () {
-	startExperiment();
-	initTracking(100);
-	registerUserData();
-}
-
 const VERSION = 3;
 
 const EVENT_ON_MOUSE_MOVE = 0;
@@ -753,7 +747,7 @@ function postAJAXDemographicData(parametros) {
 
 function registergender(value) { postStringDD(39, value); } function registerbirthdate(value) { postDateDD(40, value); } function registercountry_of_origin(value) { postStringDD(41, value); } function registereducation_level(value) { postStringDD(42, value); } function registercurrent_occupation(value) { postStringDD(43, value); } function registercurrent_location(value) { postStringDD(44, value); } function registeralone_or_together(value) { postStringDD(45, value); } function registercurrent_mood(value) { postStringDD(46, value); } function registertech_comfortable(value) { postNumberDD(47, value); } function registeronline_subscriptions(value) { postNumberDD(48, value); }
 
-function registerneed_of_learning(value) {postNumberDD(76, value);}function registercumbersome(value) {postNumberDD(77, value);}function registerneeded_help(value) {postNumberDD(78, value);}function registerfrequency_of_use(value) {postNumberDD(79, value);}function registertoo_much_inconsistency(value) {postNumberDD(80, value);}function registercomplex(value) {postNumberDD(81, value);}function registersystem_ease(value) {postNumberDD(82, value);}function registerquick_learn_of_system(value) {postNumberDD(83, value);}function registerwell_integrated(value) {postNumberDD(84, value);}function registeruse_confidenty(value) {postNumberDD(85, value);}function registerattractive(value) {postNumberDD(86, value);}function registeraesthically_appealing(value) {postNumberDD(87, value);}function registernice_graphic_images(value) {postNumberDD(88, value);}function registerappealed_visually(value) {postNumberDD(89, value);}function registerpleasing_screen_layout(value) {postNumberDD(90, value);}
+function registerneed_of_learning(value) { postNumberDD(76, value); } function registercumbersome(value) { postNumberDD(77, value); } function registerneeded_help(value) { postNumberDD(78, value); } function registerfrequency_of_use(value) { postNumberDD(79, value); } function registertoo_much_inconsistency(value) { postNumberDD(80, value); } function registercomplex(value) { postNumberDD(81, value); } function registersystem_ease(value) { postNumberDD(82, value); } function registerquick_learn_of_system(value) { postNumberDD(83, value); } function registerwell_integrated(value) { postNumberDD(84, value); } function registeruse_confidenty(value) { postNumberDD(85, value); } function registerattractive(value) { postNumberDD(86, value); } function registeraesthically_appealing(value) { postNumberDD(87, value); } function registernice_graphic_images(value) { postNumberDD(88, value); } function registerappealed_visually(value) { postNumberDD(89, value); } function registerpleasing_screen_layout(value) { postNumberDD(90, value); }
 
 $(document).ready(function () {
 	$('#startForm').on('submit', function (event) {
@@ -774,13 +768,13 @@ $(document).ready(function () {
 		var techExp = $('input[name=tech-comfortable]:checked').val();
 		var subscriptions = $('input[name=online_subscriptions]:checked').val();
 
-		if(!gender || !dateVal || !origin || !education || !occupation  || !location || !setting || !mood || !techExp || !subscriptions){
+		if (!gender || !dateVal || !origin || !education || !occupation || !location || !setting || !mood || !techExp || !subscriptions) {
 			return;
 		}
 
 		var date = new Date(dateVal);
 		var birthDate = date.toISOString().split('T')[0];
-		
+
 		registergender(gender);
 		registerbirthdate(birthDate);
 		registercountry_of_origin(origin);
@@ -792,7 +786,49 @@ $(document).ready(function () {
 		registertech_comfortable(techExp);
 		registeronline_subscriptions(subscriptions);
 
-		finishSubsceneTracking();
 		finishTracking('video.html');
+	});
+});
+
+$(document).ready(function () {
+	$('#finishForm').on('submit', function (event) {
+
+		// Prevent the form from being submitted
+		event.preventDefault();
+
+		var frequency = $('input[name=frequency_of_use]:checked').val();
+		var complex = $('input[name=complex]:checked').val();
+		var easeOfUse = $('input[name=system-ease]:checked').val();
+		var needHelp = $('input[name="needed_help"]').val();
+		var wellIntegrated = $('input[name=well_integrated]:checked').val();
+		var inconsistency = $('input[name=too_much_inconsistency]:checked').val();
+		var quickLearn = $('input[name=quick_learn_of_system]:checked').val();
+		var cumbersome = $('input[name="cumbersome"]').val();
+		var confidency = $('input[name=use_confidenty]:checked').val();
+		var needLearning = $('input[name="need_of_learning"]:checked').val();
+		var attractive = $('input[name=attractive]:checked').val();
+		var aestethicallyAppealing = $('input[name=aesthically_appealing]:checked').val();
+		var niceImages = $('input[name=nice_graphic_images]:checked').val();
+		var visuallyAppealing = $('input[name=appealed_visually]:checked').val();
+		var pleasingLayout = $('input[name=pleasing_screen_layout]:checked').val();
+
+		registerneed_of_learning(needLearning);
+		registercumbersome(cumbersome);
+		registerneeded_help(needHelp);
+		registerfrequency_of_use(frequency);
+		registertoo_much_inconsistency(inconsistency);
+		registercomplex(complex);
+		registersystem_ease(easeOfUse);
+		registerquick_learn_of_system(quickLearn);
+		registerwell_integrated(wellIntegrated);
+		registeruse_confidenty(confidency);
+		registerattractive(attractive);
+		registeraesthically_appealing(aestethicallyAppealing);
+		registernice_graphic_images(niceImages);
+		registerappealed_visually(visuallyAppealing);
+		registerpleasing_screen_layout(pleasingLayout);
+
+		finishExperiment();
+		finishTracking('thank-you.html');
 	});
 });

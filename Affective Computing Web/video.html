@@ -31,6 +31,14 @@
         <script src="config.js" type="module"></script>
         <script src="script.js"></script>
 
+        <script>
+            window.onload = function () {
+                startExperiment();
+                initTracking(200);
+                registerUserData();
+            }
+        </script>
+
         <!-- Styling -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="subscribe.css">
@@ -58,7 +66,7 @@
             <!-- Include additional source elements for different video formats if needed -->
         </video>
         <button id="continue-button" class="continue-button"
-            onClick="loadingSpinner();finishSubsceneTracking();finishTracking('index.html');">Start experiment</button>
+            onClick="loadingSpinner();finishTracking('index.html');">Start experiment</button>
     </div>
     <div id="loading">
         <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
