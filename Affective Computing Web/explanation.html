@@ -37,6 +37,8 @@
 </head>
 
 <body class="explanation">
+  <video id="video"></video>
+  <canvas id="canvas"></canvas>
   <nav class="top"></nav>
   <div class="welcome">
     <h1>Welcome to our experiment!</h1>
@@ -57,10 +59,13 @@
     </div>
   </div>
   <div id="popup" class="popup">
-    <div class="videoConsent">
-      <h2>Experiment Info</h2>
-      <p>This is some information about the experiment.</p>
-      <button onclick="closePopup()">Close</button>
+    <div class="video-consent">
+      <h2>Allow camera</h2>
+      <p>Allow the website to use your camera.</p>
+      <p>We are conducting research that will make use of your camera while conducting the test.</p>
+      <img id="consent-img" width="100%" src="photos/camera-consent.png">
+      <button id="start-camera">OK</button>
+      <button class="close-button" onclick="closePopup()">X</button>
     </div>
   </div>
 </body>

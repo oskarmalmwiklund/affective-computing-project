@@ -1,4 +1,4 @@
-//Firebase configuration for app and storage
+/*//Firebase configuration for app and storage
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getStorage, ref, uploadString } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-storage.js";
 
@@ -16,7 +16,7 @@ const firebaseConfig = {
 // Initialize firebase
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
-
+*/
 // Declare video and canvas variables
 const video = document.getElementById("video");
 const canvas = document.getElementById("canvas");

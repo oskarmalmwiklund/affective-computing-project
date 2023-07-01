@@ -639,10 +639,11 @@ h2 {
 
 
 @media (max-width: 768px) {
-    .step-container{
+    .step-container {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .step-content {
         flex-direction: column;
         align-items: center;
@@ -651,7 +652,7 @@ h2 {
     .step-content.left {
         flex-direction: column;
     }
-    
+
     .step {
         width: 100%;
         margin-bottom: 20px;
@@ -947,9 +948,12 @@ h1#carousel-title {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px; /* Set the desired width of the box */
-    height: 600px; /* Set the desired height of the box */
-    padding: 1px; /* Add some padding inside the box */
+    width: 800px;
+    /* Set the desired width of the box */
+    height: 600px;
+    /* Set the desired height of the box */
+    padding: 1px;
+    /* Add some padding inside the box */
     padding-top: 1px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1020,8 +1024,8 @@ h1#carousel-title {
 }
 
 .purchase-button a {
-   color: inherit;
-   text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .purchase-button:hover {
@@ -1162,6 +1166,7 @@ p#agree-terms {
         background-color: #f1f1f1;
     }
 }
+
 /* styling for the pre-questionnaire */
 
 #survey-title {
@@ -1170,7 +1175,8 @@ p#agree-terms {
 }
 
 /* Styling the Form (Color, Padding, Shadow) */
-#startForm, #finishForm {
+#startForm,
+#finishForm {
     background-color: #fff;
     max-width: 500px;
     margin: 50px auto;
@@ -1179,6 +1185,7 @@ p#agree-terms {
     font-family: Verdana;
     text-align: center;
 }
+
 /* Styling form-control Class */
 .form-control {
     text-align: left;
@@ -1244,32 +1251,32 @@ button and Checkbox */
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
-  }
+}
 
-  .explanation .welcome {
+.explanation .welcome {
     margin-top: 5%;
     text-align: center;
     padding-bottom: 20px;
     color: rgb(82, 82, 82);
-  }
+}
 
-  .explanation .start-img-container {
+.explanation .start-img-container {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .explanation .start-image {
+.explanation .start-image {
     flex: 1;
     margin-left: 150px;
     align-self: flex-start;
-  }
+}
 
-  .explanation .start-image img {
+.explanation .start-image img {
     max-width: 80%;
     height: auto;
-  }
+}
 
-  .explanation .text-block {
+.explanation .text-block {
     flex: 1;
     display: inline-block;
     width: 500px;
@@ -1284,9 +1291,9 @@ button and Checkbox */
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
-  .explanation .top {
+.explanation .top {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -1296,9 +1303,9 @@ button and Checkbox */
     background-color: rgb(82, 82, 82);
     margin-bottom: 10px;
 
-  }
+}
 
-  .explanation .start-button {
+.explanation .start-button {
     padding: 10px 30px;
     margin-top: 5%;
     background-color: rgb(24, 121, 55);
@@ -1307,35 +1314,76 @@ button and Checkbox */
     border-radius: 4px;
     font-size: 16px;
     font-family: "Helvetica", sans-serif;
-    margin-left: 25%;
-  }
+}
 
-  .explanation .start-button a {
+.explanation .start-button a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .explanation .start-img-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
     }
 
     .explanation .start-image {
-      margin-left: 0;
-      margin-bottom: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     .explanation .text-block {
-      width: auto;
-      height: auto;
-      margin-right: 0;
-      margin-left: 0;
-      padding: 20px;
+        width: auto;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 20px;
     }
-  }
+}
+
+.video-consent {
+    position: relative;
+    width: 24em;
+    height: 23em;
+    padding: 40px;
+    text-align: center;
+    background-color: #e1e1e1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#consent-img {
+    margin-top: 5%;
+}
+
+#start-camera {
+    margin-top: 5%;
+    padding: 10px 30px;
+    background-color: rgb(24, 121, 55);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* congratulations page */
 
 .congratulations {
     text-align: center;
@@ -1344,7 +1392,7 @@ button and Checkbox */
     padding-top: 10%;
 }
 
-.congratulations h1{
+.congratulations h1 {
     font-size: 28px;
 }
 
@@ -1372,10 +1420,10 @@ button and Checkbox */
 
 .finish-experiment-button:hover {
     background-color: #45a049;
-  }
+}
 
 
-/*Task explanation popup window*/  
+/*Task explanation popup window*/
 .task-popup-overlay {
     display: none;
     position: fixed;
@@ -1387,7 +1435,7 @@ button and Checkbox */
     z-index: 999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-  
+
 .task-popup-content {
     position: absolute;
     top: 50%;
@@ -1399,15 +1447,15 @@ button and Checkbox */
     font-family: Helvetica, sans-serif;
     color: rgb(66, 66, 66);
 }
-  
+
 .task-popup-content h2 {
     margin-top: 20px;
 }
-  
+
 .task-popup-content p {
     margin-bottom: 20px;
 }
-  
+
 #close-task-popup {
     padding: 8px 16px;
     background-color: rgb(24, 121, 55);
@@ -1415,7 +1463,7 @@ button and Checkbox */
     border-radius: 4px;
     cursor: pointer;
 }
-  
+
 .task-popup-close {
     position: absolute;
     top: 10px;
