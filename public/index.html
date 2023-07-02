@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,11 +31,11 @@
 
   <script>
     window.onload = function () {
-        startExperiment();
-        initTracking(300);
-        registerUserData();
+      startExperiment();
+      initTracking(100);
+      registerUserData();
     }
-</script>
+  </script>
 
   <!-- Styling -->
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -44,171 +44,45 @@
   <title>FreshBox</title>
 </head>
 
-<body>
-  <video id="video"></video>
-  <canvas id="canvas"></canvas>
-
-  <header class="header">
-    <nav class="navbar">
-      <a href="index.html" target="">
-        <object class="nav-logo" data="logo/freshbox_logo.svg" type="image/svg+xml"></object></a>
-
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html">Home</a></li>
-        <li class="nav-item"><a href="our-plans.html">Our Plans</a></li>
-        <li class="nav-item"><a href="how-it-works.html">How It Works</a></li>
-        <li class="nav-item"><a href="our-menus.html">Our Menus</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
-        <!-- Add more menu items as needed -->
-      </ul>
-      <button id="quit-button" onclick="openPopupQuit()">Quit</button>
-      <button class="subscription-button" onclick="openPopup()">Subscibe</button>
-
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
-
-    <div id="task-popup-overlay" class="task-popup-overlay">
-      <div id="task-popup-content" class="task-popup-content">
-        <span class="task-popup-close">&times;</span>
-        <h2>Your task</h2>
-        <p>Your task is to try and find how to purchase the service.</p>
-        <button id="close-task-popup">I understand</button>
-      </div>
+<body class="explanation">
+  <nav class="top"></nav>
+  <div class="welcome">
+    <h1>Welcome to our experiment!</h1>
+  </div>
+  <div class="start-img-container">
+    <div class="start-image">
+      <img src="photos/usability.jpg" alt="Your Image">
     </div>
-
-    <div id="popupQuit" class="popupQuit">
-      <div class="quit-box">
-        <button class="close-button" onclick="closePopupQuit()">&times;</button>
-        <h2>Are you sure you want to quit?</h2>
-        <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel
-          like you’re not able to complete the task, you can finish the experiment now.</p>
-        <button class="subscription-box-button">Finish the experiment</button>
-      </div>
+    <div class="text-block">
+      <p>Dear Participant,</p>
+      <p>
+        We are conducting an experiment in the field of affective computing to explore the connection between facial
+        expressions and user experience during website navigation. During the experiment, we will capture your facial
+        expressions using a camera while you navigate through a website. Please note that the captured data will be used
+        solely for the purpose of this experiment and will not be stored.
+      </p>
+      <button onclick="openPopup()" class="start-button">Begin</button>
     </div>
-    <div id="popup" class="popup">
-      <div class="subscription-box">
-        <button class="close-button" onclick="closePopup()">&times;</button>
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Receive the latest recipes by subscribing now!</p>
-        <form>
-          <input type="text" id="name" placeholder="Enter you name" required>
-          <input type="email" id="email" placeholder="Enter your email" required>
-          <button class="subscription-box-button" type="submit">Subscribe</button>
-        </form>
-      </div>
+  </div>
+  <div id="popup" class="popup">
+    <div class="video-consent">
+      <h2>Allow camera</h2>
+      <p>Once the experiment starts, you will be asked to allow the website to use your camera.
+        We are conducting research that will make use of your camera while conducting the test.
+      </p>
+      <img id="consent-img" width="100%" src="photos/camera-consent.png">
+      <button id="start-camera" onclick="sendToPage('start.html')">OK</button>
+      <button class="close-button" onclick="closePopup()">X</button>
     </div>
-    <div class="hero-image">
-      <h1>Take the stress<br>
-        out of mealtime</h1>
-
-    </div>
-    <button class="center-button" onClick="loadingSpinner();finishTracking('our-plans.html');">View Our Plans</a></button>
-    <section class="section">
-      <div class="text-container">
-        <div class="text-box">
-          <img src="photos/hf1.png" alt="Image 1">
-          <h3>No skimpin’ on the chicken!</h3>
-          <p>Or steak, or fish, or plant protein.</p>
-        </div>
-        <div class="text-box">
-          <img src="photos/hf2.png" alt="Image 2">
-          <h3>No commitment whatsoever</h3>
-          <p>Skipping weeks or cancelling is super easy.</p>
-        </div>
-        <div class="text-box">
-          <img src="photos/hf3.png" alt="Image 3">
-          <h3>The most 5-star reviews</h3>
-          <p>Our huge recipe selection wows week after week.</p>
-        </div>
-        <div class="text-box">
-          <img src="photos/hf4.png" alt="Image 4">
-          <h3>Fresh and affordable</h3>
-          <p>Chef-created deliciousness from $7.49 per meal.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="carousel-container">
-      <h1 id="carousel-title">Over 30+ fresh recipes every week</h1>
-
-        
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="photos/meat-veggies.jpg" class="carousel-image" alt="Meat and Veggies">
-              <div class="carousel-text">MEAT & VEGGIES</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/veggies.jpg" class="carousel-image" alt="Veggies">
-              <div class="carousel-text">VEGGIES</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/family friendly.jpg" class="carousel-image" alt="Family Friendly">
-              <div class="carousel-text">FAMILY FRIENDLY</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/fit-wholesome.jpg" class="carousel-image" alt="Fit & Wholesome">
-              <div class="carousel-text">FIT & WHOLESOME</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/quick-easy.jpg" class="carousel-image" alt="Quick & Easy">
-              <div class="carousel-text">QUICK & EASY</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/fish.jpg" class="carousel-image" alt="Pescatarian">
-              <div class="carousel-text">PESCATARIAN</div>
-            
-          </div>
-        </div>
-        <div class="carousel-navigation">
-          <div class="arrow prev">&lt;</div>
-          <div class="arrow next">&gt;</div>
-        
-      </div>
-      <button class="carousel-button">View Our Menus</button>
-    </section>
-
-
-    <section>
-      <div class="section2-container">
-        <div class="section2-image">
-          <img src="photos/box.jpg" alt="Your Image">
-        </div>
-        <div class="section2-content">
-          <h2>What’s inside each box?</h2>
-          <ul id="section2-disc">
-            <li>Easy-to-follow recipes with clear nutritional info</li>
-            <li>High-quality ingredients sourced straight from the farm</li>
-            <li>Convenient meal kits that fit perfectly in the fridge</li>
-            <li>A fun cooking experience that makes you feel unstoppable</li>
-            <li>Innovative packaging designed to reduce waste</li>
-          </ul>
-          <button class="section2-button">View Our Plans</button>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <iframe src="footer.html" width="100%" height="400"></iframe>
-    </footer>
-  </header>
-  <script src="carousel.js"></script>
+  </div>
   <div id="loading">
     <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
-</div>
-<script>
+  </div>
+  <script>
     $(window).on('load', function () {
-        $('#loading').hide();
+      $('#loading').hide();
     }) 
-</script>
+  </script>
 </body>
 
 </html>

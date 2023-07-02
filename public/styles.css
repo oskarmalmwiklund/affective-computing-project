@@ -928,6 +928,10 @@ h1#carousel-title {
     font-family: "Helvetica", sans-serif;
 }
 
+.section2-button:hover{
+    background-color: #45a049;
+}
+
 @media (max-width: 767px) {
     .section2-container {
         flex-wrap: wrap;

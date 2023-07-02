@@ -793,6 +793,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('#finishForm').on('submit', function (event) {
 
+		console.log('Form submitted');
 		// Prevent the form from being submitted
 		event.preventDefault();
 
@@ -812,6 +813,8 @@ $(document).ready(function () {
 		var visuallyAppealing = $('input[name=appealed_visually]:checked').val();
 		var pleasingLayout = $('input[name=pleasing_screen_layout]:checked').val();
 
+		console.log('Variables registered');
+
 		registerneed_of_learning(needLearning);
 		registercumbersome(cumbersome);
 		registerneeded_help(needHelp);
@@ -828,7 +831,17 @@ $(document).ready(function () {
 		registerappealed_visually(visuallyAppealing);
 		registerpleasing_screen_layout(pleasingLayout);
 
+		console.log('Data sent');
+
+		finishTracking();
+		console.log('Finish tracking');
+
+		console.log(finishedExperiment);
+
 		finishExperiment();
-		finishTracking('thank-you.html');
+
+		console.log(finishedExperiment);
+
+		sendToPage('thank-you.html');
 	});
 });
