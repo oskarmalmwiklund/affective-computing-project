@@ -26,8 +26,6 @@
   <script src="scriptTest.js"></script>
 
   <!-- All other javaScript   -->
-  <script src="config.js" type="module"></script>
-  <script src="script.js"></script>
 
   <script>
     window.onload = function () {
@@ -101,7 +99,7 @@
             <p>Continue to purchase by subscribing now!</p>
             <form id="purchase-form">
               <input type="email" id="email" placeholder="Enter your email" required>
-              <button id="subscribe" class="purchase-button">Subscribe</button>
+              <button type="submit" id="subscribe" class="purchase-button" onclick="sendToPage('congratulations-finish.html')">Subscribe</button>
             </form>
 
             <p id="agree-terms">By submitting, you agree to receive marketing emails and our Terms and Privacy Policy.
@@ -145,6 +143,9 @@
       $('#loading').hide();
     }) 
   </script>
+
+<script src="config.js" type="module"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

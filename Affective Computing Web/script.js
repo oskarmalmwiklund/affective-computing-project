@@ -178,21 +178,8 @@ function loadingSpinner() {
 
 }
 
-// For final form where the user subscribes to the service
-document.getElementById('purchase-form').addEventListener('submit', function (event) {
+function sendToPage(page){
   event.preventDefault();
   loadingSpinner();
-  finishTracking('congratulations-finish.html');
-});
-
-/*
-$(document).ready(function () {
-  $('#purchase-form').on('subscribe', function (event) {
-    // Prevent the form from being submitted
-    console.log("subscribe pushed");
-
-    event.preventDefault();
-    loadingSpinner();
-    finishTracking('congratulations-finish.html');
-  });
-});*/
+  finishTracking(page);
+}
