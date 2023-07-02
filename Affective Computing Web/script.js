@@ -136,8 +136,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navMenu.classList.remove("active");
 }))
 
-// When promo video has finished, show continue button
-
+// when promo video has finished, show continue button
 document.addEventListener('DOMContentLoaded', function () {
   console.log("DOM fully loaded and parsed");
   var video = document.getElementById('promo-video');
@@ -148,8 +147,6 @@ document.addEventListener('DOMContentLoaded', function () {
     continueButton.style.display = 'block';
   });
 });
-
-console.log('test');
 
 //Task popup
 document.addEventListener("DOMContentLoaded", function () {
@@ -182,8 +179,7 @@ function loadingSpinner() {
 }
 
 // For final form where the user subscribes to the service
-
-document.getElementById('purchase-form').addEventListener('subscribe', function (event) {
+document.getElementById('purchase-form').addEventListener('submit', function (event) {
   event.preventDefault();
   loadingSpinner();
   finishTracking('congratulations-finish.html');
@@ -191,12 +187,12 @@ document.getElementById('purchase-form').addEventListener('subscribe', function 
 
 /*
 $(document).ready(function () {
-	$('#purchase-form').on('subscribe', function (event) {
-		// Prevent the form from being submitted
+  $('#purchase-form').on('subscribe', function (event) {
+    // Prevent the form from being submitted
     console.log("subscribe pushed");
 
-		event.preventDefault();
-		loadingSpinner();
-		finishTracking('congratulations-finish.html');
-	});
+    event.preventDefault();
+    loadingSpinner();
+    finishTracking('congratulations-finish.html');
+  });
 });*/

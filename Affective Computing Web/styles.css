@@ -192,6 +192,10 @@ object {
     justify-content: center;
 }
 
+.center-button:hover{
+    background-color: #45a049;
+}
+
 .center-button a {
     color: inherit;
     /* Inherit the color from the parent element */
@@ -441,7 +445,7 @@ object {
 }
 
 .button-our-plans:hover{
-    background-color: rgb(15, 98, 41);
+    background-color: #45a049;
 }
 
 .ttl-our-plans {
@@ -556,7 +560,7 @@ object {
 }
 
 .button:hover{
-    background-color: rgb(18, 103, 45);
+    background-color: #45a049;
 }
 
 @media screen and (max-width: 767px) {
@@ -1148,7 +1152,7 @@ p#agree-terms {
 }
 
 .continue-button:hover{
-    background-color: rgb(14, 104, 43);
+    background-color: #45a049;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1247,7 +1251,7 @@ button and Checkbox */
 
 #submit:hover,
 #finish:hover {
-    background-color: #00a055;
+    background-color: #45a049;
 }
 
 .likert-options {
@@ -1408,7 +1412,7 @@ button and Checkbox */
 }
 
 #start-camera:hover{
-    background-color: rgb(17, 96, 42);
+    background-color: #45a049;
 }
 
 .close-button {
