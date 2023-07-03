@@ -111,6 +111,29 @@ function calculatePrice() {
 }
 
 // continue button
+/*
+document.addEventListener("DOMContentLoaded", function () {
+  let checkbox = document.querySelector(".checkbox-input");
+  let button = document.querySelector(".button");
+
+  if (button) {  // Check if the button exists before trying to access its properties
+      button.disabled = true;
+
+      checkbox.addEventListener("change", stateHandle);
+
+      function stateHandle() {
+          if (document.querySelector(".input").value === "") {
+              button.disabled = true;
+          } else {
+              button.disabled = false;
+          }
+      }
+  } else {
+      console.log('Element with class .button not found');
+  }
+});
+*/
+/*
 let checkbox = document.querySelector(".checkbox-input");
 let button = document.querySelector(".button");
 button.disabled = true;
@@ -122,7 +145,7 @@ function stateHandle() {
   } else {
     button.disabled = false;
   }
-}
+}*/
 
 // mobile menu
 const hamburger = document.querySelector(".hamburger");
@@ -150,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Task popup
 document.addEventListener("DOMContentLoaded", function () {
+  console.log('Page loaded');  // Add this line to see if your script runs
   var taskPopupOverlay = document.getElementById("task-popup-overlay");
   var taskPopupContent = document.getElementById("task-popup-content");
   var closeTaskPopupButton = document.getElementById("close-task-popup");
