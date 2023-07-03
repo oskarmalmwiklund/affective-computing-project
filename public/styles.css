@@ -1522,3 +1522,12 @@ button and Checkbox */
     font-size: 30px;
     cursor: pointer;
 }
+
+/* Thank you page */
+.thank-you {
+    max-width: 100%;
+    text-align: center;
+    padding: 200px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+}

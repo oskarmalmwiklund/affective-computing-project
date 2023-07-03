@@ -766,6 +766,7 @@ $(document).ready(function () {
 		var setting = $('input[name=setting]:checked').val();
 		var mood = $('input[name=current_mood]:checked').val();
 		var techExp = $('input[name=tech-comfortable]:checked').val();
+		var currentDevice = $('input[current-device]:checked').val();
 		var subscriptions = $('input[name=online_subscriptions]:checked').val();
 
 		if (!gender || !dateVal || !origin || !education || !occupation || !location || !setting || !mood || !techExp || !subscriptions) {

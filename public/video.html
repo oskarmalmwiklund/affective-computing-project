@@ -12,29 +12,19 @@
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
 
             gtag('config', 'G-VCRGBNS29B');
-        </script>
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <!-- Tracking script -->
-        <script src="html2canvas.js"></script>
-        <script src="scriptTest.js"></script>
-
-        <!-- All other javaScript   -->
-        <script src="config.js" type="module"></script>
-        <script src="script.js"></script>
-
-        <script>
             window.onload = function () {
                 startExperiment();
-                initTracking(200);
+                initTracking(300);
                 registerUserData();
             }
         </script>
@@ -45,9 +35,29 @@
 
         <title>FreshBox</title>
     </head>
+
+<body>
+    <video id="video"></video>
+    <canvas id="canvas"></canvas>
+
+    <div id="video-container">
+        <h1>Please watch the video until the end</h1>
+        <video id="promo-video" controls autoplay>
+            <source src="video/FreshBox_promo.mp4" type="video/mp4">
+            <!-- Include additional source elements for different video formats if needed -->
+        </video>
+        <button id="continue-button" class="continue-button" onClick="sendToPage('experiment.html')">Start
+            experiment</button>
+    </div>
+    <div id="loading">
+        <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
+    </div>
     <script>
+        $(window).on('load', function () {
+            $('#loading').hide();
+        })
+
         document.addEventListener('DOMContentLoaded', function () {
-            console.log("DOM fully loaded and parsed");
             var video = document.getElementById('promo-video');
             var continueButton = document.getElementById('continue-button');
 
@@ -57,25 +67,13 @@
             });
         });
     </script>
+    <!-- Tracking script -->
+    <script src="html2canvas.js"></script>
+    <script src="scriptTest.js"></script>
 
-<body>
-    <div id="video-container">
-        <h1>Please watch the video until the end</h1>
-        <video id="promo-video" controls autoplay>
-            <source src="video/FreshBox_promo.mp4" type="video/mp4">
-            <!-- Include additional source elements for different video formats if needed -->
-        </video>
-        <button id="continue-button" class="continue-button"
-            onClick="sendToPage('index.html')">Start experiment</button>
-    </div>
-    <div id="loading">
-        <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
-    </div>
-    <script>
-        $(window).on('load', function () {
-            $('#loading').hide();
-        }) 
-    </script>
+    <!-- All other javaScript   -->
+    <script src="config.js" type="module"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

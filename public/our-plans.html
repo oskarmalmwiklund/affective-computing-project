@@ -11,11 +11,11 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-VCRGBNS29B');
+    gtag('config', 'G-VCRGBNS29B');
   </script>
 
   <!-- jQuery -->
@@ -30,11 +30,11 @@
   <script src="script.js"></script>
 
   <script>
-      window.onload = function () {
-          startExperiment();
-          initTracking(800);
-          registerUserData();
-      }
+    window.onload = function () {
+      startExperiment();
+      initTracking(500);
+      registerUserData();
+    }
   </script>
 
   <!-- Styling -->
@@ -46,6 +46,9 @@
 </head>
 
 <body>
+  <video id="video"></video>
+  <canvas id="canvas"></canvas>
+
   <header class="header">
     <nav class="navbar">
       <a href="index.html" target="">
@@ -89,81 +92,83 @@
         </form>
       </div>
     </div>
-          <div class="container">
-            <div class="big-box"> 
-              <p class="ttl-our-plans">1. Choose your preferences</p>
-               <p>Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes each week!</p>
-              <div class="choices">
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-carrot"></i>
-                        <span class="checkbox-label">Veggie</span>
-                      </span>
-                    </label>
-                </div>  
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-hamburger"></i>
-                        <span class="checkbox-label">Meat & Veggie</span>
-                      </span>
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-fish"></i>
-                        <span class="checkbox-label">Pescatarian</span>
-                      </span>
-                    </label>
-                </div>  
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-lemon"></i>
-                        <span class="checkbox-label">Fit & Wholesome</span>
-                      </span>
-                    </label>
-                </div>  
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-clock"></i>
-                        <span class="checkbox-label">Quick & Easy</span>
-                      </span>
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label class="checkbox-wrapper">
-                      <input type="checkbox" class="checkbox-input" />
-                      <span class="checkbox-tile">
-                        <i class="choice-icon fas fa-child"></i>
-                        <span class="checkbox-label">Family Friendly</span>
-                      </span>
-                    </label>
-                </div> 
-                <button class="button-our-plans" onClick="sendToPage('continue.html')">Continue</button>
-              </div>
-            </div>
-          </div>    
-    </header>
-    <footer>
-      <iframe src="footer.html" width="100%" height="400"></iframe>
-    </footer>
+    <div class="container">
+      <div class="big-box">
+        <p class="ttl-our-plans">1. Choose your preferences</p>
+        <p>Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes
+          each week!</p>
+        <div class="choices">
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-carrot"></i>
+                <span class="checkbox-label">Veggie</span>
+              </span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-hamburger"></i>
+                <span class="checkbox-label">Meat & Veggie</span>
+              </span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-fish"></i>
+                <span class="checkbox-label">Pescatarian</span>
+              </span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-lemon"></i>
+                <span class="checkbox-label">Fit & Wholesome</span>
+              </span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-clock"></i>
+                <span class="checkbox-label">Quick & Easy</span>
+              </span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label class="checkbox-wrapper">
+              <input type="checkbox" class="checkbox-input" />
+              <span class="checkbox-tile">
+                <i class="choice-icon fas fa-child"></i>
+                <span class="checkbox-label">Family Friendly</span>
+              </span>
+            </label>
+          </div>
+          <button class="button-our-plans" onClick="sendToPage('continue.html')">Continue</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <iframe src="footer.html" width="100%" height="400"></iframe>
+  </footer>
   </div>
   <div id="loading">
-      <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
+    <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
   </div>
   <script>
-      $(window).on('load', function () {
-          $('#loading').hide();
-      }) 
+    $(window).on('load', function () {
+      $('#loading').hide();
+    }) 
   </script>
 </body>
+
 </html>

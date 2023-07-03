@@ -1,3 +1,4 @@
+/*
 // Declare video and canvas variables
 const video = document.getElementById("video");
 const canvas = document.getElementById("canvas");
@@ -60,6 +61,7 @@ navigator.mediaDevices
     console.log(err);
   });
 
+*/
 // opens video consent popup
 
 function openConsentPopup() {
@@ -138,12 +140,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 // when promo video has finished, show continue button
 document.addEventListener('DOMContentLoaded', function () {
-  console.log("DOM fully loaded and parsed");
   var video = document.getElementById('promo-video');
   var continueButton = document.getElementById('continue-button');
 
   video.addEventListener('ended', function () {
-    console.log("Video has ended");
     continueButton.style.display = 'block';
   });
 });

@@ -10,32 +10,26 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tracking script -->
+    <script src="html2canvas.js"></script>
+    <script src="scriptTest.js"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-VCRGBNS29B');
-  </script>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Tracking script -->
-  <script src="html2canvas.js"></script>
-  <script src="scriptTest.js"></script>
-
-  <!-- All other javaScript   -->
-  <script src="config.js" type="module"></script>
-  <script src="script.js"></script>
-
-  <script>
     window.onload = function () {
         startExperiment();
-        initTracking(300);
+        initTracking(400);
         registerUserData();
     }
-</script>
+  </script>
 
   <!-- Styling -->
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -106,7 +100,7 @@
         out of mealtime</h1>
 
     </div>
-    <button class="center-button" onClick="sentToPage('our-plans.html')">View Our Plans</a></button>
+    <button class="center-button" onClick="sendToPage('our-plans.html')">View Our Plans</a></button>
     <section class="section">
       <div class="text-container">
         <div class="text-box">
@@ -209,6 +203,10 @@
         $('#loading').hide();
     }) 
 </script>
+
+  <!-- All other javaScript   -->
+  <script src="config.js" type="module"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
