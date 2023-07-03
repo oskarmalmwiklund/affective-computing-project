@@ -10,12 +10,16 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Google translate -->
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <!-- Tracking script -->
-    <script src="html2canvas.js"></script>
-    <script src="scriptTest.js"></script>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Tracking script -->
+  <script src="html2canvas.js"></script>
+  <script src="scriptTest.js"></script>
 
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,9 +29,9 @@
     gtag('config', 'G-VCRGBNS29B');
 
     window.onload = function () {
-        startExperiment();
-        initTracking(400);
-        registerUserData();
+      startExperiment();
+      initTracking(400);
+      registerUserData();
     }
   </script>
 
@@ -43,15 +47,6 @@
   <canvas id="canvas"></canvas>
 
   <div id="google_translate_element"></div>
-
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-  </script>
-
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <header class="header">
     <nav class="navbar">
@@ -140,43 +135,43 @@
     <section class="carousel-container">
       <h1 id="carousel-title">Over 30+ fresh recipes every week</h1>
 
-        
-        <div class="carousel">
-          <div class="carousel-item">
-            <img src="photos/meat-veggies.jpg" class="carousel-image" alt="Meat and Veggies">
-              <div class="carousel-text">MEAT & VEGGIES</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/veggies.jpg" class="carousel-image" alt="Veggies">
-              <div class="carousel-text">VEGGIES</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/family friendly.jpg" class="carousel-image" alt="Family Friendly">
-              <div class="carousel-text">FAMILY FRIENDLY</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/fit-wholesome.jpg" class="carousel-image" alt="Fit & Wholesome">
-              <div class="carousel-text">FIT & WHOLESOME</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/quick-easy.jpg" class="carousel-image" alt="Quick & Easy">
-              <div class="carousel-text">QUICK & EASY</div>
-            
-          </div>
-          <div class="carousel-item">
-            <img src="photos/fish.jpg" class="carousel-image" alt="Pescatarian">
-              <div class="carousel-text">PESCATARIAN</div>
-            
-          </div>
+
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="photos/meat-veggies.jpg" class="carousel-image" alt="Meat and Veggies">
+          <div class="carousel-text">MEAT & VEGGIES</div>
+
         </div>
-        <div class="carousel-navigation">
-          <div class="arrow prev">&lt;</div>
-          <div class="arrow next">&gt;</div>
-        
+        <div class="carousel-item">
+          <img src="photos/veggies.jpg" class="carousel-image" alt="Veggies">
+          <div class="carousel-text">VEGGIES</div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="photos/family friendly.jpg" class="carousel-image" alt="Family Friendly">
+          <div class="carousel-text">FAMILY FRIENDLY</div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="photos/fit-wholesome.jpg" class="carousel-image" alt="Fit & Wholesome">
+          <div class="carousel-text">FIT & WHOLESOME</div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="photos/quick-easy.jpg" class="carousel-image" alt="Quick & Easy">
+          <div class="carousel-text">QUICK & EASY</div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="photos/fish.jpg" class="carousel-image" alt="Pescatarian">
+          <div class="carousel-text">PESCATARIAN</div>
+
+        </div>
+      </div>
+      <div class="carousel-navigation">
+        <div class="arrow prev">&lt;</div>
+        <div class="arrow next">&gt;</div>
+
       </div>
       <button class="carousel-button">View Our Menus</button>
     </section>
@@ -200,7 +195,7 @@
         </div>
       </div>
     </section>
-    
+
     <footer>
       <iframe src="footer.html" width="100%" height="400"></iframe>
     </footer>
@@ -208,12 +203,12 @@
   <script src="carousel.js"></script>
   <div id="loading">
     <img id="loading-image" src="photos/Iphone-spinner-2.gif" alt="Loading..." />
-</div>
-<script>
+  </div>
+  <script>
     $(window).on('load', function () {
-        $('#loading').hide();
+      $('#loading').hide();
     }) 
-</script>
+  </script>
 
   <!-- All other javaScript   -->
   <script src="config.js" type="module"></script>
