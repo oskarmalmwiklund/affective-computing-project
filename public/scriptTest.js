@@ -106,6 +106,7 @@ function deliverSnapshot(sceneId, canvas) {
 			error: function (XMLHttpRequest, textStatus, errorThrown) {
 				//alert("Status: " + textStatus); alert("Error: " + errorThrown);
 				console.log("Status: " + textStatus);
+				pendingBackgroundsDelivered--;
 				console.log("Error: " + errorThrown);
 			}
 		}).always(function (jqXHR, textStatus) {
