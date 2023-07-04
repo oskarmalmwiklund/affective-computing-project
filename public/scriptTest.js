@@ -23,7 +23,6 @@ const COMPONENT_COMBOBOX = 2;
 const COMPONENT_OPTION = 3;
 const COMPONENT_RADIO_BUTTON = 4;
 const COMPONENT_CHECK_BOX = 5;
-// Create a variable that sets a flag for the experiment button
 
 const user = createUser();
 
@@ -34,6 +33,8 @@ var trackingOn = false;
 var TOP_LIMIT = 500;
 var sentRequest = 0;
 var pendingRequest = 0;
+// Continue with the function if checkReadyToLeave has been looped 5 fives
+var retryCount = 0;
 
 var pendingBackgroundsDelivered = 0;
 var backgroundsDelivered = 0;
@@ -457,8 +458,9 @@ function checkReadyToLeave() {
 	}
 	else {
 		//Events are delivered, we wait for the background delivery
-		if (pendingBackgroundsDelivered > 0) {
+		if (pendingBackgroundsDelivered > 0 && retryCount < 5) {
 			console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
+			retryCount++; // Increment the counter
 			setTimeout(() => {
 				this.checkReadyToLeave();
 			}, 2000);
