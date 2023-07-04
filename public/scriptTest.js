@@ -23,6 +23,7 @@ const COMPONENT_COMBOBOX = 2;
 const COMPONENT_OPTION = 3;
 const COMPONENT_RADIO_BUTTON = 4;
 const COMPONENT_CHECK_BOX = 5;
+// Create a variable that sets a flag for the experiment button
 
 const user = createUser();
 
@@ -451,6 +452,7 @@ function finishTracking(_newPage) {
 function checkReadyToLeave() {
 
 	if (eventsDelivered == false || pendingRequest > 0) {
+		// Set a flag to check if the first page works
 		console.log("Not ready to leave page, events still pending");
 	}
 	else {
