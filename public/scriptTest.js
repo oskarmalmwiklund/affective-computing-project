@@ -44,7 +44,7 @@ var elements = [];
 var emittingData = false;
 
 var idExperiment = 19;
-var urlBase = 'http://156.35.82.106'
+var urlBase = 'https://156.35.82.106'
 
 var url = urlBase + '/TrackerServer/restws/track';
 var urlBackgroundTracker = urlBase + '/TrackerServer/restws/backgroundTracker';
