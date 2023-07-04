@@ -214,7 +214,7 @@ function sendToPage(page){
   event.preventDefault();
   loadingSpinner();
   finishTracking(page);
-  hideSpinner();
+  setTimeout(hideSpinner, 0);
 }
 
 
