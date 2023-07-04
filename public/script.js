@@ -194,19 +194,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function loadingSpinner() {
+/*function loadingSpinner() {
   document.getElementById('loading').style.display = "";
   setTimeout(function () {
     document.getElementById('loading').style.display = "none";
   }, 1000);
 
+}*/
+
+function loadingSpinner() {
+  document.getElementById('loading').style.display = "";
+}
+
+function hideSpinner() {
+  document.getElementById('loading').style.display = "none";
 }
 
 function sendToPage(page){
   event.preventDefault();
   loadingSpinner();
   finishTracking(page);
+  hideSpinner();
 }
+
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
