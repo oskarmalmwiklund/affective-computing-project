@@ -1074,11 +1074,13 @@ p#agree-terms {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
+        flex-wrap: nowrap;
     }
 
     .image-purchase {
         margin-bottom: 20px;
         max-width: 100%;
+        margin-left: 10px;
     }
 
     .purchase-content {
@@ -1089,6 +1091,7 @@ p#agree-terms {
         padding: 6px 12px;
         position: absolute;
         right: 35%;
+        margin-top: 45px;
     }
 
     .under-subscribe-container {
@@ -1100,6 +1103,10 @@ p#agree-terms {
     .under-subscribe-box {
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    p#agree-terms {
+        margin-top: 40px;
     }
 }
 
@@ -1527,7 +1534,11 @@ button and Checkbox */
 .thank-you {
     max-width: 100%;
     text-align: center;
-    padding: 200px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: Helvetica, sans-serif;
     color: rgb(66, 66, 66);
 }
+
