@@ -194,6 +194,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Original v1
+
 /*function loadingSpinner() {
   document.getElementById('loading').style.display = "";
   setTimeout(function () {
@@ -202,21 +204,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 }*/
 
+// Version 2
+
+/*
 function loadingSpinner() {
   document.getElementById('loading').style.display = "";
+}*/
+
+// Modified loading spinner
+
+function loadingSpinner(checkPromise) {
+  let loadingElement = document.getElementById('loading');
+  let loadingCheckInterval = setInterval(() => {
+    // Always set the display property
+    loadingElement.style.display = "flex";
+    // Check the promise
+    checkPromise.then(isReady => {
+      if (isReady) {
+        // Hide the spinner and clear the interval when ready
+        loadingElement.style.display = "none";
+        clearInterval(loadingCheckInterval);
+      }
+    });
+  }, 100);
 }
 
 function hideSpinner() {
   document.getElementById('loading').style.display = "none";
 }
 
-function sendToPage(page){
+function sendToPage(page) {
   event.preventDefault();
-  loadingSpinner();
   finishTracking(page);
-  setTimeout(hideSpinner, 0);
 }
-
 
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');

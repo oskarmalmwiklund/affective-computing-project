@@ -67,12 +67,23 @@ function finishExperiment() {
 	finishedExperiment = true;
 }
 
+/*
 function takeSnapshot(sceneId) {
 	html2canvas(document.body).then(canvas => {
 		console.log("Delivering background for scene " + sceneId)
 		deliverSnapshot(sceneId, canvas);
 	});
-}
+}*/
+
+function takeSnapshot(sceneId) {
+	return new Promise((resolve, reject) => {
+	  html2canvas(document.body).then(canvas => {
+		console.log("Delivering background for scene " + sceneId);
+		deliverSnapshot(sceneId, canvas);
+		resolve();
+	  }).catch(reject);
+	});
+  }  
 
 function deliverSnapshot(sceneId, canvas) {
 
@@ -436,6 +447,9 @@ function trackOnClickSelectionEvent(event) {
 	trackWithEvent(EVENT_ON_CLICK_SELECTION_OBJECT, event);
 }
 
+// Original version
+
+/*
 function finishTracking(_newPage) {
 	trackEvent(EVENT_TRACKIND_END);
 	trackingOn = false;
@@ -448,8 +462,26 @@ function finishTracking(_newPage) {
 	newPage = _newPage;
 	checkReadyToLeave();
 }
+*/
 
+// Modified version
 
+function finishTracking(_newPage) {
+	trackEvent(EVENT_TRACKIND_END);
+	trackingOn = false;
+	takeSnapshot(this.sceneId);
+	deliverData(list);
+	list = [];
+	newPage = _newPage;
+  
+	let readyCheck = checkReadyToLeave();
+	// Pass the promise to loadingSpinner
+	loadingSpinner(readyCheck);
+  }
+
+// Original version
+
+  /*
 function checkReadyToLeave() {
 
 	if (eventsDelivered == false || pendingRequest > 0) {
@@ -458,7 +490,7 @@ function checkReadyToLeave() {
 	}
 	else {
 		//Events are delivered, we wait for the background delivery
-		if (pendingBackgroundsDelivered > 0 && retryCount < 3) {
+		if (pendingBackgroundsDelivered > 0 && retryCount < 1) {
 			console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
 			retryCount++; // Increment the counter
 			setTimeout(() => {
@@ -479,7 +511,39 @@ function checkReadyToLeave() {
 	}
 
 }
+*/
 
+// Modified version
+
+function checkReadyToLeave() {
+	return new Promise(resolve => {
+	  if (eventsDelivered == false || pendingRequest > 0) {
+		// Set a flag to check if the first page works
+		console.log("Not ready to leave page, events still pending");
+		resolve(false);
+	  } else {
+		// Events are delivered, we wait for the background delivery
+		if (pendingBackgroundsDelivered > 0 && retryCount < 2) {
+		  console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
+		  retryCount++; // Increment the counter
+		  setTimeout(() => {
+			checkReadyToLeave().then(resolve);
+		  }, 2000);
+		} else {
+		  console.log("Ready to leave page, pending request:" + pendingRequest + ", pending backgrounds " + pendingBackgroundsDelivered + "/" + backgroundsDelivered);
+		  if (finishedExperiment) {
+			// We delete the user
+			console.log("Experiment finished, deleting user " + localStorage.getItem("user"));
+			localStorage.removeItem("user");
+		  }
+		  if (newPage != null) {
+			window.location.href = newPage;
+		  }
+		  resolve(true);
+		}
+	  }
+	});
+  }  
 
 function finishSubsceneTracking() {
 	trackEvent(EVENT_TRACKIND_END);
@@ -564,6 +628,9 @@ function deliverChunk(chunk) {
 	}
 }
 
+// Original version
+
+/*
 function deliverData(list) {
 	var i = 0;
 	chunk = [];
@@ -583,6 +650,41 @@ function deliverData(list) {
 	chunkCounter++;
 	chunk = [];
 }
+*/
+
+// Modified version
+
+function deliverData(list) {
+	return new Promise((resolve, reject) => {
+	  var i = 0;
+	  var chunk = [];
+	  var chunkCounter = 0;
+	  var promises = [];
+	  
+	  list.forEach(myFunction);
+	  
+	  function myFunction(item, index) {
+		chunk[i] = item;
+		i++;
+		if (i >= TOP_LIMIT) {
+		  i = 0;
+		  // Assuming deliverChunk returns a Promise
+		  promises.push(deliverChunk(chunk));
+		  chunkCounter++;
+		  chunk = [];
+		}
+	  }
+  
+	  // Make sure to deliver the last chunk if any
+	  if(chunk.length > 0) {
+		promises.push(deliverChunk(chunk));
+	  }
+  
+	  // Wait for all chunks to be delivered
+	  Promise.all(promises).then(resolve).catch(reject);
+	});
+  }
+  
 
 function getTracking(sessionId, sceneId) {
 	var parametros = {
