@@ -458,7 +458,7 @@ function checkReadyToLeave() {
 	}
 	else {
 		//Events are delivered, we wait for the background delivery
-		if (pendingBackgroundsDelivered > 0 && retryCount < 5) {
+		if (pendingBackgroundsDelivered > 0 && retryCount < 3) {
 			console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
 			retryCount++; // Increment the counter
 			setTimeout(() => {
