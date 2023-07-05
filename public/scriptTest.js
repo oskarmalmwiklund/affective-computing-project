@@ -77,13 +77,13 @@ function takeSnapshot(sceneId) {
 
 function takeSnapshot(sceneId) {
 	return new Promise((resolve, reject) => {
-	  html2canvas(document.body).then(canvas => {
-		console.log("Delivering background for scene " + sceneId);
-		deliverSnapshot(sceneId, canvas);
-		resolve();
-	  }).catch(reject);
+		html2canvas(document.body).then(canvas => {
+			console.log("Delivering background for scene " + sceneId);
+			deliverSnapshot(sceneId, canvas);
+			resolve();
+		}).catch(reject);
 	});
-  }  
+}
 
 function deliverSnapshot(sceneId, canvas) {
 
@@ -473,42 +473,42 @@ function finishTracking(_newPage) {
 	deliverData(list);
 	list = [];
 	newPage = _newPage;
-  
+
 	let readyCheck = checkReadyToLeave();
 	// Pass the promise to loadingSpinner
 	loadingSpinner(readyCheck);
-  }
+}
 
 // Original version
 
-  /*
+/*
 function checkReadyToLeave() {
 
-	if (eventsDelivered == false || pendingRequest > 0) {
-		// Set a flag to check if the first page works
-		console.log("Not ready to leave page, events still pending");
-	}
-	else {
-		//Events are delivered, we wait for the background delivery
-		if (pendingBackgroundsDelivered > 0 && retryCount < 1) {
-			console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
-			retryCount++; // Increment the counter
-			setTimeout(() => {
-				this.checkReadyToLeave();
-			}, 2000);
-			return;
-		}
+  if (eventsDelivered == false || pendingRequest > 0) {
+	  // Set a flag to check if the first page works
+	  console.log("Not ready to leave page, events still pending");
+  }
+  else {
+	  //Events are delivered, we wait for the background delivery
+	  if (pendingBackgroundsDelivered > 0 && retryCount < 1) {
+		  console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
+		  retryCount++; // Increment the counter
+		  setTimeout(() => {
+			  this.checkReadyToLeave();
+		  }, 2000);
+		  return;
+	  }
 
-		console.log("Ready to leave page, pending request:" + pendingRequest + ", pending backgrounds " + pendingBackgroundsDelivered + "/" + backgroundsDelivered);
-		if (finishedExperiment) {
-			//We delete the user
-			console.log("Experiment finished, deleting user " + localStorage.getItem("user"));
-			localStorage.removeItem("user");
-		}
-		if (newPage != null) {
-			window.location.href = newPage;
-		}
-	}
+	  console.log("Ready to leave page, pending request:" + pendingRequest + ", pending backgrounds " + pendingBackgroundsDelivered + "/" + backgroundsDelivered);
+	  if (finishedExperiment) {
+		  //We delete the user
+		  console.log("Experiment finished, deleting user " + localStorage.getItem("user"));
+		  localStorage.removeItem("user");
+	  }
+	  if (newPage != null) {
+		  window.location.href = newPage;
+	  }
+  }
 
 }
 */
@@ -517,33 +517,33 @@ function checkReadyToLeave() {
 
 function checkReadyToLeave() {
 	return new Promise(resolve => {
-	  if (eventsDelivered == false || pendingRequest > 0) {
-		// Set a flag to check if the first page works
-		console.log("Not ready to leave page, events still pending");
-		resolve(false);
-	  } else {
-		// Events are delivered, we wait for the background delivery
-		if (pendingBackgroundsDelivered > 0 && retryCount < 2) {
-		  console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
-		  retryCount++; // Increment the counter
-		  setTimeout(() => {
-			checkReadyToLeave().then(resolve);
-		  }, 2000);
+		if (eventsDelivered == false || pendingRequest > 0) {
+			// Set a flag to check if the first page works
+			console.log("Not ready to leave page, events still pending");
+			resolve(false);
 		} else {
-		  console.log("Ready to leave page, pending request:" + pendingRequest + ", pending backgrounds " + pendingBackgroundsDelivered + "/" + backgroundsDelivered);
-		  if (finishedExperiment) {
-			// We delete the user
-			console.log("Experiment finished, deleting user " + localStorage.getItem("user"));
-			localStorage.removeItem("user");
-		  }
-		  if (newPage != null) {
-			window.location.href = newPage;
-		  }
-		  resolve(true);
+			// Events are delivered, we wait for the background delivery
+			if (pendingBackgroundsDelivered > 0 && retryCount < 2) {
+				console.log("Not ready to leave page, " + pendingBackgroundsDelivered + " backgrounds still pending");
+				retryCount++; // Increment the counter
+				setTimeout(() => {
+					resolve(checkReadyToLeave());
+				}, 2000);
+			} else {
+				console.log("Ready to leave page, pending request:" + pendingRequest + ", pending backgrounds " + pendingBackgroundsDelivered + "/" + backgroundsDelivered);
+				if (finishedExperiment) {
+					// We delete the user
+					console.log("Experiment finished, deleting user " + localStorage.getItem("user"));
+					localStorage.removeItem("user");
+				}
+				if (newPage != null) {
+					window.location.href = newPage;
+				}
+				resolve(true);
+			}
 		}
-	  }
 	});
-  }  
+}
 
 function finishSubsceneTracking() {
 	trackEvent(EVENT_TRACKIND_END);
@@ -656,35 +656,35 @@ function deliverData(list) {
 
 function deliverData(list) {
 	return new Promise((resolve, reject) => {
-	  var i = 0;
-	  var chunk = [];
-	  var chunkCounter = 0;
-	  var promises = [];
-	  
-	  list.forEach(myFunction);
-	  
-	  function myFunction(item, index) {
-		chunk[i] = item;
-		i++;
-		if (i >= TOP_LIMIT) {
-		  i = 0;
-		  // Assuming deliverChunk returns a Promise
-		  promises.push(deliverChunk(chunk));
-		  chunkCounter++;
-		  chunk = [];
+		var i = 0;
+		var chunk = [];
+		var chunkCounter = 0;
+		var promises = [];
+
+		list.forEach(myFunction);
+
+		function myFunction(item, index) {
+			chunk[i] = item;
+			i++;
+			if (i >= TOP_LIMIT) {
+				i = 0;
+				// Assuming deliverChunk returns a Promise
+				promises.push(deliverChunk(chunk));
+				chunkCounter++;
+				chunk = [];
+			}
 		}
-	  }
-  
-	  // Make sure to deliver the last chunk if any
-	  if(chunk.length > 0) {
-		promises.push(deliverChunk(chunk));
-	  }
-  
-	  // Wait for all chunks to be delivered
-	  Promise.all(promises).then(resolve).catch(reject);
+
+		// Make sure to deliver the last chunk if any
+		if (chunk.length > 0) {
+			promises.push(deliverChunk(chunk));
+		}
+
+		// Wait for all chunks to be delivered
+		Promise.all(promises).then(resolve).catch(reject);
 	});
-  }
-  
+}
+
 
 function getTracking(sessionId, sceneId) {
 	var parametros = {
@@ -893,7 +893,7 @@ $(document).ready(function () {
 		registertech_comfortable(techExp);
 		registercurrent_device(currentDevice);
 		registeronline_subscriptions(subscriptions);
-		
+
 		finishTracking('video.html');
 	});
 });
