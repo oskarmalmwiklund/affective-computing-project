@@ -25,6 +25,9 @@ const COMPONENT_RADIO_BUTTON = 4;
 const COMPONENT_CHECK_BOX = 5;
 
 const user = createUser();
+const abTest = window.myGlobalVariable;
+
+console.log(abTest);
 
 var list = [];
 var sceneId = 0;
