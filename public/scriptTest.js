@@ -27,8 +27,6 @@ const COMPONENT_CHECK_BOX = 5;
 const user = createUser();
 const abTest = window.myGlobalVariable;
 
-console.log(abTest);
-
 var list = [];
 var sceneId = 0;
 var eventCounter = 0;
