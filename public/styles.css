@@ -1213,6 +1213,12 @@ p#agree-terms {
     text-align: center;
 }
 
+#grading-scale {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 18px;
+}
+
 /* Styling form-control Class */
 .form-control {
     text-align: left;
