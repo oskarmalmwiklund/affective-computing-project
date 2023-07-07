@@ -27,7 +27,8 @@ const COMPONENT_CHECK_BOX = 5;
 const user = createUser();
 
 var abTest = window.myGlobalVariable === "B" ? window.myGlobalVariable : "A";
-var taskCompleted = false;
+// Check if the 'taskCompleted' key exists in the localStorage when the page loads
+var taskCompleted = localStorage.getItem('taskCompleted') === 'true';
 var list = [];
 var sceneId = 0;
 var eventCounter = 0;
@@ -854,9 +855,11 @@ function postAJAXDemographicData(parametros) {
 	}
 }
 
-function completeTask(){
-	taskCompleted = true;
-	console.log(taskCompleted);
+function completeTask() {
+    taskCompleted = true;
+    // Store the 'taskCompleted' value in the localStorage
+    localStorage.setItem('taskCompleted', taskCompleted);
+    console.log(taskCompleted);
 }
 
 function registerattractive(value) {postNumberDD(156, value);}function registerAB_test(value) {postStringDD(157, value);}
