@@ -46,7 +46,7 @@ var newPage = null;
 var elements = [];
 var emittingData = false;
 
-var idExperiment = 19;
+var idExperiment = 20;
 var urlBase = 'https://156.35.82.106'
 
 var url = urlBase + '/TrackerServer/restws/track';
@@ -853,7 +853,29 @@ function postAJAXDemographicData(parametros) {
 	}
 }
 
-function registeralone_or_together(value) { postStringDD(103, value); } function registereducation_level(value) { postStringDD(104, value); } function registerbirthdate(value) { postDateDD(105, value); } function registergender(value) { postStringDD(106, value); } function registercurrent_mood(value) { postStringDD(107, value); } function registercurrent_location(value) { postStringDD(108, value); } function registercountry_of_origin(value) { postStringDD(109, value); } function registercurrent_occupation(value) { postStringDD(110, value); } function registeronline_subscriptions(value) { postNumberDD(111, value); } function registertech_comfortable(value) { postNumberDD(112, value); } function registercurrent_device(value) { postStringDD(113, value); } function registeruse_confidenty(value) { postNumberDD(114, value); } function registerattractive(value) { postNumberDD(115, value); } function registerpleasing_screen_layout(value) { postNumberDD(116, value); } function registercomplex(value) { postNumberDD(117, value); } function registerappealed_visually(value) { postNumberDD(118, value); } function registerquick_learn_of_system(value) { postNumberDD(119, value); } function registercumbersome(value) { postNumberDD(120, value); } function registerneeded_help(value) { postNumberDD(121, value); } function registertoo_much_inconsistency(value) { postNumberDD(122, value); } function registersystem_ease(value) { postNumberDD(123, value); } function registeraesthically_appealing(value) { postNumberDD(124, value); } function registernice_graphic_images(value) { postNumberDD(125, value); } function registerneed_of_learning(value) { postNumberDD(126, value); } function registerwell_integrated(value) { postNumberDD(127, value); } function registerfrequency_of_use(value) { postNumberDD(128, value); }
+var checkVariableInterval = setInterval(function() {
+	if(window.myGlobalVariable) {
+	  abTest = window.myGlobalVariable;
+	  clearInterval(checkVariableInterval);
+	}
+  }, 100);
+  
+  // If after 5 seconds `window.myGlobalVariable` is not set, assign "A" to `abTest`
+  setTimeout(function() {
+	if(!abTest) {
+	  abTest = "A";
+	}
+  }, 5000);
+
+function registeralone_or_together(value) { postStringDD(103, value); } function registereducation_level(value) { postStringDD(104, value); } function registerbirthdate(value) { postDateDD(105, value); } 
+function registergender(value) { postStringDD(106, value); } function registercurrent_mood(value) { postStringDD(107, value); } function registercurrent_location(value) { postStringDD(108, value); } 
+function registercountry_of_origin(value) { postStringDD(109, value); } function registercurrent_occupation(value) { postStringDD(110, value); } function registeronline_subscriptions(value) { postNumberDD(111, value); } 
+function registertech_comfortable(value) { postNumberDD(112, value); } function registercurrent_device(value) { postStringDD(113, value); } function registeruse_confidenty(value) { postNumberDD(114, value); } 
+function registerattractive(value) { postNumberDD(115, value); } function registerpleasing_screen_layout(value) { postNumberDD(116, value); } function registercomplex(value) { postNumberDD(117, value); } 
+function registerappealed_visually(value) { postNumberDD(118, value); } function registerquick_learn_of_system(value) { postNumberDD(119, value); } function registercumbersome(value) { postNumberDD(120, value); } 
+function registerneeded_help(value) { postNumberDD(121, value); } function registertoo_much_inconsistency(value) { postNumberDD(122, value); } function registersystem_ease(value) { postNumberDD(123, value); } 
+function registeraesthically_appealing(value) { postNumberDD(124, value); } function registernice_graphic_images(value) { postNumberDD(125, value); } function registerneed_of_learning(value) { postNumberDD(126, value); } 
+function registerwell_integrated(value) { postNumberDD(127, value); } function registerfrequency_of_use(value) { postNumberDD(128, value); } function registerAB_test(value) {postStringDD(155, value);}
 
 $(document).ready(function () {
 	$('#startForm').on('submit', function (event) {
@@ -939,22 +961,9 @@ $(document).ready(function () {
 		registernice_graphic_images(niceImages);
 		registerappealed_visually(visuallyAppealing);
 		registerpleasing_screen_layout(pleasingLayout);
+		registerAB_test(abTest);
 
 		finishExperiment();
 		finishTracking('thank-you.html');
 	});
 });
-
-var checkVariableInterval = setInterval(function() {
-  if(window.myGlobalVariable) {
-    abTest = window.myGlobalVariable;
-    clearInterval(checkVariableInterval);
-  }
-}, 100);
-
-// If after 5 seconds `window.myGlobalVariable` is not set, assign "A" to `abTest`
-setTimeout(function() {
-  if(!abTest) {
-    abTest = "A";
-  }
-}, 5000);
