@@ -62,6 +62,7 @@ navigator.mediaDevices
   });
 
 */
+
 // opens video consent popup
 
 function openConsentPopup() {

@@ -1,0 +1,18 @@
+[
+    {
+        "o": "Dear Participant,",
+        "t": "Estimado participante,"
+    },
+    {
+        "o": "We are conducting an experiment in the field of affective computing to explore the connection between facial expressions and user experience during website navigation.",
+        "t": "Estamos realizando un experimento en el campo de la informática afectiva para explorar la conexión entre las expresiones faciales y la experiencia del usuario durante la navegación por el sitio web."
+    },
+    {
+        "o": "During the experiment, we will capture your facial expressions using a camera while you navigate through a website.",
+        "t": "Durante el experimento, capturaremos sus expresiones faciales con una cámara mientras navega por un sitio web."
+    },
+    {
+        "o": "Please note that the captured data will be used solely for the purpose of this experiment and will not be stored.",
+        "t": "Tenga en cuenta que los datos capturados se utilizarán únicamente para el propósito de este experimento y no se almacenarán."
+    }
+]

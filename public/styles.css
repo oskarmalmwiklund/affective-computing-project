@@ -1338,7 +1338,7 @@ button and Checkbox */
     flex: 1;
     display: inline-block;
     width: 500px;
-    height: 250px;
+    height: 50%;
     margin-right: 150px;
     align-self: flex-start;
     bottom: 20px;
@@ -1554,4 +1554,3 @@ button and Checkbox */
     font-family: Helvetica, sans-serif;
     color: rgb(66, 66, 66);
 }
-

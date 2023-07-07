@@ -10,9 +10,6 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRGBNS29B"></script>
 
-  <!-- Google translate -->
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -32,6 +29,9 @@
   <script src="config.js" type="module"></script>
   <script src="script.js"></script>
 
+  <!-- Cloud Localization library -->
+  <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+
   <script>
     window.onload = function () {
       startExperiment();
@@ -49,16 +49,14 @@
 
 <body class="explanation">
 
-  <div id="google_translate_element"></div>
-
   <div class="welcome">
-    <h1>Welcome to our experiment!</h1>
+    <h1 class="translate">Welcome to our experiment!</h1>
   </div>
   <div class="start-img-container">
     <div class="start-image">
       <img src="photos/usability.jpg" alt="Your Image">
     </div>
-    <div class="text-block">
+    <div class="text-block translate">
       <p>Dear Participant,</p>
       <p>
         We are conducting an experiment in the field of affective computing to explore the connection between facial
@@ -67,13 +65,18 @@
         solely for the purpose of this experiment and will not be stored.
       </p>
       <p>
-        You can change the language of the experiment in the top left corner.
+        <strong>Please note that the experiment is best done on a desktop or laptop computer</strong>
+      </p>
+      <p>
+        Note: You can change the language of the experiment here.
+        <!-- Language selection dropdown -->
+        <select class="cloudlocalization-selection"></select>
       </p>
       <button onclick="openPopup()" class="start-button">Begin</button>
     </div>
   </div>
   <div id="popup" class="popup">
-    <div class="video-consent">
+    <div class="video-consent translate">
       <h2>Allow camera</h2>
       <p>Once the experiment starts, you will be asked to allow the website to use your camera.
         We are conducting research that will make use of your camera while conducting the test.
@@ -89,7 +92,39 @@
   <script>
     $(window).on('load', function () {
       $('#loading').hide();
-    }) 
+    })
+
+    // Initialize Cloud Localization
+    cloudLocalization({
+      defaultLanguage: "en",
+      urlLanguageLocation: UrlLanguageLocation.none,
+      translatorProvider: TranslatorProvider.none,
+      translatorProviderKey: "",
+      logTranslationsFromProvider: false,
+      languages: [
+        {
+          code: "en",
+          displayName: "English"
+        },
+        {
+          code: "es",
+          displayName: "Spanish"
+        },
+        {
+          code: "fr",
+          displayName: "Français"
+        },
+        {
+          code: "fr-ca",
+          displayName: "Français (Canada)"
+        },
+        {
+          code: "ar",
+          displayName: "العربية",
+          direction: LanguageDirection.rtl
+        }
+      ]
+    });
   </script>
 </body>
 
