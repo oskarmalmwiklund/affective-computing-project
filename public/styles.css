@@ -1525,9 +1525,14 @@ button and Checkbox */
 #close-task-popup {
     padding: 8px 16px;
     background-color: rgb(24, 121, 55);
+    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#close-task-popup:hover {
+    background-color: #45a049;
 }
 
 .task-popup-close {

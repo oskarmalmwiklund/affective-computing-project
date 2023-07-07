@@ -25,8 +25,8 @@ const COMPONENT_RADIO_BUTTON = 4;
 const COMPONENT_CHECK_BOX = 5;
 
 const user = createUser();
-const abTest = window.myGlobalVariable;
 
+var abTest;
 var list = [];
 var sceneId = 0;
 var eventCounter = 0;
@@ -944,3 +944,17 @@ $(document).ready(function () {
 		finishTracking('thank-you.html');
 	});
 });
+
+var checkVariableInterval = setInterval(function() {
+  if(window.myGlobalVariable) {
+    abTest = window.myGlobalVariable;
+    clearInterval(checkVariableInterval);
+  }
+}, 100);
+
+// If after 5 seconds `window.myGlobalVariable` is not set, assign "A" to `abTest`
+setTimeout(function() {
+  if(!abTest) {
+    abTest = "A";
+  }
+}, 5000);
