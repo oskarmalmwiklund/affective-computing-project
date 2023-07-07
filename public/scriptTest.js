@@ -26,7 +26,8 @@ const COMPONENT_CHECK_BOX = 5;
 
 const user = createUser();
 
-var abTest;
+var abTest = window.myGlobalVariable === "B" ? window.myGlobalVariable : "A";
+var taskCompleted = false;
 var list = [];
 var sceneId = 0;
 var eventCounter = 0;
@@ -46,7 +47,7 @@ var newPage = null;
 var elements = [];
 var emittingData = false;
 
-var idExperiment = 20;
+var idExperiment = 21;
 var urlBase = 'https://156.35.82.106'
 
 var url = urlBase + '/TrackerServer/restws/track';
@@ -853,34 +854,25 @@ function postAJAXDemographicData(parametros) {
 	}
 }
 
-var checkVariableInterval = setInterval(function() {
-	if(window.myGlobalVariable) {
-	  abTest = window.myGlobalVariable;
-	  clearInterval(checkVariableInterval);
-	}
-  }, 100);
-  
-  // If after 5 seconds `window.myGlobalVariable` is not set, assign "A" to `abTest`
-  setTimeout(function() {
-	if(!abTest) {
-	  abTest = "A";
-	}
-  }, 5000);
+function completeTask(){
+	taskCompleted = true;
+	console.log(taskCompleted);
+}
 
-  function registercurrent_occupation(value) {postStringDD(129, value);}function registertech_comfortable(value) {postNumberDD(130, value);}
-  function registercurrent_device(value) {postStringDD(131, value);}function registerquick_learn_of_system(value) {postNumberDD(132, value);}
-  function registernice_graphic_images(value) {postNumberDD(133, value);}function registeralone_or_together(value) {postStringDD(134, value);}
-  function registercurrent_mood(value) {postStringDD(135, value);}function registeruse_confidenty(value) {postNumberDD(136, value);}
-  function registercumbersome(value) {postNumberDD(137, value);}function registerappealed_visually(value) {postNumberDD(138, value);}
-  function registerwell_integrated(value) {postNumberDD(139, value);}function registerfrequency_of_use(value) {postNumberDD(140, value);}
-  function registereducation_level(value) {postStringDD(141, value);}function registeronline_subscriptions(value) {postNumberDD(142, value);}
-  function registercountry_of_origin(value) {postStringDD(143, value);}function registerpleasing_screen_layout(value) {postNumberDD(144, value);}
-  function registercurrent_location(value) {postStringDD(145, value);}function registerneed_of_learning(value) {postNumberDD(146, value);}
-  function registeraesthically_appealing(value) {postNumberDD(147, value);}function registerbirthdate(value) {postDateDD(148, value);}
-  function registersystem_ease(value) {postNumberDD(149, value);}function registerattractive(value) {postNumberDD(150, value);}
-  function registergender(value) {postStringDD(151, value);}function registerneeded_help(value) {postNumberDD(152, value);}
-  function registertoo_much_inconsistency(value) {postNumberDD(153, value);}function registercomplex(value) {postNumberDD(154, value);}
-  function registerAB_test(value) {postStringDD(155, value);}
+function registerattractive(value) {postNumberDD(156, value);}function registerAB_test(value) {postStringDD(157, value);}
+function registertoo_much_inconsistency(value) {postNumberDD(158, value);}function registerwell_integrated(value) {postNumberDD(159, value);}
+function registergender(value) {postStringDD(160, value);}function registerfrequency_of_use(value) {postNumberDD(161, value);}
+function registeralone_or_together(value) {postStringDD(162, value);}function registersystem_ease(value) {postNumberDD(163, value);}
+function registertech_comfortable(value) {postNumberDD(164, value);}function registercurrent_device(value) {postStringDD(165, value);}
+function registerneed_of_learning(value) {postNumberDD(166, value);}function registereducation_level(value) {postStringDD(167, value);}
+function registercurrent_occupation(value) {postStringDD(168, value);}function registeronline_subscriptions(value) {postNumberDD(169, value);}
+function registerpleasing_screen_layout(value) {postNumberDD(170, value);}function registercomplex(value) {postNumberDD(171, value);}
+function registeraesthically_appealing(value) {postNumberDD(172, value);}function registercountry_of_origin(value) {postStringDD(173, value);}
+function registercurrent_location(value) {postStringDD(174, value);}function registernice_graphic_images(value) {postNumberDD(175, value);}
+function registerbirthdate(value) {postDateDD(176, value);}function registerneeded_help(value) {postNumberDD(177, value);}
+function registerappealed_visually(value) {postNumberDD(178, value);}function registerquick_learn_of_system(value) {postNumberDD(179, value);}
+function registeruse_confidenty(value) {postNumberDD(180, value);}function registercurrent_mood(value) {postStringDD(181, value);}
+function registercumbersome(value) {postNumberDD(182, value);}function registertask_completed(value) {postStringDD(183, value);}
 
 $(document).ready(function () {
 	$('#startForm').on('submit', function (event) {
@@ -967,6 +959,7 @@ $(document).ready(function () {
 		registerappealed_visually(visuallyAppealing);
 		registerpleasing_screen_layout(pleasingLayout);
 		registerAB_test(abTest);
+		registertask_completed(taskCompleted);
 
 		finishExperiment();
 		finishTracking('thank-you.html');
