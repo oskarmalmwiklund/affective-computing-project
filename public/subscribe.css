@@ -80,6 +80,10 @@ input[type="email"] {
     margin-top: 10px;
   }
 
+  .quitbox, .subscription-box-button:hover {
+    background-color: #45a049;
+  }
+
   
   .subscription-button:hover {
     background-color: #45a049;
@@ -136,6 +140,10 @@ input[type="email"] {
     margin-top: 10px;
     position: absolute;
     right: 100px;
+  }
+
+  #quit-button:hover{
+    background-color: rgb(201, 26, 26);
   }
 
   .popupQuit {
