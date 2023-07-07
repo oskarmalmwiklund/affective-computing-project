@@ -125,7 +125,7 @@ function deliverSnapshot(sceneId, canvas) {
 			}
 		}).always(function (jqXHR, textStatus) {
 			if (textStatus != "success") {
-				alert("ERROR: " + jqXHR.statusText);
+				console.log("ERROR: " + jqXHR.statusText);
 			}
 		});
 	}
@@ -623,7 +623,7 @@ function deliverChunk(chunk) {
 			}
 		}).always(function (jqXHR, textStatus) {
 			if (textStatus != "success") {
-				alert("ERROR: " + jqXHR.statusText);
+				console.log("ERROR: " + jqXHR.statusText);
 			}
 		});
 	}
