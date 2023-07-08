@@ -86,5 +86,12 @@
   {
     "o": "Please note that the experiment is best done on a desktop or laptop computer",
     "t": "Tenga en cuenta que el experimento se realiza mejor en una computadora de escritorio o portátil"
+  },
+  {
+    "o": "Begin",
+    "t": "Comenzar"
+  },
+  {
+    "o": "Note: You can change the language of the experiment here."
   }
 ]
