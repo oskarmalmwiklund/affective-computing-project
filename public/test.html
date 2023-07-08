@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Localization Example</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Cloud Localization library -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="translate">
+        <h1>Hello, World!</h1>
+        <p>Welcome to our website.</p>
+        <p>Please note that the experiment is best done on a desktop or laptop computer</p>
+        <p>We are conducting an experiment in the field of affective computing to explore the connection between facial</p>
+    </div>
+    <!-- Language selection dropdown -->
+    <select class="cloudlocalization-selection"></select>
+
+    <script>
+        // Initialize Cloud Localization
+        cloudLocalization({
+            defaultLanguage: "en",
+            urlLanguageLocation: UrlLanguageLocation.none,
+            translatorProvider: TranslatorProvider.none,
+            translatorProviderKey: "",
+            logTranslationsFromProvider: false,
+            languages: [
+                {
+                    code: "en",
+                    displayName: "English"
+                },
+                {
+                    code: "es",
+                    displayName: "Spanish"
+                },
+                {
+                    code: "fr",
+                    displayName: "Français"
+                },
+                {
+                    code: "fr-ca",
+                    displayName: "Français (Canada)"
+                },
+                {
+                    code: "ar",
+                    displayName: "العربية",
+                    direction: LanguageDirection.rtl
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
