@@ -859,7 +859,6 @@ function completeTask() {
     taskCompleted = true;
     // Store the 'taskCompleted' value in the localStorage
     localStorage.setItem('taskCompleted', taskCompleted);
-    console.log(taskCompleted);
 }
 
 function registerattractive(value) {postNumberDD(156, value);}function registerAB_test(value) {postStringDD(157, value);}

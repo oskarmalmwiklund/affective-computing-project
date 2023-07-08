@@ -75,9 +75,7 @@
   <div id="popup" class="popup">
     <div class="video-consent translate">
       <h2>Allow camera</h2>
-      <p>Once the experiment starts, you will be asked to allow the website to use your camera.
-        We are conducting research that will make use of your camera while conducting the test.
-      </p>
+      <p>Once the experiment starts, you will be asked to allow the website to use your camera. We are conducting research that will make use of your camera while conducting the test.</p>
       <img id="consent-img" width="100%" src="photos/camera-consent.png">
       <button id="start-camera" onclick="sendToPage('start.html')">OK</button>
       <button class="close-button" onclick="closePopup()">X</button>
@@ -90,39 +88,8 @@
     $(window).on('load', function () {
       $('#loading').hide();
     })
-
-    // Initialize Cloud Localization
-    cloudLocalization({
-      defaultLanguage: "en",
-      urlLanguageLocation: UrlLanguageLocation.none,
-      translatorProvider: TranslatorProvider.none,
-      translatorProviderKey: "",
-      logTranslationsFromProvider: false,
-      languages: [
-        {
-          code: "en",
-          displayName: "English"
-        },
-        {
-          code: "es",
-          displayName: "Spanish"
-        },
-        {
-          code: "fr",
-          displayName: "Français"
-        },
-        {
-          code: "fr-ca",
-          displayName: "Français (Canada)"
-        },
-        {
-          code: "ar",
-          displayName: "العربية",
-          direction: LanguageDirection.rtl
-        }
-      ]
-    });
   </script>
+  <script src="localization.js"></script>
 </body>
 
 </html>

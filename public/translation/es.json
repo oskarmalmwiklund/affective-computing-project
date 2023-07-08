@@ -1,11 +1,15 @@
 [
   {
-    "o": "Hello, World!",
-    "t": "¡Hola Mundo!"
+    "o": "Welcome to our experiment!",
+    "t": "¡Bienvenido a nuestro experimento!"
   },
   {
-    "o": "Welcome to our website.",
-    "t": "Bienvenido a nuestro sitio web."
+    "o": "Allow camera",
+    "t": "Permitir cámara"
+  },
+  {
+    "o": "Once the experiment starts, you will be asked to allow the website to use your camera. We are conducting research that will make use of your camera while conducting the test.",
+    "t": "Una vez que comience el experimento, se le pedirá que permita que el sitio web use su cámara. Estamos realizando una investigación que utilizará su cámara mientras realiza la prueba."
   },
   {
     "o": "Dear Participant,",
@@ -92,6 +96,7 @@
     "t": "Comenzar"
   },
   {
-    "o": "Note: You can change the language of the experiment here."
+    "o": "Note: You can change the language of the experiment here.",
+    "t": "Nota: Puedes cambiar el idioma del experimento aquí."
   }
 ]
