@@ -506,5 +506,64 @@
   {
     "o": "Finish the experiment",
     "t": "Terminar el experimento"
+  },
+  {
+    "o": "Stay flexible",
+    "t": "Mantén la flexibilidad"
+  },
+  {
+    "o": "Skip weeks with ease or schedule ahead if you like to plan.",
+    "t": "Sáltate semanas con facilidad o programa con anticipación si te gusta planificar."
+  },
+  {
+    "o": "Customize your menu",
+    "t": "Personaliza tu menú"
+  },
+  {
+    "o": "Swap proteins and sides for endless variety with 30+ weekly recipes.",
+    "t": "Cambia proteínas y acompañamientos para una variedad infinita con más de 30 recetas semanales."
+  },
+  {
+    "o": "Save money",
+    "t": "Ahorra dinero"
+  },
+  {
+    "o": "Perfect portions mean no excess food waste and no extra dollars spent.",
+    "t": "Porciones perfectas significan cero desperdicio de alimentos y ningún gasto adicional."
+  }, 
+  {
+    "o": "Get started",
+    "t": "Comienza"
+  },
+  {
+    "o": "Continue to purchase by subscribing now!",
+    "t": "¡Continúa tu compra suscribiéndote ahora!"
+  },
+  {
+    "o": "Enter your email",
+    "t": "Ingresa tu correo electrónico"
+  },
+  {
+    "o": "By submitting, you agree to receive marketing emails and our Terms and Privacy Policy. Unsubscribe at any time.",
+    "t": "Al enviar, aceptas recibir correos electrónicos de marketing y nuestros Términos y Política de privacidad. Puedes cancelar la suscripción en cualquier momento."
+  },
+  {
+    "o": "Congratulations!",
+    "t": "¡Felicitaciones!"
+  },
+  {
+    "o": "You completed your tasks.",
+    "t": "Has completado tus tareas."
+  },
+  {
+    "o": "Click here to finish the experiment.",
+    "t": "Haz clic aquí para finalizar el experimento."
+  },
+  {
+    "o": "Finish experiment",
+    "t": "Finalizar experimento"
   }
+  
+  
+
 ]
