@@ -13,6 +13,9 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <!-- Cloud Localization library -->
+  <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+
   <!-- Tracking script -->
   <script src="html2canvas.js"></script>
   <script src="scriptTest.js"></script>
@@ -38,7 +41,10 @@
   <title>FreshBox</title>
 </head>
 
-<body class="experiment">
+<body class="experiment translation">
+  <!-- Language select drop down -->
+  <select class="cloudlocalization-selection"></select>
+
   <video id="video"></video>
   <canvas id="canvas"></canvas>
 
@@ -79,8 +85,7 @@
       <div class="quit-box">
         <button class="close-button" onclick="closePopupQuit()">&times;</button>
         <h2>Are you sure you want to quit?</h2>
-        <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel
-          like you’re not able to complete the task, you can finish the experiment now.</p>
+        <p id="quit-experiment">By quitting the experiment, you have not successfully completed the task. If you feel like you’re not able to complete the task, you can finish the experiment now.</p>
           <button class="subscription-box-button" onclick="sendToPage('finish.html')">Finish the experiment</button>
       </div>
     </div>
@@ -208,6 +213,7 @@
   <!-- All other javaScript   -->
   <script src="config.js" type="module"></script>
   <script src="script.js"></script>
+  <script src="localization.js"></script>
 </body>
 
 </html>

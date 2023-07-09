@@ -15,6 +15,9 @@
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+        <!-- Cloud Localization library -->
+        <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
@@ -39,6 +42,9 @@
 <body>
     <video id="video"></video>
     <canvas id="canvas"></canvas>
+    
+    <!-- Language select drop down -->
+    <select class="cloudlocalization-selection"></select>
 
     <div id="video-container">
         <h1>Please watch the video until the end</h1>
@@ -75,6 +81,7 @@
     <!-- All other javaScript   -->
     <script src="config.js" type="module"></script>
     <script src="script.js"></script>
+    <script src="localization.js"></script>
 </body>
 
 </html>

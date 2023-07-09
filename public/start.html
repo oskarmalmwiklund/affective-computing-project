@@ -29,6 +29,9 @@
     <script src="config.js" type="module"></script>
     <script src="script.js"></script>
 
+    <!-- Cloud Localization library -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
+
     <script>
         window.onload = function () {
             startExperiment();
@@ -62,36 +65,30 @@
 
             <!-- Details -->
             <div class="form-control">
-                <label for="gender" id="label-gender">
-                    I identify as
-                </label>
+                <label for="gender" id="label-gender">I identify as</label>
 
                 <!-- Input Type Radio Button -->
                 <label for="gender-1">
-                    <input type="radio" id="radio-male" name="gender" value="male" required>Male</input>
+                    <input type="radio" id="radio-male" name="gender" value="male" required><span>Male</span></input>
                 </label>
                 <label for="gender-2">
-                    <input type="radio" id="radio-female" name="gender" value="female" required>Female</input>
+                    <input type="radio" id="radio-female" name="gender" value="female" required><span>Female</span></input>
                 </label>
                 <label for="gender-3">
-                    <input type="radio" id="radio-other" name="gender" value="other" required>Other</input>
+                    <input type="radio" id="radio-other" name="gender" value="other" required><span>Other</span></input>
                 </label>
                 </select>
             </div>
 
             <div class="form-control">
-                <label for="birth-date" id="label-birth-date">
-                    What is your birth date?
-                </label>
+                <label for="birth-date" id="label-birth-date">What is your birth date?</label>
 
                 <!-- Input Type date-->
                 <input type="date" id="birth-date" name="birth-date" required />
             </div>
 
             <div class="form-control">
-                <label for="country-of-origin" id="label-country-of-origin">
-                    Please select your country of origin
-                </label>
+                <label for="country-of-origin" id="label-country-of-origin">Please select your country of origin</label>
 
                 <!-- Input Type Text -->
                 <select name="country-of-origin" id="country-of-origin" required>
@@ -211,8 +208,7 @@
                     <option value="Kazakhstan">Kazakhstan</option>
                     <option value="Kenya">Kenya</option>
                     <option value="Kiribati">Kiribati</option>
-                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
-                    </option>
+                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
                     <option value="Korea, Republic of">Korea, Republic of</option>
                     <option value="Kuwait">Kuwait</option>
                     <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -226,8 +222,7 @@
                     <option value="Lithuania">Lithuania</option>
                     <option value="Luxembourg">Luxembourg</option>
                     <option value="Macao">Macao</option>
-                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic
-                        of</option>
+                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
                     <option value="Madagascar">Madagascar</option>
                     <option value="Malawi">Malawi</option>
                     <option value="Malaysia">Malaysia</option>
@@ -300,8 +295,7 @@
                     <option value="Solomon Islands">Solomon Islands</option>
                     <option value="Somalia">Somalia</option>
                     <option value="South Africa">South Africa</option>
-                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich
-                        Islands</option>
+                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
                     <option value="Spain">Spain</option>
                     <option value="Sri Lanka">Sri Lanka</option>
                     <option value="Sudan">Sudan</option>
@@ -347,9 +341,7 @@
             </div>
 
             <div class="form-control">
-                <label for="education-level" id="label-education-level">
-                    What is your highest level of education?
-                </label>
+                <label for="education-level" id="label-education-level">What is your highest level of education?</label>
 
                 <!-- Dropdown options -->
                 <select name="education" id="education-level" required>
@@ -365,177 +357,169 @@
             </div>
 
             <div class="form-control">
-                <label>
-                    What would best describe your current occupation?
-                </label>
-
+                <label>What would best describe your current occupation?</label>
+            
                 <!-- Input Type Radio Button -->
                 <label for="label-current-occupation-1">
-                    <input type="radio" id="label-current-occupation-1" name="current-occupation" value="employee"
-                        required>Employee</input>
+                    <input type="radio" id="label-current-occupation-1" name="current-occupation" value="employee" required>
+                    <span class="translate">Employee</span>
                 </label>
                 <label for="label-current-occupation-2">
-                    <input type="radio" id="label-current-occupation-2" name="current-occupation" value="intern"
-                        required>Intern</input>
+                    <input type="radio" id="label-current-occupation-2" name="current-occupation" value="intern" required>
+                    <span class="translate">Intern</span>
                 </label>
                 <label for="label-current-occupation-3">
-                    <input type="radio" id="label-current-occupation-3" name="current-occupation" value="student"
-                        required>Student</input>
+                    <input type="radio" id="label-current-occupation-3" name="current-occupation" value="student" required>
+                    <span class="translate">Student</span>
                 </label>
                 <label for="label-current-occupation-4">
-                    <input type="radio" id="label-current-occupation-4" name="current-occupation" value="self-employed"
-                        required>Self-employed</input>
+                    <input type="radio" id="label-current-occupation-4" name="current-occupation" value="self-employed" required>
+                    <span class="translate">Self-employed</span>
                 </label>
                 <label for="label-current-occupation-5">
-                    <input type="radio" id="label-current-occupation-5" name="current-occupation" value="other"
-                        required>Other</input>
+                    <input type="radio" id="label-current-occupation-5" name="current-occupation" value="other" required>
+                    <span class="translate">Other</span>
                 </label>
             </div>
 
             <div class="form-control">
-                <label>
-                    Where are you currently conducting the test?
-                </label>
-
+                <label>Where are you currently conducting the test?</label>
+            
                 <!-- Input Type Radio Button -->
                 <label for="current_location-1">
-                    <input type="radio" id="current_location-1" name="current_location" value="at home" required>At
-                    home</input>
+                    <input type="radio" id="current_location-1" name="current_location" value="at home" required>
+                    <span class="translate">At home</span>
                 </label>
                 <label for="current_location-2">
-                    <input type="radio" id="current_location-2" name="current_location" value="at work" required>At
-                    work</input>
+                    <input type="radio" id="current_location-2" name="current_location" value="at work" required>
+                    <span class="translate">At work</span>
                 </label>
                 <label for="current_location-3">
-                    <input type="radio" id="current_location-3" name="current_location" value="at school" required>At
-                    school</input>
+                    <input type="radio" id="current_location-3" name="current_location" value="at school" required>
+                    <span class="translate">At school</span>
                 </label>
                 <label for="current_location-4">
-                    <input type="radio" id="current_location-4" name="current_location" value="outside"
-                        required>Outside</input>
+                    <input type="radio" id="current_location-4" name="current_location" value="outside" required>
+                    <span class="translate">Outside</span>
                 </label>
             </div>
-
+            
             <div class="form-control">
-                <label>
-                    Are you alone or with others while conducting this test?
-                </label>
-
+                <label>Are you alone or with others while conducting this test?</label>
+            
                 <!-- Input Type Radio Button -->
-                <label for="setting">
-                    <input type="radio" id="setting-1" name="setting" value="alone" required>Alone</input>
+                <label for="setting-1">
+                    <input type="radio" id="setting-1" name="setting" value="alone" required>
+                    <span class="translate">Alone</span>
                 </label>
                 <label for="setting-2">
-                    <input type="radio" id="setting-2" name="setting" value="with family" required>With family</input>
+                    <input type="radio" id="setting-2" name="setting" value="with family" required>
+                    <span class="translate">With family</span>
                 </label>
                 <label for="setting-3">
-                    <input type="radio" id="setting-3" name="setting" value="with friends" required>With friends</input>
+                    <input type="radio" id="setting-3" name="setting" value="with friends" required>
+                    <span class="translate">With friends</span>
                 </label>
                 <label for="setting-4">
-                    <input type="radio" id="setting-4" name="setting" value="with colleagues" required>With
-                    colleagues</input>
+                    <input type="radio" id="setting-4" name="setting" value="with colleagues" required>
+                    <span class="translate">With colleagues</span>
                 </label>
             </div>
-
+            
             <div class="form-control">
-                <label>
-                    What would best describe your current mood?
-                </label>
-
+                <label>What would best describe your current mood?</label>
+            
                 <!-- Input Type Radio Button -->
                 <label for="current_mood-1">
-                    <input type="radio" id="current_mood-1" name="current_mood" value="happy" required>Happy</input>
+                    <input type="radio" id="current_mood-1" name="current_mood" value="happy" required>
+                    <span class="translate">Happy</span>
                 </label>
                 <label for="current_mood-2">
-                    <input type="radio" id="current_mood-2" name="current_mood" value="sad" required>Sad</input>
+                    <input type="radio" id="current_mood-2" name="current_mood" value="sad" required>
+                    <span class="translate">Sad</span>
                 </label>
                 <label for="current_mood-3">
-                    <input type="radio" id="current_mood-3" name="current_mood" value="stressed"
-                        required>Stressed</input>
+                    <input type="radio" id="current_mood-3" name="current_mood" value="stressed" required>
+                    <span class="translate">Stressed</span>
                 </label>
                 <label for="current_mood-4">
-                    <input type="radio" id="current_mood-4" name="current_mood" value="relaxed" required>Relaxed</input>
+                    <input type="radio" id="current_mood-4" name="current_mood" value="relaxed" required>
+                    <span class="translate">Relaxed</span>
                 </label>
                 <label for="current_mood-5">
-                    <input type="radio" id="current_mood-5" name="current_mood" value="neutral" required>Neutral</input>
+                    <input type="radio" id="current_mood-5" name="current_mood" value="neutral" required>
+                    <span class="translate">Neutral</span>
                 </label>
             </div>
-
+            
             <div class="form-control">
-                <label>
-                    How comfortable are you with using the internet and web services?
-                </label>
-
+                <label>How comfortable are you with using the internet and web services?</label>
+            
                 <!-- Input Type Radio Button -->
                 <label for="tech-comfortable-1">
-                    <input type="radio" id="tech-comfortable-1" name="tech-comfortable" value="5" required>Very
-                    comfortable</input>
+                    <input type="radio" id="tech-comfortable-1" name="tech-comfortable" value="5" required>
+                    <span class="translate">Very comfortable</span>
                 </label>
                 <label for="tech-comfortable-2">
-                    <input type="radio" id="tech-comfortable-2" name="tech-comfortable" value="4"
-                        required>Comfortable</input>
+                    <input type="radio" id="tech-comfortable-2" name="tech-comfortable" value="4" required>
+                    <span class="translate">Comfortable</span>
                 </label>
                 <label for="tech-comfortable-3">
-                    <input type="radio" id="tech-comfortable-3" name="tech-comfortable" value="3"
-                        required>Neutral</input>
+                    <input type="radio" id="tech-comfortable-3" name="tech-comfortable" value="3" required>
+                    <span class="translate">Neutral</span>
                 </label>
                 <label for="tech-comfortable-4">
-                    <input type="radio" id="tech-comfortable-4" name="tech-comfortable" value="2"
-                        required>Uncomfortable</input>
+                    <input type="radio" id="tech-comfortable-4" name="tech-comfortable" value="2" required>
+                    <span class="translate">Uncomfortable</span>
                 </label>
                 <label for="tech-comfortable-5">
-                    <input type="radio" id="tech-comfortable-5" name="tech-comfortable" value="1" required>Very
-                    uncomfortable</input>
+                    <input type="radio" id="tech-comfortable-5" name="tech-comfortable" value="1" required>
+                    <span class="translate">Very uncomfortable</span>
                 </label>
             </div>
-
+            
             <div class="form-control">
-                <label>
-                    What kind of device are you currently using?
-                </label>
-
+                <label>What kind of device are you currently using?</label>
+            
                 <!-- Input Type Radio Button -->
                 <label for="current-device-1">
-                    <input type="radio" id="current-device-1" name="current-device" value="computer"
-                        required>Computer</input>
+                    <input type="radio" id="current-device-1" name="current-device" value="computer" required>
+                    <span class="translate">Computer</span>
                 </label>
                 <label for="current-device-2">
-                    <input type="radio" id="current-device-2" name="current-device" value="phone" required>Phone</input>
+                    <input type="radio" id="current-device-2" name="current-device" value="phone" required>
+                    <span class="translate">Phone</span>
                 </label>
                 <label for="current-device-3">
-                    <input type="radio" id="current-device-3" name="current-device" value="tablet"
-                        required>Tablet</input>
+                    <input type="radio" id="current-device-3" name="current-device" value="tablet" required>
+                    <span class="translate">Tablet</span>
                 </label>
             </div>
 
             <div class="form-control">
-                <label>
-                    Approximately, how many online subscriptions do you have?
-                </label>
-
-                <!-- Input Type Radio Button -->
-                <label for="online_subscriptions-1">
-                    <input type="radio" id="online_subscriptions-1" name="online_subscriptions" value="1"
-                        required>0</input>
-                </label>
-                <label for="online_subscriptions-2">
-                    <input type="radio" id="online_subscriptions-2" name="online_subscriptions" value="2"
-                        required>1-5</input>
-                </label>
-                <label for="online_subscriptions-3">
-                    <input type="radio" id="online_subscriptions-3" name="online_subscriptions" value="3"
-                        required>6-10</input>
-                </label>
-                <label for="online_subscriptions-4">
-                    <input type="radio" id="online_subscriptions-4" name="online_subscriptions" value="4"
-                        required>11+</input>
+                <label>Approximately, how many online subscriptions do you have?</label>
+                
+                    <!-- Input Type Radio Button -->
+                    <label for="online_subscriptions-1">
+                        <input type="radio" id="online_subscriptions-1" name="online_subscriptions" value="1" required>
+                        <span class="translate">0</span>
+                    </label>
+                    <label for="online_subscriptions-2">
+                        <input type="radio" id="online_subscriptions-2" name="online_subscriptions" value="2" required>
+                        <span class="translate">1-5</span>
+                    </label>
+                    <label for="online_subscriptions-3">
+                        <input type="radio" id="online_subscriptions-3" name="online_subscriptions" value="3" required>
+                        <span class="translate">6-10</span>
+                    </label>
+                    <label for="online_subscriptions-4">
+                        <input type="radio" id="online_subscriptions-4" name="online_subscriptions" value="4" required>
+                        <span class="translate">11+</span></input>
                 </label>
             </div>
 
             <!-- Multi-line Text Input Control -->
-            <button type="submit" id="submit" value="submit">
-                Submit survey
-            </button>
+            <button type="submit" id="submit" value="submit">Submit survey</button>
         </form>
     </div>
     <div id="loading">
@@ -546,6 +530,7 @@
             $('#loading').hide();
         })
     </script>
+    <script src="localization.js"></script>
 </body>
 
 </html>

@@ -4,9 +4,12 @@
     <title>Thank you</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/704ff50790.js" crossorigin="anonymous"></script>
-    <!-- Google translate -->
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Cloud Localization library -->
+    <script src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js" crossorigin="anonymous"></script>
     <style>
         body {
             height: 0;
@@ -54,8 +57,8 @@
     </style>
 </head>
 
-<body>
-    <div id="google_translate_element"></div>
+<body class="translation">
+    <select class="cloudlocalization-selection"></select>
 
     <div class="thank-you">
         <h1>
@@ -89,6 +92,7 @@
         </button>
     </div>
     -->
+    <script src="localization.js"></script>
 </body>
 
 </html>
