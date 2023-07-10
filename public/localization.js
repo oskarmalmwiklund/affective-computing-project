@@ -15,7 +15,7 @@ cloudLocalization({
     },
     {
       code: "es",
-      displayName: "Spanish"
+      displayName: "Español"
     },
     {
       code: "fr",
@@ -23,7 +23,7 @@ cloudLocalization({
     },
     {
       code: "de",
-      displayName: "German"
+      displayName: "Deutsch"
     },
     {
       code: "el",
