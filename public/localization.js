@@ -18,17 +18,12 @@ cloudLocalization({
       displayName: "Spanish"
     },
     {
-      code: "fr",
-      displayName: "Français"
+      code: "de",
+      displayName: "Deutsch"
     },
     {
-      code: "fr-ca",
-      displayName: "Français (Canada)"
-    },
-    {
-      code: "ar",
-      displayName: "العربية",
-      direction: LanguageDirection.rtl
+      code: "el",
+      displayName: "Ελληνικά",
     }
   ]
 });
@@ -65,13 +60,12 @@ if (window.location.pathname === "/index.html") {
           displayName: "Français"
         },
         {
-          code: "fr-ca",
-          displayName: "Français (Canada)"
+          code: "de",
+          displayName: "Deutsch"
         },
         {
-          code: "ar",
-          displayName: "العربية",
-          direction: LanguageDirection.rtl
+          code: "el",
+          displayName: "Ελληνικά"
         }
       ]
     });
