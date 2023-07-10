@@ -544,6 +544,10 @@
     "t": "Ingresa tu correo electrónico"
   },
   {
+    "o": "Enter your name",
+    "t": "Introduzca su nombre"
+  },
+  {
     "o": "By submitting, you agree to receive marketing emails and our Terms and Privacy Policy. Unsubscribe at any time.",
     "t": "Al enviar, aceptas recibir correos electrónicos de marketing y nuestros Términos y Política de privacidad. Puedes cancelar la suscripción en cualquier momento."
   },
@@ -562,8 +566,209 @@
   {
     "o": "Finish experiment",
     "t": "Finalizar experimento"
+  },
+  {
+    "o": "You are finished.",
+    "t": "Estas terminada."
+  },
+  {
+    "o": "Thank you for participating in our experiment!",
+    "t": "¡Gracias por participar en nuestro experimento!"
+  },
+  {
+    "o": "Our recipes",
+    "t": "Nuestras recetas"
+  },
+  {
+    "o": "One-Pan Beef Enchiladas Verdes",
+    "t": "Enchiladas Verdes de Res en una Sartén"
+  },
+  {
+    "o": "with Mexican Cheese Blend & Hot Sauce Crema.",
+    "t": "con Mezcla de Queso Mexicano y Crema de Salsa Picante."
+  },
+  {
+    "o": "Chicken & Mushroom Flatbreads",
+    "t": "Pan Plano de Pollo y Champiñones"
+  },
+  {
+    "o": "with Gouda Cream Sauce & Parmesan",
+    "t": "con Salsa de Crema de Gouda y Parmesano"
+  },
+  {
+    "o": "Southwest Beef Cavatappi",
+    "t": "Cavatappi de Res del Suroeste"
+  },
+  {
+    "o": "with Green Pepper & Smoky Red Pepper Crema",
+    "t": "con Pimiento Verde y Crema de Pimiento Rojo Ahumado"
+  },
+  {
+    "o": "Moo Shu Pork Bowls",
+    "t": "Tazones de Cerdo Moo Shu"
+  },
+  {
+    "o": "with Cabbage, Scallions & Buttery Rice",
+    "t": "con Col, Cebolletas y Arroz con Mantequilla"
+  },
+  {
+    "o": "Firehouse Cheeseburgers",
+    "t": "Cheeseburgers de la Casa de Bomberos"
+  },
+  {
+    "o": "with Fried Onions, Garlic Potato Wedges & Creamy Ranch Sauce",
+    "t": "con Cebollas Fritas, Cuñas de Patata con Ajo y Salsa Ranchera Cremosa"
+  },
+  {
+    "o": "Lemon-Dill Chicken Sausage Couscous",
+    "t": "Cuscús de Salchicha de Pollo con Eneldo y Limón"
+  },
+  {
+    "o": "with Zucchini",
+    "t": "con Calabacín"
+  },
+  {
+    "o": "35 minutes",
+    "t": "35 minutos"
+  },
+  {
+    "o": "20 minutes",
+    "t": "20 minutos"
+  },
+  {
+    "o": "25 minutes",
+    "t": "25 minutos"
+  },
+  {
+    "o": "30 minutes",
+    "t": "30 minutos"
+  },
+  {
+    "o": "Citrusy Tex-Mex Pork Tenderloin",
+    "t": "Solomillo de Cerdo Tex-Mex Cítrico"
+  },
+  {
+    "o": "with Spiced Veggie Jumble & Lime Crema",
+    "t": "con Mezcla de Verduras Especiadas y Crema de Lima"
+  },
+  {
+    "o": "One-Pan Trattoria Tortelloni Bake",
+    "t": "Horneado de Tortelloni Trattoria en una Sartén"
+  },
+  {
+    "o": "with a Crispy Parmesan Panko Topping",
+    "t": "con Cobertura Crujiente de Panko con Parmesano"
+  },
+  {
+    "o": "I think that I would like to use this system frequently.",
+    "t": "Creo que me gustaría usar este sistema con frecuencia."
+  },
+  {
+    "o": "I found the system unnecessarily complex.",
+    "t": "Encontré el sistema innecesariamente complejo."
+  },
+  {
+    "o": "I thought the system was easy to use.",
+    "t": "Pensé que el sistema era fácil de usar."
+  },
+  {
+    "o": "I think that I would need the support of a technical person to be able to use this system.",
+    "t": "Creo que necesitaría el apoyo de una persona técnica para poder usar este sistema."
+  },
+  {
+    "o": "I found the various functions in this system were well integrated.",
+    "t": "Encontré que las diversas funciones de este sistema estaban bien integradas."
+  },
+  {
+    "o": "I thought there was too much inconsistency in this system.",
+    "t": "Pensé que había demasiada inconsistencia en este sistema."
+  },
+  {
+    "o": "I would imagine that most people would learn to use this system very quickly.",
+    "t": "Imagino que la mayoría de las personas aprenderían a usar este sistema muy rápidamente."
+  },
+  {
+    "o": "I found the system very cumbersome to use.",
+    "t": "Encontré el sistema muy engorroso para usar."
+  },
+  {
+    "o": "I felt very confident using the system.",
+    "t": "Me sentí muy seguro usando el sistema."
+  },
+  {
+    "o": "I needed to learn a lot of things before I could get going with this system.",
+    "t": "Necesitaba aprender muchas cosas antes de poder empezar con este sistema."
+  },
+  {
+    "o": "This website is attractive.",
+    "t": "Este sitio web es atractivo."
+  },
+  {
+    "o": "This website was aesthetically appealing.",
+    "t": "Este sitio web era estéticamente atractivo."
+  },
+  {
+    "o": "I liked the graphics and images used on this website.",
+    "t": "Me gustaron los gráficos e imágenes utilizados en este sitio web."
+  },
+  {
+    "o": "This website appealed to my visual senses.",
+    "t": "Este sitio web apeló a mis sentidosvisuales."
+  },
+  {
+    "o": "The screen layout of this shopping website was visually pleasing.",
+    "t": "El diseño de pantalla de este sitio web de compras fue visualmente agradable."
+  },
+  {
+    "o": "1. Pick a plan",
+    "t": "1. Elige un plan"
+  },
+  {
+    "o": "Whether cooking for yourself or your household, we have a flexible plan to match your lifestyle. Need to cancel, change meals, or skip a week? Not a problem.",
+    "t": "Ya sea que cocines para ti mismo o para tu hogar, tenemos un plan flexible que se adapta a tu estilo de vida. ¿Necesitas cancelar, cambiar comidas o saltarte una semana? No hay problema."
+  },
+  {
+    "o": "2. Get your delivery",
+    "t": "2. Recibe tu entrega"
+  },
+  {
+    "o": "Each week, you’ll open simple step-by-step recipes complete with nutritional information and fresh, pre-measured ingredients to get you whipping up delicious dinners in no time.",
+    "t": "Cada semana, abrirás recetas simples paso a paso completas con información nutricional e ingredientes frescos y premedidos para que prepares deliciosas cenas en poco tiempo."
+  },
+  {
+    "o": "3. Cook, eat, enjoy!",
+    "t": "3. ¡Cocina, come, disfruta!"
+  },
+  {
+    "o": "The old “what do you want to eat?” conversation is about to be banished from your life. Welcome to a world where dinner is always planned, simple, and delicious.",
+    "t": "La vieja conversación de '¿qué quieres comer?' está a punto de ser desterrada de tu vida. Bienvenido a un mundo donde la cena siempre está planeada, es simple y deliciosa."
+  },
+  {
+    "o": "4. Recycle your box and packaging",
+    "t": "4. Recicla tu caja y embalaje"
+  },
+  {
+    "o": "Simply fold your box and place it with your curbside recyclables or take it to your local recycling center. Explore the recycling and packaging page for more details.",
+    "t": "Simplemente dobla tu caja y colócala con tus reciclables en la acera o llévala a tu centro de reciclaje local. Explora la página de reciclaje y embalaje para más detalles."
+  },
+  {
+    "o": "Submit",
+    "t": "Entregar"
+  },
+  {
+    "o": "Submit survey",
+    "t": "Enviar Encuesta"
+  },
+  {
+    "o": "Start experiment",
+    "t": "Iniciar experimento"
+  },
+  {
+    "o": "Take the stress",
+    "t": "Elimine el estrés"
+  },
+  {
+    "o": "out of mealtime",
+    "t": "de la hora de comer"
   }
-  
-  
-
 ]
