@@ -18,6 +18,10 @@ cloudLocalization({
       displayName: "Spanish"
     },
     {
+      code: "fr",
+      displayName: "Français"
+    },
+    {
       code: "de",
       displayName: "Deutsch"
     },
