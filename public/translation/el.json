@@ -138,8 +138,663 @@
     {
         "o": "With colleagues",
         "t": "Με συναδέλφους"
-    }
-    
+    },
+    {
+        "o": "What would best describe your current mood?",
+        "t": "Ποια λέξη θα περιέγραφε καλύτερα την διάθεσή σας αυτή την στιγμή;"
+    },
+    {
+        "o": "Happy",
+        "t": "Χαρούμενος"
+    },
+    {
+        "o": "Sad",
+        "t": "Λυπημένος"
+    },
+    {
+        "o": "Stressed",
+        "t": "Αγχωμένος"
+    },
+    {
+        "o": "Relaxed",
+        "t": "Χαλαρός"
+    },
+    {
+        "o": "Neutral",
+        "t": "Ουδέτερος"
+    },
+    {
+        "o": "How comfortable are you with using the internet and web services?",
+        "t": "Πόσο άνετα νιώθετε χρησιμοποιώντας το διαδίκτυο και τις υπηρεσίες του ιστού;"
+    },
+    {
+        "o": "Very comfortable",
+        "t": "Πολύ άνετα"
+    },
+    {
+        "o": "Comfortable",
+        "t": "Άνετα"
+    },
+    {
+        "o": "Uncomfortable",
+        "t": "Ανασφαλής"
+    },
+    {
+        "o": "Very uncomfortable",
+        "t": "Πολύ ανασφαλής"
+    },
+    {
+        "o": "What kind of device are you currently using?",
+        "t": "Τι είδους συσκευή χρησιμοποιείτε αυτήν τη στιγμή;"
+    },
+    {
+        "o": "Computer",
+        "t": "Υπολογιστής"
+    },
+    {
+        "o": "Phone",
+        "t": "Τηλέφωνο"
+    },
+    {
+        "o": "Tablet",
+        "t": "Τάμπλετ"
+    },
+    {
+        "o": "Approximately, how many online subscriptions do you have?",
+        "t": "Περίπου πόσες online συνδρομές έχετε;"
+    },
+    {
+        "o": "0",
+        "t": "0"
+    },
+    {
+        "o": "1-5",
+        "t": "1-5"
+    },
+    {
+        "o": "6-10",
+        "t": "6-10"
+    },
+    {
+        "o": "11+",
+        "t": "11+"
+    },
+    {
+        "o": "1 = Don't agree at all",
+        "t": "1 = Δε συμφωνώ καθόλου"
+    },
+    {
+        "o": "3 = Neutral",
+        "t": "3 = Ουδέτερος"
+    },
+    {
+        "o": "5 = Completely agree",
+        "t": "5 = Συμφωνώ απολύτως"
+    },
+    {
+        "o": "What is your birth date?",
+        "t": "Ποια είναι η ημερομηνία γέννησής σας;"
+    },
+    {
+        "o": "Home",
+        "t": "Αρχική"
+    },
+    {
+        "o": "Our Plans",
+        "t": "Τα πλάνα μας"
+    },
+    {
+        "o": "How It Works",
+        "t": "Πώς λειτουργεί"
+    },
+    {
+        "o": "Our Menus",
+        "t": "Το μενού μας"
+    },
+    {
+        "o": "Contact",
+        "t": "Επικοινωνία"
+    },
+    {
+        "o": "Your task is to try and find how to purchase the service.",
+        "t": "Η εργασία σας είναι να προσπαθήσετε να βρείτε πώς να αγοράσετε την υπηρεσία."
+    },
+    {
+        "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
+        "t": "Αν δεν μπορείτε να ολοκληρώσετε την εργασία, μπορείτε να εγκαταλείψετε το πείραμα κάνοντας κλικ στο κουμπί εξόδου στην πάνω δεξιά γωνία."
+    },
+    {
+        "o": "Are you sure you want to quit?",
+        "t": "Είστε σίγουροι ότι θέλετε να αποχωρήσετε;"
+    },
+    {
+        "o": "By quitting the experiment, you have not successfully completed the task. If you feel like you’re not able to complete the task, you can finish the experiment now.",
+        "t": "Αποχωρώντας από το πείραμα, δεν έχετε ολοκληρώσει με επιτυχία την εργασία. Αν νιώθετε ότι δεν μπορείτε να ολοκληρώσετε την εργασία, μπορείτε να τερματίσετε το πείραμα τώρα."
+    },
+    {
+        "o": "Subscribe to Our Newsletter",
+        "t": "Εγγραφείτε στο ενημερωτικό μας δελτίο"
+    },
+    {
+        "o": "Receive the latest recipes by subscribing now!",
+        "t": "Λάβετε τις πιο πρόσφατες συνταγές εγγραφόμενοι τώρα!"
+    },
+    {
+        "o": "Take the stress out of mealtime",
+        "t": "Απαλλαγείτε από το άγχος του φαγητού"
+    },
+    {
+        "o": "No skimpin’ on the chicken!",
+        "t": "Χωρίς περιορισμούς στο κοτόπουλο!"
+    },
+    {
+        "o": "Or steak, or fish, or plant protein.",
+        "t": "Ή μπριζόλα, ή ψάρι, ή φυτική πρωτεΐνη."
+    },
+    {
+        "o": "No commitment whatsoever",
+        "t": "Χωρίς καμία υποχρέωση"
+    },
+    {
+        "o": "Skipping weeks or cancelling is super easy.",
+        "t": "Η παράλειψη εβδομάδων ή η ακύρωση είναι πολύ εύκολη."
+    },
+    {
+        "o": "The most 5-star reviews",
+        "t": "Με τις περισσότερες κριτικές 5 αστέρων"
+    },
+    {
+        "o": "Our huge recipe selection wows week after week.",
+        "t": "Η τεράστια επιλογή συνταγών μας εντυπωσιάζει."
+    },
+    {
+        "o": "Fresh and affordable",
+        "t": "Φρέσκο και οικονομικά προσιτό"
+    },
+    {
+        "o":"Chef-created deliciousness from $7.49 per meal.",
+        "t": "Γεύσεις που δημιουργήθηκαν από σεφ από $7.49 ανά γεύμα."
+    },
+    {
+        "o": "Over 30+ fresh recipes every week",
+        "t": "Πάνω από 30+ φρέσκες συνταγές κάθε εβδομάδα"
+    },
+    {
+        "o": "MEAT & VEGGIES",
+        "t": "ΚΡΕΑΣ & ΛΑΧΑΝΙΚΑ"
+    },
+    {
+        "o": "VEGGIES",
+        "t": "ΛΑΧΑΝΙΚΑ"
+    },
+    {
+        "o": "FAMILY FRIENDLY",
+        "t": "ΟΙΚΟΓΕΝΕΙΑΚΟ"
+    },
+    {
+        "o": "FIT & WHOLESOME",
+        "t": "ΤΑΙΡΙΑΣΤΟ & ΥΓΙΕΙΝΟ"
+    },
+    {
+        "o": "QUICK & EASY",
+        "t": "ΓΡΗΓΟΡΟ & ΕΥΚΟΛΟ"
+    },
+    {
+        "o": "PESCATARIAN",
+        "t": "ΨΑΡΟΤΡΟΦΙΚΟ"
+    },
+    {
+        "o": "What’s inside each box?",
+        "t": "Τι υπάρχει μέσα σε κάθε κουτί;"
+    },
+    {
+        "o": "Easy-to-follow recipes with clear nutritional info",
+        "t": "Εύκολες συνταγές με σαφείς πληροφορίες διατροφής"
+    },
+    {
+        "o": "High-quality ingredients sourced straight from the farm",
+        "t": "Υλικά υψηλής ποιότητας που προέρχονται κατευθείαν από το αγρόκτημα"
+    },
+    {
+        "o": "Convenient meal kits that fit perfectly in the fridge",
+        "t": "Πρακτικά κιτ γευμάτων που ταιριάζουν τέλεια στο ψυγείο"
+    },
+    {
+        "o": "A fun cooking experience that makes you feel unstoppable",
+        "t": "Μια διασκεδαστική εμπειρία μαγειρέματος που σας κάνει να αισθάνεστε ασταμάτητοι"
+    },
+    {
+        "o": "Innovative packaging designed to reduce waste",
+        "t": "Καινοτόμα συσκευασία που σχεδιάστηκε για τη μείωση των αποβλήτων"
+    },
+    {
+        "o": "View Our Plans",
+        "t": "Δείτε τα σχέδιά μας"
+    },
+    {
+        "o": "Take the stress out of mealtime",
+        "t": "Απαλλαγείτε από το άγχος του φαγητού"
+    },
+    {
+        "o": "Quit",
+        "t": "Εγκαταλείπω"
+    },
+    {
+        "o": "Subscribe",
+        "t": "Εγγραφή"
+    },
+    {
+        "o": "About Us",
+        "t": "Σχετικά με εμάς"
+    },
+    {
+        "o": "About Us",
+        "t": "Σχετικά με εμάς"
+    },
+    {
+        "o": "How It Works",
+        "t": "Πώς λειτουργεί"
+    },
+    {
+        "o": "Recipes",
+        "t": "Συνταγές"
+    },
+    {
+        "o": "Meal Plans",
+        "t": "Προγράμματα γευμάτων"
+    },
+    {
+        "o": "Our Company",
+        "t": "Η εταιρεία μας"
+    },
+    {
+        "o": "Careers",
+        "t": "Σταδιοδρομία"
+    },
+    {
+        "o": "Blog",
+        "t": "Ιστολόγιο"
+    },
+    {
+        "o": "Press",
+        "t": "Τύπος"
+    },
+    {
+        "o": "Contact",
+        "t": "Επικοινωνία"
+    },
+    {
+        "o": "Customer Support",
+        "t": "Υποστήριξη πελατών"
+    },
+    {
+        "o": "FAQ",
+        "t": "Συχνές Ερωτήσεις"
+    },
+    {
+        "o": "Contact Us",
+        "t": "Επικοινωνήστε μαζί μας"
+    },
+    {
+        "o": "Payment Methods",
+        "t": "Τρόποι Πληρωμής"
+    },
+    {
+        "o": "Credit Cards",
+        "t": "Πιστωτικές Κάρτες"
+    },
+    {
+        "o": "Debit Cards",
+        "t": "Χρεωστικές Κάρτες"
+    },
+    {
+        "o": "PayPal",
+        "t": "PayPal"
+    },
+    {
+        "o": "1. Choose your preferences",
+        "t": "1. Επιλέξτε τις προτιμήσεις σας"
+    },
+    {
+        "o": "Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes each week!",
+        "t": "Οι προτιμήσεις σας μας βοηθούν να σας εμφανίσουμε πρώτα τις πιο σχετικές συνταγές. Θα έχετε ακόμα πρόσβαση σε όλες τις συνταγές κάθε εβδομάδα!"
+    },
+    {
+        "o": "Veggie",
+        "t": "Χορτοφαγικό"
+    },
+    {
+        "o": "Meat & Veggie",
+        "t": "Κρέας και Χορτοφαγικό"
+    },
+    {
+        "o": "Pescatarian",
+        "t": "Ψαροτροφία"
+    },
+    {
+        "o": "Fit & Wholesome",
+        "t": "Γευστικό και Υγιεινό"
+    },
+    {
+        "o": "Quick & Easy",
+        "t": "Γρήγορο και Εύκολο"
+    },
+    {
+        "o": "Family Friendly",
+        "t": "Φιλικό προς την Οικογένεια"
+    },
+    {
+        "o": "Continue",
+        "t": "Συνέχεια"
+    },
+    {
+        "o": "2. Customize your plan size",
+        "t": "2. Προσαρμόστε το μέγεθος του σχεδίου σας"
+    },
+    {
+        "o": "Number of people:",
+        "t": "Αριθμός ατόμων:"
+    },
+    {
+        "o": "Meals per week:",
+        "t": "Γεύματα ανά εβδομάδα:"
+    },
+    {
+        "o": "Total Price: $",
+        "t": "Συνολική Τιμή: $"
+    },
+    {
+        "o": "Select a plan",
+        "t": "Επιλέξτε ένα σχέδιο"
+    },
+    {
+        "o": "Finish the experiment",
+        "t": "Ολοκλήρωση του πειράματος"
+    },
+    {
+        "o": "Stay flexible",
+        "t": "Διατηρήστε την ευελιξία"
+    },
+    {
+        "o": "Skip weeks with ease or schedule ahead if you like to plan.",
+        "t": "Παραλείψτε εβδομάδες με ευκολία ή προγραμματίστε εκ των προτέρων αν σας αρέσει να σχεδιάζετε."
+    },
+    {
+        "o": "Customize your menu",
+        "t": "Προσαρμόστε το μενού σας"
+    },
+    {
+        "o": "Swap proteins and sides for endless variety with 30+ weekly recipes.",
+        "t": "Ανταλλάξτε πρωτεΐνες και παρασκευές για ατελείωτη ποικιλία με 30+ εβδομαδιαίες συνταγές."
+    },
+    {
+        "o": "Save money",
+        "t": "Εξοικονομήστε χρήματα"
+    },
+    {
+        "o": "Perfect portions mean no excess food waste and no extra dollars spent.",
+        "t": "Τέλειες μερίδες σημαίνουν μηδέν υπερβολικά απορρίμματα τροφίμων και καμία επιπλέον δαπάνη."
+    },
+    {
+        "o": "Get started",
+        "t": "Ξεκίνα"
+    },
+    {
+        "o": "Continue to purchase by subscribing now!",
+        "t": "Συνεχίστε την αγορά εγγραφόμενοι τώρα!"
+    },
+    {
+        "o": "Enter your email",
+        "t": "Εισαγάγετε το email σας"
+    },
+    {
+        "o": "Enter your name",
+        "t": "Εισαγάγετε το όνομά σας"
+    },
+    {
+        "o": "By submitting, you agree to receive marketing emails and our Terms and Privacy Policy. Unsubscribe at any time.",
+        "t": "Υποβάλλοντας, συμφωνείτε να λαμβάνετε μάρκετινγκ emails και τους Όρους και την Πολιτική Απορρήτου μας. Απεγγραφή ανά πάσα στιγμή."
+    },
+    {
+        "o": "Congratulations!",
+        "t": "Συγχαρητήρια!"
+    },
+    {
+        "o": "You completed your tasks.",
+        "t": "Ολοκληρώσατε τις εργασίες σας."
+    },
+    {
+        "o": "Click here to finish the experiment.",
+        "t": "Κάντε κλικ εδώ για να ολοκληρώσετε το πείραμα."
+    },
+    {
+        "o": "Finish experiment",
+        "t": "Ολοκλήρωση πειράματος"
+    },
+    {
+        "o": "You are finished.",
+        "t": "Ολοκληρώσατε."
+    },
+    {
+        "o": "Thank you for participating in our experiment!",
+        "t": "Σας ευχαριστούμε που συμμετείχατε στο πείραμά μας!"
+    },
+    {
+        "o": "Our recipes",
+        "t": "Οι συνταγές μας"
+    },
+    {
+        "o": "One-Pan Beef Enchiladas Verdes",
+        "t": "Μονόχνοτες Πίτες Με Μοσχάρι και Πράσινη Σάλτσα"
+    },
+    {
+        "o": "with Mexican Cheese Blend & Hot Sauce Crema.",
+        "t": "με Μείγμα Μεξικανικού Τυριού και Κρέμα Καυτερής Σάλτσας."
+    },
+    {
+        "o": "Chicken & Mushroom Flatbreads",
+        "t": "Πίτες με Κοτόπουλο και Μανιτάρια"
+    },
+    {
+        "o": "with Gouda Cream Sauce & Parmesan",
+        "t": "με Σάλτσα Κρέμας Γκούντα και Παρμεζάνα"
+    },
+    {
+        "o": "Southwest Beef Cavatappi",
+        "t": "Καβατάπι με Μοσχάρι της Νοτιοδυτικής Πολιτείας"
+    },
+    {
+        "o": "with Green Pepper & Smoky Red Pepper Crema",
+        "t": "με Πράσινη Πιπεριά και Κρέμα Καπνιστής Κόκκινης Πιπεριάς"
+    },
+    {
+        "o": "Moo Shu Pork Bowls",
+        "t": "Μπολ με Χοιρινό Moo Shu"
+    },
+    {
+        "o": "with Cabbage, Scallions & Buttery Rice",
+        "t": "με Λάχανο, Φρέσκα Κρεμμύδια και Ρύζι με Βούτυρο"
+    },
+    {
+        "o": "Firehouse Cheeseburgers",
+        "t": "Cheeseburger της Πυροσβεστικής"
+    },
+    {
+        "o": "with Fried Onions, Garlic Potato Wedges & Creamy Ranch Sauce",
+        "t": "με Τηγανητά Κρεμμύδια, Τηγανιτές Πατάτες με Σκόρδο και Κρεμώδη Σάλτσα Ranch"
+    },
+    {
+        "o": "Lemon-Dill Chicken Sausage Couscous",
+        "t": "Κοτόπουλο με Λεμόνι, Άνηθο και Κουσκούς"
+    },
+    {
+        "o": "with Zucchini",
+        "t": "με Κολοκυθάκι"
+    },
+    {
+        "o": "35 minutes",
+        "t": "35 λεπτά"
+    },
+    {
+        "o": "20 minutes",
+        "t": "20 λεπτά"
+    },
+    {
+        "o": "25 minutes",
+        "t": "25 λεπτά"
+    },
+    {
+        "o": "30 minutes",
+        "t": "30 λεπτά"
+    },
+    {
+        "o": "Citrusy Tex-Mex Pork Tenderloin",
+        "t": "Χοιρινό Σολομός Tex-Mex με Κιτρούς"
+    },
+    {
+        "o": "with Spiced Veggie Jumble & Lime Crema",
+        "t": "με Πιπεράτο Μείγμα Λαχανικών και Κρέμα Λάιμ"
+    },
+    {
+        "o": "One-Pan Trattoria Tortelloni Bake",
+        "t": "Ψήσιμο Τορτελόνι Τρατορίας σε Μία Κατσαρόλα"
+    },
+    {
+        "o": "with a Crispy Parmesan Panko Topping",
+        "t": "με Χροντοψημένη Πάνκο Παρμεζάνα"
+    },
+    {
+        "o": "I think that I would like to use this system frequently.",
+        "t": "Νομίζω ότι θα ήθελα να χρησιμοποιώ αυτό το σύστημα συχνά."
+    },
+    {
+        "o": "I found the system unnecessarily complex.",
+        "t": "Βρήκα το σύστημα περιττά πολύπλοκο."
+    },
+    {
+        "o": "I thought the system was easy to use.",
+        "t": "Νόμιζα ότι το σύστημα ήταν εύκολο στη χρήση."
+    },
+    {
+        "o": "I think that I would need the support of a technical person to be able to use this system.",
+        "t": "Νομίζω ότι θα χρειαζόμουν την υποστήριξη ενός τεχνικού προσώπου για να μπορέσω να χρησιμοποιήσω αυτό το σύστημα."
+    },
+    {
+        "o": "I found the various functions in this system were well integrated.",
+        "t": "Βρήκα ότι οι διάφορες λειτουργίες σε αυτό το σύστημα είχαν ενσωματωθεί καλά."
+    },
+    {
+        "o": "I thought there was too much inconsistency in this system.",
+        "t": "Νόμιζα ότι υπήρχε υπερβολική έλλειψη συνέπειας σε αυτό το σύστημα."
+    },
+    {
+        "o": "I would imagine that most people would learn to use this system very quickly.",
+        "t": "Φαντάζομαι ότι οι περισσότεροι άνθρωποι θα μάθαιναν να χρησιμοποιούν αυτό το σύστημα πολύ γρήγορα."
+    },
+    {
+        "o": "I found the system very cumbersome to use.",
+        "t": "Βρήκα το σύστημα πολύ δυσκίνητο για να το χρησιμοποιήσω."
+    },
+    {
+        "o": "I felt very confident using the system.",
+        "t": "Ένιωσα πολύ σίγουρος χρησιμοποιώντας το σύστημα."
+    },
+    {
+        "o": "I needed to learn a lot of things before I could get going with this system.",
+        "t": "Χρειάστηκα να μάθω πολλά πράγματα πριν μπορέσω να ξεκινήσω με αυτό το σύστημα."
+    },
+    {
+        "o": "This website is attractive.",
+        "t": "Αυτή η ιστοσελίδα είναι ελκυστική."
+    },
+    {
+        "o": "This website was aesthetically appealing.",
+        "t": "Αυτή η ιστοσελίδα ήταν αισθητικά ελκυστική."
+    },
+    {
+        "o": "I liked the graphics and images used on this website.",
+        "t": "Μου άρεσαν οι γραφικές παραστάσεις και οι εικόνες που χρησιμοποιήθηκαν σε αυτήν την ιστοσελίδα."
+    },
+    {
+        "o": "This website appealed to my visual senses.",
+        "t": "Αυτή η ιστοσελίδα ανταποκρίνεται στις οπτικές αισθήσεις μου."
+    },
+    {
+        "o": "The screen layout of this shopping website was visually pleasing.",
+        "t": "Η διάταξη της οθόνης αυτού του ιστότοπου αγορών ήταν οπτικά ευχάριστη."
+    },
+    {
+        "o": "1. Pick a plan",
+        "t": "1. Επιλέξτε ένα πλάνο"
+    },
+    {
+        "o": "Whether cooking for yourself or your household, we have a flexible plan to match your lifestyle. Need to cancel, change meals, or skip a week? Not a problem.",
+        "t": "Είτε μαγειρεύετε για εσάς είτε για το νοικοκυριό σας, έχουμε ένα ευέλικτο πλάνο που ταιριάζει στον τρόπο ζωής σας. Χρειάζεται να ακυρώσετε, να αλλάξετε γεύματα ή να παραλείψετε μια εβδομάδα; Δεν υπάρχει πρόβλημα."
+    },
+    {
+        "o": "2. Get your delivery",
+        "t": "2. Παραλάβετε την παραγγελία σας"
+    },
+    {
+        "o": "Each week, you’ll open simple step-by-step recipes complete with nutritional information and fresh, pre-measured ingredients to get you whipping up delicious dinners in no time.",
+        "t": "Κάθε εβδομάδα, θα ανοίγετε απλές συνταγές βήμα προς βήμα πλήρεις με διατροφικές πληροφορίες και φρέσκα, προ-μετρημένα υλικά για να ετοιμάσετε γρήγορα και εύκολα νόστιμα δείπνα."
+    },
+    {
+        "o": "3. Cook, eat, enjoy!",
+        "t": "3. Μαγειρέψτε, φάτε, απολαύστε!"
+    },
+    {
+        "o": "The old “what do you want to eat?” conversation is about to be banished from your life. Welcome to a world where dinner is always planned, simple, and delicious.",
+        "t": "Η παλιά συζήτηση “Τι θες να φας;” πρόκειται να αποβληθεί από τη ζωή σας. Καλώς ήρθατε σε έναν κόσμο όπου η δείπνο είναι πάντα προγραμματισμένο, απλό και νόστιμο."
+    },
+    {
+        "o": "4. Recycle your box and packaging",
+        "t": "4. Ανακυκλώστε το κουτί και τη συσκευασία σας"
+    },
+    {
+        "o": "Simply fold your box and place it with your curbside recyclables or take it to your local recycling center. Explore the recycling and packaging page for more details.",
+        "t": "Απλώς διπλώστε το κουτί σας και τοποθετήστε το με τα υλικά ανακύκλωσης στην πλευρική περιοχή ή πάρτε το στον τοπικό σας κέντρο ανακύκλωσης. Εξερευνήστε τη σελίδα ανακύκλωσης και συσκευασίας για περισσότερες λεπτομέρειες."
+    },
+    {
+        "o": "Submit",
+        "t": "Υποβολή"
+    },
+    {
+        "o": "Submit survey",
+        "t": "Υποβολή έρευνας"
+    },
+    {
+        "o": "Start experiment",
+        "t": "Έναρξη πειράματος"
+    },
+    {
+        "o": "Simplify your",
+        "t": "Απλοποιήστε το"
+    },
+    {
+        "o": "family mealtime",
+        "t": "οικογενειακός χρόνος γεύματος"
+    },
+    {
+        "o": "Note: We will not collect your email, and you will not purchase anything. This is just a part of the experiment.",
+        "t": "Σημείωση: Δεν θα συλλέξουμε το ηλεκτρονικό σας ταχυδρομείο, και δεν θα αγοράσετε τίποτα. Αυτό είναι απλώς μέρος του πειράματος."
+    },
+    {
+        "o": "We will not collect your email",
+        "t": "Δεν θα συλλέξουμε το ηλεκτρονικό σας ταχυδρομείο"
+    },
+    {
+        "o": "Your task",
+        "t": "Η εργασία σας"
+    },
+    {
+        "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
+        "t": "Εάν δεν μπορείτε να ολοκληρώσετε την εργασία, μπορείτε να αποχωρήσετε από το πείραμα κάνοντας κλικ στο κουμπί αποχώρησης στην επάνω δεξιά γωνία."
+    },
+    {
+        "o": "I understand",
+        "t": "Καταλαβαίνω"
+    }   
 ]    
     
     
