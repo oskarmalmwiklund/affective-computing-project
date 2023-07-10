@@ -27,7 +27,7 @@ cloudLocalization({
     },
     {
       code: "el",
-      displayName: "Ελληνικά",
+      displayName: "Ελληνικά"
     }
   ]
 });
