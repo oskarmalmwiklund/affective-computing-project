@@ -573,7 +573,7 @@
   },
   {
     "o": "You are finished.",
-    "t": "Estas terminada."
+    "t": "¡Has terminado!"
   },
   {
     "o": "Thank you for participating in our experiment!",
@@ -717,7 +717,7 @@
   },
   {
     "o": "This website appealed to my visual senses.",
-    "t": "Este sitio web apeló a mis sentidosvisuales."
+    "t": "Este sitio web resulta visualmente agradable."
   },
   {
     "o": "The screen layout of this shopping website was visually pleasing.",
@@ -782,5 +782,17 @@
   {
     "o": "We will not collect your email",
     "t": "No recopilaremos su correo electrónico"
+  },
+  {
+    "o": "Your task",
+    "t": "Tu tarea"
+  },
+  {
+    "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
+    "t": "Si no puede completar la tarea, puede salir del experimento haciendo clic en el botón Salir en la esquina superior derecha."
+  },
+  {
+    "o": "I understand",
+    "t": "Entiendo"
   }
 ]
