@@ -770,5 +770,13 @@
   {
     "o": "out of mealtime",
     "t": "de la hora de comer"
+  },
+  {
+    "o": "Note: We will not collect your email, and you will not purchase anything. This is just a part of the experiment.",
+    "t": "Nota: No recopilaremos su correo electrónico y no comprará nada. Esto es solo una parte del experimento."
+  },
+  {
+    "o": "We will not collect your email",
+    "t": "No recopilaremos su correo electrónico"
   }
 ]
