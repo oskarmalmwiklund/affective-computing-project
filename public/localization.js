@@ -23,7 +23,7 @@ cloudLocalization({
     },
     {
       code: "de",
-      displayName: "Deutsch"
+      displayName: "German"
     },
     {
       code: "el",
