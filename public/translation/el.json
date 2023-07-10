@@ -1,0 +1,145 @@
+[  
+    {
+        "o": "Dear Participant,",
+        "t": "Αγαπητέ συμμετέχοντα,"
+    },
+    {
+        "o": "Welcome to our experiment!",
+        "t": "Καλώς ήρθατε στο πείραμά μας!"
+    },
+    {
+        "o": "Allow camera",
+        "t": "Να επιτραπεί η χρήση της κάμερας"
+    },
+    {
+        "o": "Once the experiment starts, you will be asked to allow the website to use your camera. We are conducting research that will make use of your camera while conducting the test.",
+        "t": "Μόλις ξεκινήσει το πείραμα, θα σας ζητηθεί να επιτρέψετε στον ιστότοπο να χρησιμοποιήσει την κάμερά σας. Πραγματοποιούμε έρευνα που θα χρησιμοποιήσει την κάμερά σας κατά τη διάρκεια της δοκιμής."
+    },
+    {
+        "o": "We are conducting an experiment in the field of affective computing to explore the connection between facial expressions and user experience during website navigation. During the experiment, we will capture your facial expressions using a camera while you navigate through a website. Please note that the captured data will be used solely for the purpose of this experiment and will not be stored.",
+        "t": "Πραγματοποιούμε ένα πείραμα στον τομέα της συναισθηματικής υπολογιστικής για να εξερευνήσουμε τη σύνδεση μεταξύ των εκφράσεων του προσώπου και της εμπειρίας του χρήστη κατά την περιήγηση σε ιστότοπο. Κατά τη διάρκεια του πειράματος, θα καταγράψουμε τις εκφράσεις του προσώπου σας χρησιμοποιώντας μια κάμερα ενώ περιηγείστε σε έναν ιστότοπο. Σημειώστε ότι τα καταγεγραμμένα δεδομένα θα χρησιμοποιηθούν αποκλειστικά για το σκοπό αυτού του πειράματος και δεν θα αποθηκευτούν."
+    },
+    {
+        "o": "Please note that the experiment is best done on a desktop or laptop computer",
+        "t": "Παρακαλούμε σημειώστε ότι το πείραμα είναι καλύτερα να πραγματοποιείται σε σταθερό ή φορητό υπολογιστή"
+    },
+    {
+        "o": "Begin",
+        "t": "Έναρξη"
+    },
+    {
+        "o": "Note: You can change the language of the experiment here.",
+        "t": "Σημείωση: Μπορείτε να αλλάξετε τη γλώσσα του πειράματος εδώ."
+    },
+    {
+        "o": "Please watch the video until the end",
+        "t": "Παρακαλούμε παρακολουθήστε το βίντεο μέχρι το τέλος"
+    },
+    {
+        "o": "Please select your country of origin",
+        "t": "Παρακαλώ επιλέξτε τη χώρα καταγωγής σας"
+    },
+    {
+        "o": "What is your highest level of education?",
+        "t": "Ποιο είναι το υψηλότερο επίπεδο εκπαίδευσής σας;"
+    },
+    {
+        "o": "What would best describe your current occupation?",
+        "t": "Τι περιγράφει καλύτερα την τρέχουσα επαγγελματική σας κατάσταση;"
+    },
+    {
+        "o": "I identify as",
+        "t": "Ταυτίζομαι ως"
+    },
+    {
+        "o": "Male",
+        "t": "Άνδρας"
+    },
+    {
+        "o": "Female",
+        "t": "Γυναίκα"
+    },
+    {
+        "o": "Employee",
+        "t": "Υπάλληλος"
+    },
+    {
+        "o": "Intern",
+        "t": "Πρακτική άσκηση"
+    },
+    {
+        "o": "Student",
+        "t": "Φοιτητής"
+    },
+    {
+        "o": "Self-employed",
+        "t": "Αυτοαπασχολούμενος"
+    },
+    {
+        "o": "Other",
+        "t": "Άλλο"
+    },
+    {
+        "o": "-- select an option --",
+        "t": "-- Επιλέξτε μια επιλογή --"
+    },
+    {
+        "o": "Some High School",
+        "t": "Μερική Λυκείου"
+    },
+    {
+        "o": "Bachelor's Degree or equivalent",
+        "t": "Προπτυχιακό ή ισότιμο"
+    },
+    {
+        "o": "Master's Degree or equivalent",
+        "t": "Μεταπτυχιακό ή ισότιμο"
+    },
+    {
+        "o": "Ph.D. or higher",
+        "t": "Διδακτορικό ή ανώτερο"
+    },
+    {
+        "o": "Where are you currently conducting the test?",
+        "t": "Πού βρίσκεστε κατά την διεξαγωγή αυτού του πειράματος;"
+    },
+    {
+        "o": "At home",
+        "t": "Στο σπίτι"
+    },
+    {
+        "o": "At work",
+        "t": "Στη δουλειά"
+    },
+    {
+        "o": "At school",
+        "t": "Στο σχολείο"
+    },
+    {
+        "o": "Outside",
+        "t": "Έξω"
+    },
+    {
+        "o": "Are you alone or with others while conducting this test?",
+        "t": "Είστε μόνος ή με άλλους κατά τη διεξαγωγή αυτού του πειράματος;"
+    },
+    {
+        "o": "Alone",
+        "t": "Μόνος"
+    },
+    {
+        "o": "With family",
+        "t": "Με την οικογένεια"
+    },
+    {
+        "o": "With friends",
+        "t": "Με φίλους"
+    },
+    {
+        "o": "With colleagues",
+        "t": "Με συναδέλφους"
+    }
+    
+]    
+    
+    

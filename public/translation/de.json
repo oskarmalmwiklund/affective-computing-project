@@ -284,8 +284,12 @@
         "t": "Nimm den Stress aus der Mahlzeit"
     },
     {
-        "o": "No skimpin’ on the chicken! Or steak, or fish, or plant protein.",
-        "t": "Kein Geiz beim Huhn! Oder Steak, oder Fisch, oder pflanzlichem Protein."
+        "o": "No skimpin’ on the chicken!",
+        "t": "Kein Geiz beim Huhn!"
+    },
+    {
+        "o":"Or steak, or fish, or plant protein.",
+        "t": "Oder Steak, oder Fisch, oder pflanzlichem Protein."
     },
     {
         "o": "No commitment whatsoever",
