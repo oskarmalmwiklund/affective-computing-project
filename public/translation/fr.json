@@ -926,13 +926,13 @@
     {
         "o": "Your task",
         "t": "Ta tâche"
-      },
-      {
+    },
+    {
         "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
         "t": "Si vous ne pouvez pas terminer la tâche, vous pouvez quitter l'expérience en cliquant sur le bouton Quitter dans le coin supérieur droit."
-      },
-      {
+    },
+    {
         "o": "I understand",
         "t": "Je comprends"
-      }
+    }
 ]

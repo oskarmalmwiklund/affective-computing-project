@@ -778,5 +778,17 @@
     {
         "o": "We will not collect your email",
         "t": "Wir werden Ihre E-Mail nicht sammeln"
+    },
+    {
+        "o": "Your task",
+        "t": "Deine Aufgabe"
+    },
+    {
+        "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
+        "t": "Wenn Sie die Aufgabe nicht abschließen können, können Sie das Experiment beenden, indem Sie oben rechts auf die Schaltfläche „Beenden“ klicken."
+    },
+    {
+        "o": "I understand",
+        "t": "Ich verstehe"
     }
 ]
