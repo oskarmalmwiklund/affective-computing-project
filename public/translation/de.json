@@ -2,5 +2,781 @@
     {
         "o": "Dear Participant,",
         "t": "Lieber Teilnehmer,"
+    },
+    {
+        "o": "Welcome to our experiment!",
+        "t": "Willkommen zu unserem Experiment!"
+    },
+    {
+        "o": "Allow camera",
+        "t": "Erlauben Sie die Kamera"
+    },
+    {
+        "o": "Once the experiment starts, you will be asked to allow the website to use your camera. We are conducting research that will make use of your camera while conducting the test.",
+        "t": "Sobald das Experiment beginnt, werden Sie aufgefordert, der Website die Verwendung Ihrer Kamera zu erlauben. Wir führen eine Forschung durch, bei der Ihre Kamera während des Tests verwendet wird."
+    },
+    {
+        "o": "We are conducting an experiment in the field of affective computing to explore the connection between facial expressions and user experience during website navigation. During the experiment, we will capture your facial expressions using a camera while you navigate through a website. Please note that the captured data will be used solely for the purpose of this experiment and will not be stored.",
+        "t": "Wir führen ein Experiment im Bereich der affektiven Berechnung durch, um den Zusammenhang zwischen Gesichtsausdrücken und Benutzererfahrung während der Navigation auf einer Website zu erforschen. Während des Experiments werden wir Ihre Gesichtsausdrücke mithilfe einer Kamera erfassen, während Sie durch eine Website navigieren. Bitte beachten Sie, dass die erfassten Daten ausschließlich für den Zweck dieses Experiments verwendet und nicht gespeichert werden."
+    },
+    {
+        "o": "Please note that the experiment is best done on a desktop or laptop computer",
+        "t": "Bitte beachten Sie, dass das Experiment am besten auf einem Desktop- oder Laptop-Computer durchgeführt wird"
+    },
+    {
+        "o": "Begin",
+        "t": "Beginnen"
+    },
+    {
+        "o": "Note: You can change the language of the experiment here.",
+        "t": "Hinweis: Sie können hier die Sprache des Experiments ändern."
+    },
+    {
+        "o": "Please watch the video until the end",
+        "t": "Bitte sehen Sie sich das Video bis zum Ende an"
+    },
+    {
+        "o": "Please select your country of origin",
+        "t": "Bitte wählen Sie Ihr Herkunftsland"
+    },
+    {
+        "o": "What is your highest level of education?",
+        "t": "Was ist Ihr höchster Bildungsabschluss?"
+    },
+    {
+        "o": "What would best describe your current occupation?",
+        "t": "Was würde Ihre aktuelle Tätigkeit am besten beschreiben?"
+    },
+    {
+        "o": "I identify as",
+        "t": "Ich identifiziere mich als"
+    },
+    {
+        "o": "Male",
+        "t": "Männlich"
+    },
+    {
+        "o": "Female",
+        "t": "Weiblich"
+    },
+    {
+        "o": "Employee",
+        "t": "Angestellter"
+    },
+    {
+        "o": "Intern",
+        "t": "Praktikant"
+    },
+    {
+        "o": "Student",
+        "t": "Student"
+    },
+    {
+        "o": "Self-employed",
+        "t": "Selbstständig"
+    },
+    {
+        "o": "Other",
+        "t": "Andere"
+    },
+    {
+        "o": "-- select an option --",
+        "t": "-- Wählen Sie eine Option --"
+    },
+    {
+        "o": "Some High School",
+        "t": "Einige Sekundarschule"
+    },
+    {
+        "o": "Bachelor's Degree or equivalent",
+        "t": "Bachelor-Abschluss oder gleichwertig"
+    },
+    {
+        "o": "Master's Degree or equivalent",
+        "t": "Master-Abschluss oder gleichwertig"
+    },
+    {
+        "o": "Ph.D. or higher",
+        "t": "Promotion oder höher"
+    },
+    {
+        "o": "Where are you currently conducting the test?",
+        "t": "Wo führen Sie derzeit den Test durch?"
+    },
+    {
+        "o": "At home",
+        "t": "Zu Hause"
+    },
+    {
+        "o": "At work",
+        "t": "Bei der Arbeit"
+    },
+    {
+        "o": "At school",
+        "t": "In der Schule"
+    },
+    {
+        "o": "Outside",
+        "t": "Draußen"
+    },
+    {
+        "o": "Are you alone or with others while conducting this test?",
+        "t": "Bist du allein oder mit anderen während du diesen Test durchführst?"
+    },
+    {
+        "o": "Alone",
+        "t": "Allein"
+    },
+    {
+        "o": "With family",
+        "t": "Mit Familie"
+    },
+    {
+        "o": "With friends",
+        "t": "Mit Freunden"
+    },
+    {
+        "o": "With colleagues",
+        "t": "Mit Kollegen"
+    },
+    {
+        "o": "What would best describe your current mood?",
+        "t": "Was würde deine aktuelle Stimmung am besten beschreiben?"
+    },
+    {
+        "o": "Happy",
+        "t": "Glücklich"
+    },
+    {
+        "o": "Sad",
+        "t": "Traurig"
+    },
+    {
+        "o": "Stressed",
+        "t": "Gestresst"
+    },
+    {
+        "o": "Relaxed",
+        "t": "Entspannt"
+    },
+    {
+        "o": "Neutral",
+        "t": "Neutral"
+    },
+    {
+        "o": "How comfortable are you with using the internet and web services?",
+        "t": "Wie komfortabel fühlst du dich bei der Nutzung des Internets und von Webdiensten?"
+    },
+    {
+        "o": "Very comfortable",
+        "t": "Sehr komfortabel"
+    },
+    {
+        "o": "Comfortable",
+        "t": "Komfortabel"
+    },
+    {
+        "o": "Uncomfortable",
+        "t": "Unkomfortabel"
+    },
+    {
+        "o": "Very uncomfortable",
+        "t": "Sehr unkomfortabel"
+    },
+    {
+        "o": "What kind of device are you currently using?",
+        "t": "Welche Art von Gerät verwendest du derzeit?"
+    },
+    {
+        "o": "Computer",
+        "t": "Computer"
+    },
+    {
+        "o": "Phone",
+        "t": "Telefon"
+    },
+    {
+        "o": "Tablet",
+        "t": "Tablet"
+    },
+    {
+        "o": "Approximately, how many online subscriptions do you have?",
+        "t": "Ungefähr wie viele Online-Abonnements hast du?"
+    },
+    {
+        "o": "0",
+        "t": "0"
+    },
+    {
+        "o": "1-5",
+        "t": "1-5"
+    },
+    {
+        "o": "6-10",
+        "t": "6-10"
+    },
+    {
+        "o": "11+",
+        "t": "11+"
+    },
+    {
+        "o": "1 = Don't agree at all",
+        "t": "1 = Stimme überhaupt nicht zu"
+    },
+    {
+        "o": "3 = Neutral",
+        "t": "3 = Neutral"
+    },
+    {
+        "o": "5 = Completely agree",
+        "t": "5 = Stimme vollständig zu"
+    },
+    {
+        "o": "What is your birth date?",
+        "t": "Was ist dein Geburtsdatum?"
+    },
+    {
+        "o": "Home",
+        "t": "Startseite"
+    },
+    {
+        "o": "Our Plans",
+        "t": "Unsere Pläne"
+    },
+    {
+        "o": "How It Works",
+        "t": "Wie es funktioniert"
+    },
+    {
+        "o": "Our Menus",
+        "t": "Unsere Menüs"
+    },
+    {
+        "o": "Contact",
+        "t": "Kontakt"
+    },
+    {
+        "o": "Your task is to try and find how to purchase the service.",
+        "t": "Deine Aufgabe besteht darin, zu versuchen, herauszufinden, wie du den Service kaufen kannst."
+    },
+    {
+        "o": "If you can't complete the task, you can quit the experiment by clicking the quit button in the top right corner.",
+        "t": "Wenn du die Aufgabe nicht abschließen kannst, kannst du das Experiment beenden, indem du auf die Schaltfläche 'Beenden' in der oberen rechten Ecke klickst."
+    },
+    {
+        "o": "Are you sure you want to quit?",
+        "t": "Bist du sicher, dass du beenden möchtest?"
+    },
+    {
+        "o": "By quitting the experiment, you have not successfully completed the task. If you feel like you’re not able to complete the task, you can finish the experiment now.",
+        "t": "Durch das Beenden des Experiments hast du die Aufgabe nicht erfolgreich abgeschlossen. Wenn du das Gefühl hast, die Aufgabe nicht abschließen zu können, kannst du das Experiment jetzt beenden."
+    },
+    {
+        "o": "Subscribe to Our Newsletter",
+        "t": "Abonniere unseren Newsletter"
+    },
+    {
+        "o": "Receive the latest recipes by subscribing now!",
+        "t": "Erhalte die neuesten Rezepte, indem du dich jetzt abonnierst!"
+    },
+    {
+        "o": "Take the stress out of mealtime",
+        "t": "Nimm den Stress aus der Mahlzeit"
+    },
+    {
+        "o": "No skimpin’ on the chicken! Or steak, or fish, or plant protein.",
+        "t": "Kein Geiz beim Huhn! Oder Steak, oder Fisch, oder pflanzlichem Protein."
+    },
+    {
+        "o": "No commitment whatsoever",
+        "t": "Keine Verpflichtung überhaupt"
+    },
+    {
+        "o": "Skipping weeks or cancelling is super easy.",
+        "t": "Wochen überspringen oder kündigen ist super einfach."
+    },
+    {
+        "o": "The most 5-star reviews",
+        "t": "Die meisten 5-Sterne-Bewertungen"
+    },
+    {
+        "o": "Our huge recipe selection wows week after week.",
+        "t": "Unsere riesige Auswahl an Rezepten beeindruckt Woche für Woche."
+    },
+    {
+        "o": "Fresh and affordable",
+        "t": "Frisch und erschwinglich"
+    },
+    {
+        "o":"Chef-created deliciousness from $7.49 per meal.",
+        "t": "Von Chefköchen kreiertes Köstliches ab $7.49 pro Mahlzeit."
+    },
+    {
+        "o": "Over 30+ fresh recipes every week",
+        "t": "Über 30+ frische Rezepte jede Woche"
+    },
+    {
+        "o": "MEAT & VEGGIES",
+        "t": "FLEISCH & GEMÜSE"
+    },
+    {
+        "o": "VEGGIES",
+        "t": "GEMÜSE"
+    },
+    {
+        "o": "FAMILY FRIENDLY",
+        "t": "FAMILIENFREUNDLICH"
+    },
+    {
+        "o": "FIT & WHOLESOME",
+        "t": "FIT & GESUND"
+    },
+    {
+        "o": "QUICK & EASY",
+        "t": "SCHNELL & EINFACH"
+    },
+    {
+        "o": "PESCATARIAN",
+        "t": "PESKETARISCH"
+    },
+    {
+        "o": "What’s inside each box?",
+        "t": "Was ist in jeder Box enthalten?"
+    },
+    {
+        "o": "Easy-to-follow recipes with clear nutritional info",
+        "t": "Leicht verständliche Rezepte mit klaren Nährwertangaben"
+    },
+    {
+        "o": "High-quality ingredients sourced straight from the farm",
+        "t": "Hochwertige Zutaten direkt vom Bauernhof bezogen"
+    },
+    {
+        "o": "Convenient meal kits that fit perfectly in the fridge",
+        "t": "Bequeme Mahlzeiten-Kits, die perfekt in den Kühlschrank passen"
+    },
+    {
+        "o": "A fun cooking experience that makes you feel unstoppable",
+        "t": "Ein lustiges Kocherlebnis, das dich unbesiegbar fühlen lässt"
+    },
+    {
+        "o": "Innovative packaging designed to reduce waste",
+        "t": "Innovative Verpackung, die darauf abzielt, Abfall zu reduzieren"
+    },
+    {
+        "o": "View Our Plans",
+        "t": "Unsere Pläne anzeigen"
+    },
+    {
+        "o": "Take the stress out of mealtime",
+        "t": "Den Stress aus der Essenszeit nehmen"
+    },
+    {
+        "o": "Quit",
+        "t": "Beenden"
+    },
+    {
+        "o": "Subscribe",
+        "t": "Abonnieren"
+    },
+    {
+        "o": "About Us",
+        "t": "Über uns"
+    },
+    {
+        "o": "About Us",
+        "t": "Über uns"
+    },
+    {
+        "o": "How It Works",
+        "t": "Wie es funktioniert"
+    },
+    {
+        "o": "Recipes",
+        "t": "Rezepte"
+    },
+    {
+        "o": "Meal Plans",
+        "t": "Mahlzeitpläne"
+    },
+    {
+        "o": "Our Company",
+        "t": "Unser Unternehmen"
+    },
+    {
+        "o": "Careers",
+        "t": "Karriere"
+    },
+    {
+        "o": "Blog",
+        "t": "Blog"
+    },
+    {
+        "o": "Press",
+        "t": "Presse"
+    },
+    {
+        "o": "Contact",
+        "t": "Kontakt"
+    },
+    {
+        "o": "Customer Support",
+        "t": "Kundensupport"
+    },
+    {
+        "o": "FAQ",
+        "t": "FAQ"
+    },
+    {
+        "o": "Contact Us",
+        "t": "Kontaktieren Sie uns"
+    },
+    {
+        "o": "Payment Methods",
+        "t": "Zahlungsmethoden"
+    },
+    {
+        "o": "Credit Cards",
+        "t": "Kreditkarten"
+    },
+    {
+        "o": "Debit Cards",
+        "t": "Debitkarten"
+    },
+    {
+        "o": "PayPal",
+        "t": "PayPal"
+    },
+    {
+        "o": "1. Choose your preferences",
+        "t": "1. Wähle deine Vorlieben"
+    },
+    {
+        "o": "Your preferences help us show you the most relevant recipes first. You'll still have access to all recipes each week!",
+        "t": "Deine Vorlieben helfen uns dabei, dir zuerst die relevantesten Rezepte anzuzeigen. Du hast trotzdem jede Woche Zugriff auf alle Rezepte!"
+    },
+    {
+        "o": "Veggie",
+        "t": "Vegetarisch"
+    },
+    {
+        "o": "Meat & Veggie",
+        "t": "Fleisch und Vegetarisch"
+    },
+    {
+        "o": "Pescatarian",
+        "t": "Pescetarier"
+    },
+    {
+        "o": "Fit & Wholesome",
+        "t": "Gesund und Komplett"
+    },
+    {
+        "o": "Quick & Easy",
+        "t": "Schnell und Einfach"
+    },
+    {
+        "o": "Family Friendly",
+        "t": "Familienfreundlich"
+    },
+    {
+        "o": "Continue",
+        "t": "Weiter"
+    },
+    {
+        "o": "2. Customize your plan size",
+        "t": "2. Passe die Größe deines Plans an"
+    },
+    {
+        "o": "Number of people:",
+        "t": "Anzahl der Personen:"
+    },
+    {
+        "o": "Meals per week:",
+        "t": "Mahlzeiten pro Woche:"
+    },
+    {
+        "o": "Total Price: $",
+        "t": "Gesamtpreis: $"
+    },
+    {
+        "o": "Select a plan",
+        "t": "Wähle einen Plan"
+    },
+    {
+        "o": "Finish the experiment",
+        "t": "Experiment beenden"
+    },
+    {
+        "o": "Stay flexible",
+        "t": "Bleibe flexibel"
+    },
+    {
+        "o": "Skip weeks with ease or schedule ahead if you like to plan.",
+        "t": "Überspringe Wochen problemlos oder plane im Voraus, wenn du gerne planst."
+    },
+    {
+        "o": "Customize your menu",
+        "t": "Passe dein Menü an"
+    },
+    {
+        "o": "Swap proteins and sides for endless variety with 30+ weekly recipes.",
+        "t": "Tauche ein in endlose Vielfalt mit über 30 wöchentlichen Rezepten und tausche Proteine und Beilagen aus."
+    },
+    {
+        "o": "Save money",
+        "t": "Spare Geld"
+    },
+    {
+        "o": "Perfect portions mean no excess food waste and no extra dollars spent.",
+        "t": "Perfekte Portionen bedeuten keinen überschüssigen Lebensmittelabfall und keine zusätzlichen ausgegebenen Dollars."
+    },
+    {
+        "o": "Get started",
+        "t": "Loslegen"
+    },
+    {
+        "o": "Continue to purchase by subscribing now!",
+        "t": "Fahre fort mit dem Kauf, indem du jetzt abonnierst!"
+    },
+    {
+        "o": "Enter your email",
+        "t": "Gib deine E-Mail-Adresse ein"
+    },
+    {
+        "o": "Enter your name",
+        "t": "Gib deinen Namen ein"
+    },
+    {
+        "o": "By submitting, you agree to receive marketing emails and our Terms and Privacy Policy. Unsubscribe at any time.",
+        "t": "Durch das Absenden stimmst du dem Erhalt von Marketing-E-Mails sowie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu. Du kannst dich jederzeit abmelden."
+    },
+    {
+        "o": "Congratulations!",
+        "t": "Herzlichen Glückwunsch!"
+    },
+    {
+        "o": "You completed your tasks.",
+        "t": "Du hast deine Aufgaben abgeschlossen."
+    },
+    {
+        "o": "Click here to finish the experiment.",
+        "t": "Klicke hier, um das Experiment zu beenden."
+    },
+    {
+        "o": "Finish experiment",
+        "t": "Experiment beenden"
+    },
+    {
+        "o": "You are finished.",
+        "t": "Du bist fertig."
+    },
+    {
+        "o": "Thank you for participating in our experiment!",
+        "t": "Vielen Dank für deine Teilnahme an unserem Experiment!"
+    },
+    {
+        "o": "Our recipes",
+        "t": "Unsere Rezepte"
+    },
+    {
+        "o": "One-Pan Beef Enchiladas Verdes",
+        "t": "Ein-Pfannen-Rindfleisch-Enchiladas Verdes"
+    },
+    {
+        "o": "with Mexican Cheese Blend & Hot Sauce Crema.",
+        "t": "mit mexikanischer Käsemischung und scharfer Sauce Crema."
+    },
+    {
+        "o": "Chicken & Mushroom Flatbreads",
+        "t": "Hähnchen- und Pilzfladenbrote"
+    },
+    {
+        "o": "with Gouda Cream Sauce & Parmesan",
+        "t": "mit Gouda-Cremesauce und Parmesan"
+    },
+    {
+        "o": "Southwest Beef Cavatappi",
+        "t": "Südwest-Rindfleisch-Cavatappi"
+    },
+    {
+        "o": "with Green Pepper & Smoky Red Pepper Crema",
+        "t": "mit grünem Pfeffer und rauchiger roter Paprika-Crema"
+    },
+    {
+        "o": "Moo Shu Pork Bowls",
+        "t": "Moo-Shu-Schweinefleischschalen"
+    },
+    {
+        "o": "with Cabbage, Scallions & Buttery Rice",
+        "t": "mit Kohl, Frühlingszwiebeln und Buttery-Reis"
+    },
+    {
+        "o": "Firehouse Cheeseburgers",
+        "t": "Firehouse-Käseburger"
+    },
+    {
+        "o": "with Fried Onions, Garlic Potato Wedges & Creamy Ranch Sauce",
+        "t": "mit gebratenen Zwiebeln, Knoblauch-Kartoffel-Wedges und cremiger Ranch-Sauce"
+    },
+    {
+        "o": "Lemon-Dill Chicken Sausage Couscous",
+        "t": "Zitronen-Dill-Hühnerwurst-Couscous"
+    },
+    {
+        "o": "with Zucchini",
+        "t": "mit Zucchini"
+    },
+    {
+        "o": "35 minutes",
+        "t": "35 Minuten"
+    },
+    {
+        "o": "20 minutes",
+        "t": "20 Minuten"
+    },
+    {
+        "o": "25 minutes",
+        "t": "25 Minuten"
+    },
+    {
+        "o": "30 minutes",
+        "t": "30 Minuten"
+    },
+    {
+        "o": "Citrusy Tex-Mex Pork Tenderloin",
+        "t": "Zitroniges Tex-Mex-Schweinefilet"
+    },
+    {
+        "o": "with Spiced Veggie Jumble & Lime Crema",
+        "t": "mit gewürztem Gemüsemix und Limettencrema"
+    },
+    {
+        "o": "One-Pan Trattoria Tortelloni Bake",
+        "t": "Trattoria-Tortelloni-Auflauf in einer Pfanne"
+    },
+    {
+        "o": "with a Crispy Parmesan Panko Topping",
+        "t": "mit knuspriger Parmesan-Panko-Kruste"
+    },
+    {
+        "o": "I think that I would like to use this system frequently.",
+        "t": "Ich denke, dass ich dieses System gerne häufig verwenden würde."
+    },
+    {
+        "o": "I found the system unnecessarily complex.",
+        "t": "Ich fand das System unnötigerweise komplex."
+    },
+    {
+        "o": "I thought the system was easy to use.",
+        "t": "Ich fand das System einfach zu bedienen."
+    },
+    {
+        "o": "I think that I would need the support of a technical person to be able to use this system.",
+        "t": "Ich denke, dass ich die Unterstützung einer technischen Person benötigen würde, um dieses System verwenden zu können."
+    },
+    {
+        "o": "I found the various functions in this system were well integrated.",
+        "t": "Ich fand, dass die verschiedenen Funktionen in diesem System gut integriert waren."
+    },
+    {
+        "o": "I thought there was too much inconsistency in this system.",
+        "t": "Ich fand, dass es in diesem System zu viele Inkonsistenzen gab."
+    },
+    {
+        "o": "I would imagine that most people would learn to use this system very quickly.",
+        "t": "Ich stelle mir vor, dass die meisten Menschen sehr schnell lernen würden, dieses System zu verwenden."
+    },
+    {
+        "o": "I found the system very cumbersome to use.",
+        "t": "Ich fand das System sehr umständlich zu bedienen."
+    },
+    {
+        "o": "I felt very confident using the system.",
+        "t": "Ich fühlte mich sehr sicher bei der Verwendung des Systems."
+    },
+    {
+        "o": "I needed to learn a lot of things before I could get going with this system.",
+        "t": "Ich musste viel lernen, bevor ich mit diesem System loslegen konnte."
+    },
+    {
+        "o": "This website is attractive.",
+        "t": "Diese Website ist attraktiv."
+    },
+    {
+        "o": "This website was aesthetically appealing.",
+        "t": "Diese Website war ästhetisch ansprechend."
+    },
+    {
+        "o": "I liked the graphics and images used on this website.",
+        "t": "Mir haben die Grafiken und Bilder auf dieser Website gefallen."
+    },
+    {
+        "o": "This website appealed to my visual senses.",
+        "t": "Diese Website sprach meine visuellen Sinne an."
+    },
+    {
+        "o": "The screen layout of this shopping website was visually pleasing.",
+        "t": "Das Bildschirmlayout dieser Einkaufswebsite war optisch ansprechend."
+    },
+    {
+        "o": "1. Pick a plan",
+        "t": "1. Wählen Sie einen Plan aus"
+    },
+    {
+        "o": "Whether cooking for yourself or your household, we have a flexible plan to match your lifestyle. Need to cancel, change meals, or skip a week? Not a problem.",
+        "t": "Egal, ob Sie für sich selbst oder Ihren Haushalt kochen, wir haben einen flexiblen Plan, der zu Ihrem Lebensstil passt. Müssen Sie eine Mahlzeit stornieren, ändern oder eine Woche überspringen? Kein Problem."
+    },
+    {
+        "o": "2. Get your delivery",
+        "t": "2. Erhalten Sie Ihre Lieferung"
+    },
+    {
+        "o": "Each week, you’ll open simple step-by-step recipes complete with nutritional information and fresh, pre-measured ingredients to get you whipping up delicious dinners in no time.",
+        "t": "Jede Woche öffnen Sie einfache, schrittweise Rezepte mit vollständigen Nährwertinformationen und frischen, vorgemessenen Zutaten, um in kürzester Zeit köstliche Abendessen zuzubereiten."
+    },
+    {
+        "o": "3. Cook, eat, enjoy!",
+        "t": "3. Kochen, essen, genießen!"
+    },
+    {
+        "o": "The old “what do you want to eat?” conversation is about to be banished from your life. Welcome to a world where dinner is always planned, simple, and delicious.",
+        "t": "Das alte “Was möchtest du essen?” Gespräch wird aus Ihrem Leben verbannt. Willkommen in einer Welt, in der das Abendessen immer geplant, einfach und köstlich ist."
+    },
+    {
+        "o": "4. Recycle your box and packaging",
+        "t": "4. Entsorgen Sie Ihre Box und Verpackung"
+    },
+    {
+        "o": "Simply fold your box and place it with your curbside recyclables or take it to your local recycling center. Explore the recycling and packaging page for more details.",
+        "t": "Falten Sie einfach Ihre Box zusammen und stellen Sie sie mit Ihrem Straßenrand-Recycling oder bringen Sie sie zu Ihrem örtlichen Recyclingzentrum. Erkunden Sie die Recycling- und Verpackungsseite für weitere Details."
+    },
+    {
+        "o": "Submit",
+        "t": "Absenden"
+    },
+    {
+        "o": "Submit survey",
+        "t": "Umfrage abschicken"
+    },
+    {
+        "o": "Start experiment",
+        "t": "Experiment starten"
+    },
+    {
+        "o": "Take the stress",
+        "t": "Nehmen Sie den Stress"
+    },
+    {
+        "o": "out of mealtime",
+        "t": "aus der Essenszeit"
+    },
+    {
+        "o": "Note: We will not collect your email, and you will not purchase anything. This is just a part of the experiment.",
+        "t": "Hinweis: Wir werden Ihre E-Mail nicht sammeln und Sie werden nichts kaufen. Dies ist nur ein Teil des Experiments."
+    },
+    {
+        "o": "We will not collect your email",
+        "t": "Wir werden Ihre E-Mail nicht sammeln"
     }
 ]
